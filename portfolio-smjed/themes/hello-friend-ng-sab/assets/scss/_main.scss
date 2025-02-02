@@ -506,21 +506,29 @@ hr {
 
     li {
       margin: 0.4rem 0;
-      padding: 0.3rem;
+      padding: 0;
       border-radius: 4px;
       font-size: 0.9rem;
-      transition: background-color 0.2s ease;
       
-      &:hover {
-        // Default
-        background-color: rgba($light-background-secondary, 0.5);
+      .skill-link {
+        display: block;
+        padding: 0.3rem;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        border-radius: 4px;
+        
+        &:hover {
+          // Default
+          background-color: rgba($light-background-secondary, 0.5);
+          transform: translateX(5px);
 
-        @media (prefers-color-scheme: dark) {
-          background-color: rgba($dark-background-secondary, 0.5);
-        }
+          @media (prefers-color-scheme: dark) {
+            background-color: rgba($dark-background-secondary, 0.5);
+          }
 
-        [data-theme=dark] & {
-          background-color: rgba($dark-background-secondary, 0.5);
+          [data-theme=dark] & {
+            background-color: rgba($dark-background-secondary, 0.5);
+          }
         }
       }
     }

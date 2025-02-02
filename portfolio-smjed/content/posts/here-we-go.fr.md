@@ -8,6 +8,7 @@ featuredalt: ""
 featuredpath: "date"
 linktitle: ""
 title: "Here we go"
+tags: ["Kubernetes", "Docker", "DevOps"]
 slug: "Here we go"
 type: "post"
 ---
