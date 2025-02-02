@@ -436,43 +436,92 @@ hr {
 
 // Skills section styles
 .skills {
-  margin: 2rem 0;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+  
+  // Default
+  border: 1px solid $light-border-color;
+  background-color: rgba($light-background-secondary, 0.3);
+
+  @media (prefers-color-scheme: dark) {
+    border: 1px solid $dark-border-color;
+    background-color: rgba($dark-background-secondary, 0.3);
+  }
+
+  [data-theme=dark] & {
+    border: 1px solid $dark-border-color;
+    background-color: rgba($dark-background-secondary, 0.3);
+  }
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.4rem;
+  }
 
   .skills-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
+    justify-content: center;
   }
 
   .skill-category {
     flex: 1;
     min-width: 200px;
+    max-width: 300px;
+    padding: 1rem;
+    border-radius: 6px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    
+    // Default
+    border: 1px solid $light-border-color;
+    
+    @media (prefers-color-scheme: dark) {
+      border: 1px solid $dark-border-color;
+    }
+
+    [data-theme=dark] & {
+      border: 1px solid $dark-border-color;
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h3 {
+      margin: 0 0 0.8rem 0;
+      text-align: center;
+      font-size: 1.1rem;
+    }
 
     ul {
       list-style: none;
       padding: 0;
+      margin: 0;
     }
 
     li {
-      margin: 0.5rem 0;
+      margin: 0.4rem 0;
+      padding: 0.3rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      transition: background-color 0.2s ease;
       
-      // Default
-      color: $light-color-variant;
+      &:hover {
+        // Default
+        background-color: rgba($light-background-secondary, 0.5);
 
-      @media (prefers-color-scheme: dark) {
-        color: $dark-color-variant;
-      }
+        @media (prefers-color-scheme: dark) {
+          background-color: rgba($dark-background-secondary, 0.5);
+        }
 
-      @media (prefers-color-scheme: light) {
-        color: $light-color-variant;
-      }
-
-      [data-theme=dark] & {
-        color: $dark-color-variant;
-      }
-
-      [data-theme=light] & {
-        color: $light-color-variant;
+        [data-theme=dark] & {
+          background-color: rgba($dark-background-secondary, 0.5);
+        }
       }
     }
   }

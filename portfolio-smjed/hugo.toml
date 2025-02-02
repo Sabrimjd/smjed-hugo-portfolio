@@ -222,14 +222,32 @@ disableHugoGeneratorInject = false
     enable = true
     title = "Skills"
     [[params.skills.categories]]
+      name = "Infrastructure"
+      items = ["Kubernetes", "Docker", "VMware", "Proxmox", "Terraform", "Ansible"]
+    [[params.skills.categories]]
       name = "Storage"
-      items = ["NFS", "Ceph", "GlusterFS"]
+      items = ["NFS", "Ceph", "GlusterFS", "MinIO", "NetApp", "iSCSI"]
     [[params.skills.categories]]
       name = "CI/CD"
-      items = ["Jenkins", "GitHub Actions", "GitLab CI"]
+      items = ["Jenkins", "GitHub Actions", "GitLab CI", "ArgoCD", "Tekton", "Flux"]
     [[params.skills.categories]]
-      name = "Cloud"
-      items = ["AWS", "Azure", "GCP"]
+      name = "Cloud Platforms"
+      items = ["AWS", "Azure", "GCP", "OpenStack", "OVH Cloud"]
+    [[params.skills.categories]]
+      name = "Monitoring"
+      items = ["Prometheus", "Grafana", "ELK Stack", "Datadog", "Nagios", "Zabbix"]
+    [[params.skills.categories]]
+      name = "Security"
+      items = ["Vault", "CertManager", "OpenSCAP", "Falco", "Trivy", "OPA"]
+    [[params.skills.categories]]
+      name = "Operating Systems"
+      items = ["Linux (RHEL/CentOS/Ubuntu)", "Windows Server", "Unix"]
+    [[params.skills.categories]]
+      name = "Networking"
+      items = ["Load Balancers", "DNS", "CDN", "VPN", "Firewalls", "SDN"]
+    [[params.skills.categories]]
+      name = "Programming"
+      items = ["Python", "Bash", "Go", "YAML", "JSON", "HCL"]
 
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
   # Addon: Social icons
@@ -277,3 +295,8 @@ disableHugoGeneratorInject = false
     identifier = "posts"
     name       = "Posts"
     url        = "posts/"
+  [[menu.main]]
+    identifier = "skills"
+    name       = "Skills"
+    url        = "skills/"
+    weight     = 3
