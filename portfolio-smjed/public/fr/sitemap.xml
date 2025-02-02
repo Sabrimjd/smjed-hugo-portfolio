@@ -2,83 +2,106 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/fr/categories/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+    <loc>http://127.0.0.1:1313/fr/about/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/categories/"
+                href="http://127.0.0.1:1313/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/categories/"
+                href="http://127.0.0.1:1313/fr/about/"
                 />
   </url><url>
-    <loc>http://localhost:1313/fr/posts/2014/09/here-we-go/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+    <loc>http://127.0.0.1:1313/fr/categories/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/posts/2025/01/here-we-go/"
+                href="http://127.0.0.1:1313/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/posts/2014/09/here-we-go/"
+                href="http://127.0.0.1:1313/fr/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/fr/categories/hugo/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/fr/posts/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+    <loc>http://127.0.0.1:1313/fr/posts/2025/01/here-we-go/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/posts/"
+                href="http://127.0.0.1:1313/posts/2025/01/here-we-go/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/posts/"
+                href="http://127.0.0.1:1313/fr/posts/2025/01/here-we-go/"
                 />
   </url><url>
-    <loc>http://localhost:1313/fr/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+    <loc>http://127.0.0.1:1313/fr/categories/hugo/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/"
+                href="http://127.0.0.1:1313/categories/hugo/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/"
+                href="http://127.0.0.1:1313/fr/categories/hugo/"
                 />
   </url><url>
-    <loc>http://localhost:1313/fr/series/</loc>
+    <loc>http://127.0.0.1:1313/fr/posts/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/series/"
+                href="http://127.0.0.1:1313/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/series/"
+                href="http://127.0.0.1:1313/fr/posts/"
                 />
   </url><url>
-    <loc>http://localhost:1313/fr/tags/</loc>
+    <loc>http://127.0.0.1:1313/fr/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/"
+                href="http://127.0.0.1:1313/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/tags/"
+                href="http://127.0.0.1:1313/fr/"
+                />
+  </url><url>
+    <loc>http://127.0.0.1:1313/fr/series/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://127.0.0.1:1313/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://127.0.0.1:1313/fr/series/"
+                />
+  </url><url>
+    <loc>http://127.0.0.1:1313/fr/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://127.0.0.1:1313/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://127.0.0.1:1313/fr/tags/"
                 />
   </url>
 </urlset>

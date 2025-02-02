@@ -160,10 +160,10 @@ disableHugoGeneratorInject = false
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
   # Uncomment this if you want a portrait on your start page
   #
-  # [params.portrait]
-  #   path     = "/img/image.jpg"
-  #   alt      = "Portrait"
-  #   maxWidth = "50px"
+  #[params.portrait]
+  #  path     = "/img/profile.png"
+  #  alt      = "Portrait"
+  #  maxWidth = "50px"
 
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
   # Addon: Commento
@@ -217,7 +217,19 @@ disableHugoGeneratorInject = false
   #      - gruvbox-dark
   #
   #   theme      = ""
-  # 
+
+  [params.skills]
+    enable = true
+    title = "Skills"
+    [[params.skills.categories]]
+      name = "Storage"
+      items = ["NFS", "Ceph", "GlusterFS"]
+    [[params.skills.categories]]
+      name = "CI/CD"
+      items = ["Jenkins", "GitHub Actions", "GitLab CI"]
+    [[params.skills.categories]]
+      name = "Cloud"
+      items = ["AWS", "Azure", "GCP"]
 
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
   # Addon: Social icons

@@ -2,19 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SMJED - Portfolio/Resume</title>
-    <link>http://localhost:1313/fr/</link>
+    <link>http://127.0.0.1:1313/fr/</link>
     <description>Recent content on SMJED - Portfolio/Resume</description>
     <generator>Hugo</generator>
     <language>fr</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/fr/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://127.0.0.1:1313/fr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://127.0.0.1:1313/fr/about/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://127.0.0.1:1313/fr/about/</guid>
+      <description>&lt;p&gt;Ce portfolio a pour but de mettre en avants les projets réalisé par Sabri MJAHED&lt;/p&gt;&#xA;&lt;p&gt;It makes use of a variety of open source projects including:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/Sabrimjd&#34;&gt;https://github.com/Sabrimjd&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Here we go</title>
-      <link>http://localhost:1313/fr/posts/2014/09/here-we-go/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fr/posts/2014/09/here-we-go/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Ce tutoriel vous montrera comment créer un thème simple pour Hugo. Je suppose que vous êtes familier avec HTML, la ligne de commande bash, et que vous êtes à l&amp;rsquo;aise avec Markdown pour formater le contenu. Je vais expliquer comment Hugo utilise des modèles et comment vous pouvez organiser vos modèles pour créer un thème. Je ne couvrirai pas l&amp;rsquo;utilisation de CSS pour styliser votre thème.&lt;/p&gt;&#xA;&lt;p&gt;Nous allons commencer par créer un nouveau site avec un modèle très basique. Ensuite, nous ajouterons quelques pages et des publications. Avec de petites variations, vous pourrez créer de nombreux types de sites web.&lt;/p&gt;</description>
+      <link>http://127.0.0.1:1313/fr/posts/2025/01/here-we-go/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://127.0.0.1:1313/fr/posts/2025/01/here-we-go/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Here we go&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
