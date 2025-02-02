@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "main.css",
-	"sourceRoot": "/Users/sabmja/git/smjed-hugo-portfolio/portfolio-smjed",
+	"sourceRoot": "/home/sabri/git/smjed-hugo-portfolio/portfolio-smjed",
 	"sources": [
 		"themes/hello-friend-ng/assets/scss/main.scss",
 		"themes/hello-friend-ng/assets/scss/_normalize.scss",
