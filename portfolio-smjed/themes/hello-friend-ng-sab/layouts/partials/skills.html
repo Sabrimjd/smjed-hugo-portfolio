@@ -1,0 +1,17 @@
+{{ if .Site.Params.skills.enable }}
+<section class="skills">
+    <h2>{{ .Site.Params.skills.title }}</h2>
+    <div class="skills-container">
+        {{ range .Site.Params.skills.categories }}
+        <div class="skill-category">
+            <h3>{{ .name }}</h3>
+            <ul>
+                {{ range .items }}
+                <li>{{ . }}</li>
+                {{ end }}
+            </ul>
+        </div>
+        {{ end }}
+    </div>
+</section>
+{{ end }}

@@ -1,7 +1,7 @@
 baseURL = "https://smjed.net"
 title   = "SMJED - Portfolio/Resume"
 languageCode = "en-us"
-theme = "hello-friend-ng"
+theme = "hello-friend-ng-sab"
 
 PygmentsCodeFences = true
 PygmentsStyle = "monokai"
