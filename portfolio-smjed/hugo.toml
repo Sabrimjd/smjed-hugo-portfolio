@@ -249,6 +249,11 @@ disableHugoGeneratorInject = false
       name = "Programming"
       items = ["Python", "Bash", "Go", "YAML", "JSON", "HCL"]
 
+    [params.skills.icons]
+      "Kubernetes" = "/svg/Kubernetes.svg"
+      "Docker" = "/svg/Docker.svg"
+      "VMware" = "/svg/VMware.svg"
+
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
   # Addon: Social icons
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #

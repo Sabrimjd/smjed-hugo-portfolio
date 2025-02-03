@@ -1,14 +1,15 @@
-{{ if .Site.Params.skills.enable }}
+{{ $root := . }}
+{{ if $root.Site.Params.skills.enable }}
 <section class="skills">
     <div class="skills-container">
-        {{ range .Site.Params.skills.categories }}
+        {{ range $root.Site.Params.skills.categories }}
         <div class="skill-category">
             <h3>{{ .name }}</h3>
             <ul class="skill-items">
                 {{ range .items }}
                 <li>
                     <a href="/tags/{{ . | urlize }}/" class="skill-link">
-                        <span class="skill-icon"></span>
+                        <img src="{{ index $root.Site.Params.skills.icons . | default "/svg/default.svg" }}" alt="{{ . }}">
                         {{ . }}
                     </a>
                 </li>
