@@ -5,9 +5,12 @@
         {{ range .Site.Params.skills.categories }}
         <div class="skill-category">
             <h3>{{ .name }}</h3>
-            <ul>
+            <ul class="skill-items">
                 {{ range .items }}
-                <li>{{ . }}</li>
+                <li>
+                    <span class="skill-icon"></span>
+                    {{ . }}
+                </li>
                 {{ end }}
             </ul>
         </div>

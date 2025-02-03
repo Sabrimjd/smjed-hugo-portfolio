@@ -268,15 +268,15 @@ pre {
     @media (prefers-color-scheme: dark) {
       color: inherit;
     }
-  
+
     @media (prefers-color-scheme: light) {
       color: #ccc;
     }
-  
+
     [data-theme=dark] & {
       color: inherit;
     }
-  
+
     [data-theme=light] & {
       color: #ccc;
     }
@@ -437,21 +437,17 @@ hr {
 // Skills section styles
 .skills {
   margin: 1.5rem 0;
-  padding: 1rem;
-  border-radius: 8px;
-  
-  // Default
-  border: 1px solid $light-border-color;
-  background-color: rgba($light-background-secondary, 0.3);
+  border: none;
+  border-radius: 0;
 
   @media (prefers-color-scheme: dark) {
-    border: 1px solid $dark-border-color;
-    background-color: rgba($dark-background-secondary, 0.3);
+    border: none;
+    background-color: transparent;
   }
 
   [data-theme=dark] & {
-    border: 1px solid $dark-border-color;
-    background-color: rgba($dark-background-secondary, 0.3);
+    border: none;
+    background-color: transparent;
   }
 
   h2 {
@@ -464,24 +460,21 @@ hr {
   .skills-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 0.1rem; // reduced gap
+    padding-top: 0.1rem;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .skill-category {
     flex: 1;
     min-width: 200px;
-    max-width: 300px;
-    padding: 1rem;
-    border-radius: 6px;
+    width: 100%;
+    border: none;
+    border-radius: 0;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    
-    // Default
-    border: 1px solid $light-border-color;
-    
-    @media (prefers-color-scheme: dark) {
-      border: 1px solid $dark-border-color;
-    }
+    max-width: 1000px;
 
     [data-theme=dark] & {
       border: 1px solid $dark-border-color;
@@ -505,18 +498,21 @@ hr {
     }
 
     li {
-      margin: 0.4rem 0;
+      margin: 0.2rem 0; // more compact
       padding: 0;
       border-radius: 4px;
       font-size: 0.9rem;
-      
+      background-color: #333;
+      color: #fff;
+      padding: 0.3rem;
+
       .skill-link {
         display: block;
         padding: 0.3rem;
         text-decoration: none;
         transition: all 0.2s ease;
         border-radius: 4px;
-        
+
         &:hover {
           // Default
           background-color: rgba($light-background-secondary, 0.5);
@@ -533,4 +529,20 @@ hr {
       }
     }
   }
+}
+
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.skill-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.3rem;
+  background: url('/path/to/icon.svg') no-repeat center;
+  background-size: contain;
 }
