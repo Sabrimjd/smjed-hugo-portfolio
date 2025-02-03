@@ -37,7 +37,7 @@ disableHugoGeneratorInject = false
   [services.rss]
       # Maximum number of items in the RSS feed.
       limit = 42
-      
+
 #   [services.disqus]
 #     shortname = 'your-disqus-shortname'
 #   [services.googleAnalytics]
@@ -61,7 +61,7 @@ disableHugoGeneratorInject = false
   dateformNumTime = "2006-01-02 15:04"
 
   # Metadata mostly used in document's head
-  # 
+  #
   description = "Nice theme for homepages and blogs"
   keywords = ""
   images = [""]
@@ -82,11 +82,11 @@ disableHugoGeneratorInject = false
   disableReadOtherPosts = false
 
   # Enable theme toggle
-  # 
-  # This options enables the theme toggle for the theme. 
-  # Per default, this option is off. 
-  # The theme is respecting the prefers-color-scheme of the operating system. 
-  # With this option on, the page user is able to set the scheme he wants. 
+  #
+  # This options enables the theme toggle for the theme.
+  # Per default, this option is off.
+  # The theme is respecting the prefers-color-scheme of the operating system.
+  # With this option on, the page user is able to set the scheme he wants.
   enableThemeToggle = false
 
   # Sharing buttons
@@ -120,8 +120,8 @@ disableHugoGeneratorInject = false
   [params.author]
     name = "Sabri MJAHED"
 
-  # Custom footer 
-  # If you want, you can easily override the default footer with your own content. 
+  # Custom footer
+  # If you want, you can easily override the default footer with your own content.
   #
   [params.footer]
     trademark = 2025
@@ -152,11 +152,11 @@ disableHugoGeneratorInject = false
     # logoCursorColor    = "#67a2c9"
     # Set to a valid CSS time value to change the animation duration, "0s" to disable.
     # logoCursorAnimate  = "2s"
-    # Append the current url pathname to logoText 
+    # Append the current url pathname to logoText
     # logoCursorPathname = true
 
-  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
-  # Addon: Startpage portrait 
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+  # Addon: Startpage portrait
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
   # Uncomment this if you want a portrait on your start page
   #
@@ -165,21 +165,21 @@ disableHugoGeneratorInject = false
   #  alt      = "Portrait"
   #  maxWidth = "50px"
 
-  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
   # Addon: Commento
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-  # Commento is more than just a comments widget you can embed — 
-  # it’s a return to the roots of the internet. 
-  # An internet without the tracking and invasions of privacy. 
-  # An internet that is simple and lightweight. 
-  # An internet that is focused on interesting discussions, not ads. 
+  # Commento is more than just a comments widget you can embed —
+  # it’s a return to the roots of the internet.
+  # An internet without the tracking and invasions of privacy.
+  # An internet that is simple and lightweight.
+  # An internet that is focused on interesting discussions, not ads.
   # A better internet.
   # Uncomment this to enable Commento.
   #
   # [params.commento]
   #   url = ""
 
-  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
   # Addon: Utteranc.es
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
   # Utteranc.es is a lightweight comments widget built on GitHub issues.
@@ -194,7 +194,7 @@ disableHugoGeneratorInject = false
   #   label used for GitHub issues
   #
   #   label      = ""
-  # 
+  #
   #   Blog Post <-> Issue mapping. This parameter is optional. Possible values are:
   #      - pathname
   #      - url
@@ -249,7 +249,7 @@ disableHugoGeneratorInject = false
       name = "Programming"
       items = ["Python", "Bash", "Go", "YAML", "JSON", "HCL"]
 
-  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
   # Addon: Social icons
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
   #
@@ -299,4 +299,9 @@ disableHugoGeneratorInject = false
     identifier = "skills"
     name       = "Skills"
     url        = "skills/"
+    weight     = 3
+  [[menu.main]]
+    identifier = "cv"
+    name       = "CV"
+    url        = "cv/"
     weight     = 3
