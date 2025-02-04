@@ -124,15 +124,17 @@
     background: $dark-background-header;
 
     @media (prefers-color-scheme: light) {
-      background: $light-background-header;
+      background: #fafafa;
+      color: #000;
     }
-    
+
     [data-theme=dark] & {
       background: $dark-background-header;
     }
-  
+
     [data-theme=light] & {
-      background: $light-background-header;
+      background: #fafafa;
+      color: #000;
     }
   }
 
@@ -141,21 +143,29 @@
     text-decoration: none;
     display: block;
     text-align: left;
+
+    @media (prefers-color-scheme: light) {
+      color: #000;
+    }
+
+    [data-theme=light] & {
+      color: #000;
+    }
   }
 
   .dropdown-content a:hover {
     background: $dark-background-header;
-    
+
     @media (prefers-color-scheme: light) {
-      background: $light-background-header;
+      background: #fafafa;
     }
 
     [data-theme=dark] & {
       background: $dark-background-header;
     }
-  
+
     [data-theme=light] & {
-      background: $light-background-header;
+      background: #fafafa;
     }
   }
 

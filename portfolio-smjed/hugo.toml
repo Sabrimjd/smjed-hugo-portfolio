@@ -1,5 +1,5 @@
 baseURL = "https://smjed.net"
-title   = "SMJED - Portfolio/Resume"
+title   = "SMJED"
 languageCode = "en-us"
 theme = "hello-friend-ng-sab"
 
@@ -62,13 +62,13 @@ disableHugoGeneratorInject = false
 
   # Metadata mostly used in document's head
   #
-  description = "Nice theme for homepages and blogs"
+  description = "System engineer to make your project true"
   keywords = ""
   images = [""]
 
   # Home subtitle of the index page.
   #
-  homeSubtitle = "Sabri Mjahed - Passitonate Freelancer"
+  homeSubtitle = "DevOps/System engineer - Passitonate Freelancer"
 
   # Set a background for the homepage
   # backgroundImage = "assets/images/background.jpg"
@@ -87,7 +87,7 @@ disableHugoGeneratorInject = false
   # Per default, this option is off.
   # The theme is respecting the prefers-color-scheme of the operating system.
   # With this option on, the page user is able to set the scheme he wants.
-  enableThemeToggle = false
+  enableThemeToggle = true
 
   # Sharing buttons
   #
@@ -95,7 +95,7 @@ disableHugoGeneratorInject = false
   # generate the buttons here: https://sharingbuttons.io
   # and add them into your own `layouts/partials/sharing-buttons.html`
   #
-  enableSharingButtons = true
+  enableSharingButtons = false
 
   # Global language menu
   #
@@ -131,8 +131,7 @@ disableHugoGeneratorInject = false
 
     topText = []
     bottomText = [
-      "Powered by <a href=\"http://gohugo.io\">Hugo</a>",
-      "Made with &#10084; by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>"
+      "Powered by <a href=\"http://gohugo.io\">Hugo</a>"
     ]
 
   # Colors for favicons
@@ -260,7 +259,7 @@ disableHugoGeneratorInject = false
   #
   [[params.social]]
     name = "twitter"
-    url  = "https://twitter.com/"
+    url  = "https://x.com/SabriMjd"
 
   [[params.social]]
     name = "email"
@@ -272,11 +271,11 @@ disableHugoGeneratorInject = false
 
   [[params.social]]
     name = "linkedin"
-    url  = ""
+    url  = "https://www.linkedin.com/in/sabrimjed/"
 
-  [[params.social]]
-    name = "stackoverflow"
-    url  = "https://www.stackoverflow.com/"
+  #[[params.social]]
+  #  name = "stackoverflow"
+  #  url  = "https://www.stackoverflow.com/"
 
 [languages]
   [languages.en]
