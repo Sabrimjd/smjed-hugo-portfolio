@@ -1,0 +1,134 @@
+{{ $skills := slice }}
+{{ range .Site.Params.skills.categories }}
+    {{ range .items }}
+        {{ $skills = $skills | append . }}
+    {{ end }}
+{{ end }}
+
+<div class="skills-search-container">
+    <input type="text" id="skillSearch" placeholder="Search skills..." class="skill-search-input">
+    <div id="searchResults" class="search-results hidden"></div>
+</div>
+
+<script>
+const skills = {{ $skills | jsonify | safeJS }};
+const searchInput = document.getElementById('skillSearch');
+const searchResults = document.getElementById('searchResults');
+
+searchInput.addEventListener('input', function(e) {
+    const searchTerm = e.target.value.toLowerCase();
+    if (searchTerm.length < 2) {
+        searchResults.classList.add('hidden');
+        searchResults.innerHTML = '';
+        return;
+    }
+
+    const filteredSkills = skills.filter(skill => 
+        skill.toLowerCase().includes(searchTerm)
+    );
+
+    if (filteredSkills.length === 0) {
+        searchResults.classList.add('hidden');
+        searchResults.innerHTML = '';
+        return;
+    }
+
+    searchResults.innerHTML = filteredSkills
+        .map(skill => `<a href="/tags/${skill.toLowerCase()}" class="skill-result">${skill}</a>`)
+        .join('');
+    searchResults.classList.remove('hidden');
+});
+
+// Hide search results when clicking outside
+document.addEventListener('click', function(e) {
+    if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+        searchResults.classList.add('hidden');
+    }
+});
+
+// Prevent hiding when clicking inside search results
+searchResults.addEventListener('click', function(e) {
+    e.stopPropagation();
+});
+</script>
+
+<style>
+.skills-search-container {
+    margin: 1rem 0;
+    position: relative;
+}
+
+.skill-search-input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--accent-bg, var(--background));
+    color: var(--color);
+    transition: all 0.3s ease;
+}
+
+.skill-search-input:focus {
+    outline: none;
+    border-color: var(--accent, #ff6b6b);
+    box-shadow: 0 0 0 3px var(--accent-alpha, rgba(255, 107, 107, 0.1));
+}
+
+.search-results {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    right: 0;
+    background: var(--background-header, #292a2d);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(-10px);
+    animation: slideDown 0.2s ease forwards;
+    display: block;
+}
+
+.search-results.hidden {
+    display: none;
+}
+
+@keyframes slideDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+[data-theme="dark"] .search-results {
+    background: var(--background-header, #1b1c1d);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.skill-result {
+    display: block;
+    padding: 0.7rem 1rem;
+    text-decoration: none;
+    color: var(--color);
+    transition: all 0.2s ease;
+    border-bottom: 1px solid var(--border-color);
+    background: var(--background-header, #292a2d);
+}
+
+[data-theme="dark"] .skill-result {
+    background: var(--background-header, #1b1c1d);
+}
+
+.skill-result:last-child {
+    border-bottom: none;
+}
+
+.skill-result:hover {
+    background: var(--accent, #ff6b6b);
+    color: var(--background);
+}
+</style>

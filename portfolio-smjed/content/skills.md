@@ -1,6 +1,6 @@
 ---
 title: "My Skills"
-type: "skills"
+layout: "skills"
 ---
 
 ## My Technical Skills

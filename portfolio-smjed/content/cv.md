@@ -3,29 +3,122 @@ title: "My Resume"
 type: "resume"
 ---
 
-## Personal Summary
-Hello, my name is Hug. I am a passionate developer with an interest in building innovative solutions.
-I started my journey as a technology enthusiast, experimenting with servers and code since my early teens.
-Now, as a passionate freelancer in both DevOps and system engineering, I collaborate with diverse clients
-to build secure, scalable solutions and ensure smooth software deployments.
+## Summary
 
-## Education
-- Bachelor's in Computer Science
-- Master's in Software Engineering
+> I'm a freelance System/Network/DevOps engineer with a lifelong passion for IT. From tinkering with code at an early age to architecting complex, high-availability infrastructures for enterprise clients, my journey in technology has been driven by curiosity, creativity, and a relentless desire to learn.
 
 ## Experience
-- Software Engineer at FakeCompany (2020 - 2021)
-- DevOps Consultant for multiple small startups
 
-## Freelance Career
-Throughout my freelance career, I have configured cloud infrastructures, optimized CI/CD pipelines,
-and helped organizations adopt containerization strategies.
+### Company Name | Job Title | Dates of Employment
 
-## Skills
-- JavaScript, Python, C++
+*   Describe your responsibilities and accomplishments using action verbs.
+*   Quantify your achievements whenever possible (e.g., "Increased sales by 20%").
+*   Highlight your key skills and contributions.
 
-## Hobbies
-- Reading tech blogs
-- Hiking
-- Gaming
+*Example:*
 
+### Kindred France | System engineer | 2021 - Present
+
+*   Led and implemented the automatic deployment of VM and application with CI/CD, acchieving multiple deployment per day.
+    *   Used Jenkins for pipelining with Git
+    *   Used Ansible to deploy the VM initliazation roles and the needed apps
+    *   Used Terraform to deploy accross 10 datacenter with 4 different provider (OpenStack, Proxmox, Vsphere, Netbox) using the same template file
+    *   Used Netbox as a Source of truth to link everything together and document the whole infrastructure.
+    *   Used Consul to automaticaly feed a the services pools for HaProxy and Prometheus
+    *   Used Vault for storing credentials
+*   Accountable for the french security scope, leading the needed fix of vulnerabilities.
+*   Implemented the whole Elastic Stack that manages a 200TB of logs with 10 nodes and Kafka for :
+    *   SIEM
+    *   Logging (Network, Apps, System)
+    *   EDR
+    *   Springboot monitoring with APM
+    *   Network monitoring
+    *   Uptime and SLA/SLOs with Synthetics
+*   Integrated a fully highly available Proxmox cluster arround 4 racks and 2 datacenter using CEPH
+    *   Managed the networking with 4 * 25GB per host (with 30 host total)
+    *   Automatic deployment with PXE
+*   Multi datacenter Squid proxy with EBGP
+
+#### Business owner and/or implementor of
+
+* Elastic Stack
+  * Logstash
+  * Kibana
+  * ElasticSearch
+  * Java APM
+  * Elastic Agents
+  * Sending logs to splunk
+* Couchbase
+* Kafka
+* Proxmox
+* Hashicorp
+  * Vault
+  * Terraform
+  * Consul
+  * Jenkins
+* Remote Desktop Manager
+* Proxy Squid
+* Redis
+
+Other skills aquired :
+
+* Fortinet
+  * FortiGate
+  * FortiAnalyzer
+  * FortiAuthentificator
+  * FortiManager
+* F5 BigIP / HaProxy
+* Nftables / Iptables
+* Juniper JunOS
+* Netbox
+* Packer
+* PostgreSQL
+* Microsoft SQL
+* Bitbucket / Jira / Confluence
+
+### VINC | System engineer | 2019 - 2021
+
+*   Archictured the new plateform with new BGP routers and Firewalls
+*   Managed Proxmox cluster arround 2 datacenters
+*   Responsible for SLA and communication with clients for production accident
+*   Implementation of websites arround client needs
+*   Implemented a new DNS stack with high availability in mind
+
+
+### Multi-Visp / Azuria | System administrator | 2017 - 2019
+
+*   Installed complete new racks in Telehouse2
+*   Cable management between two rooms
+*   Installed managed wifi equipmenents
+*   Implemented high availability multi datacenter VPN services
+
+### Education
+
+**Louis Armand | BAC**
+
+*   Learned the basics of
+    *   Networking
+    *   Firewalling
+    *   Electricity
+
+
+**Louis Armand | BTS**
+
+*   Learned basics of
+    *   Algorithm with Python
+    *   Web development with PHP
+    *   Distributed Storage
+    *   Routing with OSPF
+
+**ESGI | Master degree**
+
+
+### Personal Website | Developed a personal website to showcase my skills and experience | Hugo, HTML, CSS, JavaScript
+
+*   Designed and developed a responsive website using Hugo, HTML, CSS, and JavaScript.
+*   Implemented a blog to share my thoughts on software development and technology.
+*   Deployed the website to Netlify.
+
+## Contact Information
+
+*   Email: contact@smjed.net
