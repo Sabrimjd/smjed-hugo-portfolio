@@ -41,40 +41,25 @@ type: "resume"
 
 #### Business owner and/or implementor of
 
-* Elastic Stack
-  * Logstash
-  * Kibana
-  * ElasticSearch
-  * Java APM
-  * Elastic Agents
-  * Sending logs to splunk
-* Couchbase
-* Kafka
-* Proxmox
-* Hashicorp
-  * Vault
-  * Terraform
-  * Consul
-  * Jenkins
-* Remote Desktop Manager
-* Proxy Squid
-* Redis
+| Technology Stack | Components/Tools |
+|-----------------|------------------|
+| Elastic Stack | Logstash, Kibana, ElasticSearch, Java APM, Elastic Agents, Splunk Integration |
+| Hashicorp | Vault, Terraform, Consul, Jenkins |
+| Databases | Couchbase, Redis, PostgreSQL, Microsoft SQL |
+| Virtualization | Proxmox |
+| Message Queuing | Kafka |
+| Networking | Proxy Squid |
+| Tools | Remote Desktop Manager |
 
-Other skills aquired :
+Other skills acquired:
 
-* Fortinet
-  * FortiGate
-  * FortiAnalyzer
-  * FortiAuthentificator
-  * FortiManager
-* F5 BigIP / HaProxy
-* Nftables / Iptables
-* Juniper JunOS
-* Netbox
-* Packer
-* PostgreSQL
-* Microsoft SQL
-* Bitbucket / Jira / Confluence
+| Category | Technologies/Tools |
+|----------|-------------------|
+| Security Solutions | FortiGate, FortiAnalyzer, FortiAuthenticator, FortiManager |
+| Load Balancing | F5 BigIP, HaProxy |
+| Networking | Nftables, Iptables, Juniper JunOS |
+| Infrastructure | Netbox, Packer |
+| Collaboration Tools | Bitbucket, Jira, Confluence |
 
 ### VINC | System engineer | 2019 - 2021
 
@@ -112,12 +97,16 @@ Other skills aquired :
 
 **ESGI | Master degree**
 
+*   As my degree project
+    *  Deployed an Elastic Stack with ML
+    *  Auto detect anomaly with JA3 Signature
+    *  Import JA3er database to automaticaly ban from JunOS Router L3
+    *  Dynamicaly rate limit / block traffic at L7
 
 ### Personal Website | Developed a personal website to showcase my skills and experience | Hugo, HTML, CSS, JavaScript
 
 *   Designed and developed a responsive website using Hugo, HTML, CSS, and JavaScript.
 *   Implemented a blog to share my thoughts on software development and technology.
-*   Deployed the website to Netlify.
 
 ## Contact Information
 
