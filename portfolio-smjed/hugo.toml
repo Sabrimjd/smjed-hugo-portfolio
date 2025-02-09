@@ -250,7 +250,7 @@ disableHugoGeneratorInject = false
 
     [params.skills.icons]
       "Docker" = "/svg/Docker.svg"
-      "VMware" = "/svg/vmware.svg"
+      "VMware" = "/svg/VMWare.svg"
       "Proxmox" = "/svg/Proxmox.svg"
       "Terraform" = "/svg/Terraform.svg"
       "Ansible" = "/svg/Ansible.svg"
