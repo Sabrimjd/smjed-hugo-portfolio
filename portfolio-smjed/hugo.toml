@@ -234,13 +234,13 @@ disableHugoGeneratorInject = false
       items = ["AWS", "Azure", "GCP", "OpenStack", "OVH Cloud"]
     [[params.skills.categories]]
       name = "Monitoring"
-      items = ["Prometheus", "Grafana", "ELK Stack", "Datadog", "Nagios", "Zabbix"]
+      items = ["Prometheus", "Grafana", "ELK", "Datadog", "Nagios", "Zabbix"]
     [[params.skills.categories]]
       name = "Security"
       items = ["Vault", "FortiGate"]
     [[params.skills.categories]]
       name = "Operating Systems"
-      items = ["Linux (RHEL/CentOS/Ubuntu)", "Windows Server", "Unix"]
+      items = ["Linux", "Windows", "Unix"]
     [[params.skills.categories]]
       name = "Networking"
       items = ["Load Balancers", "DNS", "CDN", "VPN", "Firewalls", "BigIP", "HaProxy"]
@@ -249,9 +249,31 @@ disableHugoGeneratorInject = false
       items = ["Python", "Bash", "Go", "YAML", "JSON", "HCL"]
 
     [params.skills.icons]
-      "Kubernetes" = "/svg/Kubernetes.svg"
       "Docker" = "/svg/Docker.svg"
-      "VMware" = "/svg/default.svg"
+      "VMware" = "/svg/vmware.svg"
+      "Proxmox" = "/svg/Proxmox.svg"
+      "Terraform" = "/svg/Terraform.svg"
+      "Ansible" = "/svg/Ansible.svg"
+      "Ceph" = "/svg/CEPH.svg"
+      "Jenkins" = "/svg/Jenkins.svg"
+      "GitHub Actions" = "/svg/GitHub-Actions.svg"
+      "GitLab CI" = "/svg/GitLab.svg"
+      "AWS" = "/svg/AWS.svg"
+      "Azure" = "/svg/Azure.svg"
+      "GCP" = "/svg/Google-Cloud.svg"
+      "OpenStack" = "/svg/OpenStack.svg"
+      "Grafana" = "/svg/Grafana.svg"
+      "Prometheus" = "/svg/Prometheus.svg"
+      "Datadog" = "/svg/DataDog.svg"
+      "OVH Cloud" = "/svg/OVH.svg"
+      "ELK" = "/svg/Elastic.svg"
+      "Vault" = "/svg/Vault.svg"
+      "Python" = "/svg/Python.svg"
+      "Bash" = "/svg/Bash.svg"
+      "Linux" = "/svg/Linux.svg"
+      "Windows" = "/svg/Windows.svg"
+      "HCL" = "/svg/HCL.svg"
+      "Go" = "/svg/Go.svg"
 
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
   # Addon: Social icons
