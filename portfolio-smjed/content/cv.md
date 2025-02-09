@@ -9,14 +9,6 @@ type: "resume"
 
 ## Experience
 
-### Company Name | Job Title | Dates of Employment
-
-*   Describe your responsibilities and accomplishments using action verbs.
-*   Quantify your achievements whenever possible (e.g., "Increased sales by 20%").
-*   Highlight your key skills and contributions.
-
-*Example:*
-
 ### Kindred France | System engineer | 2021 - Present
 
 *   Led and implemented the automatic deployment of VM and application with CI/CD, acchieving multiple deployment per day.
