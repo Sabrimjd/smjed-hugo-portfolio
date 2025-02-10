@@ -57,7 +57,7 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "https://sabrimjd.github.io/"
+            --baseURL "https://sabrimjd.github.io/smjed-hugo-portfolio/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
