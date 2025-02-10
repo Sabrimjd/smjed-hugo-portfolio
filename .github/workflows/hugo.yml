@@ -55,10 +55,10 @@ jobs:
         run: |
           cd portfolio-smjed
           hugo \
-            --config hugo-github.toml \
+            --config hugo.toml \
             --gc \
             --minify \
-            --baseURL "https://sabrimjd.github.io/smjed-hugo-portfolio/"
+            --baseURL "https://smjed.net"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
