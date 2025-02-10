@@ -62,13 +62,13 @@ disableHugoGeneratorInject = false
 
   # Metadata mostly used in document's head
   #
-  description = "System engineer to make your project true"
+  description = "Experienced DevOps & System Engineer specializing in infrastructure and automation"
   keywords = ""
   images = [""]
 
   # Home subtitle of the index page.
   #
-  homeSubtitle = "DevOps/System engineer - Passitonate Freelancer"
+  homeSubtitle = "DevOps Engineer & Infrastructure Specialist"
 
   # Set a background for the homepage
   # backgroundImage = "assets/images/background.jpg"
@@ -143,7 +143,7 @@ disableHugoGeneratorInject = false
 
   [params.logo]
     logoMark     = ">"
-    logoText     = "SMJED - DevOps"
+    logoText     = "SMJED Engineering"
     logoHomeLink = "/"
     # Set true to remove the logo cursor entirely.
     # logoCursorDisabled = false
@@ -304,13 +304,13 @@ disableHugoGeneratorInject = false
     weight    = 1
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
   [languages.en.params]
-    subtitle  = "SMJED - Sabri MJAHED"
+    subtitle  = "DevOps & Infrastructure Engineering"
 
   [languages.fr]
     weight    = 2
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
   [languages.fr.params]
-    subtitle  = "SMJED - Sabri MJAHED"
+    subtitle  = "Ingénierie DevOps & Infrastructure"
 
 [menu]
   [[menu.main]]
