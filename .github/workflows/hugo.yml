@@ -55,8 +55,9 @@ jobs:
         run: |
           cd portfolio-smjed
           hugo \
+            --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --baseURL "https://sabrimjd.github.io/smjed-hugo-portfolio/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
