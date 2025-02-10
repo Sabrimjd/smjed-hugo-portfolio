@@ -1,6 +1,6 @@
 ---
 title: "Mes compétences"
-type: "skills"
+layout: "skills"
 ---
 
 ## Mes compétences techniques

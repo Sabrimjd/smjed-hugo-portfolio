@@ -89,6 +89,18 @@
 
 <main class="posts">
     <h1>{{ .Title }}</h1>
+    <div class="post-info">
+        {{ if .IsTranslated }}
+          {{ i18n "postAvailable" }}
+          {{ range .Translations }}
+            <a href="{{ .Permalink }}"><span class="flag fi fi-{{ index $.Site.Data.langFlags (.Lang) }}"></span></a>
+          {{ end}}
+        {{ end }}
+        </p>
+      </div>
+    <div class="content">
+        {{ .Content }}
+    </div>
 
     {{ partial "skills-search.html" . }}
 
