@@ -240,7 +240,7 @@ disableHugoGeneratorInject = false
       items = ["Vault", "FortiGate", "FirePower/ASA", "PFsense/OPNSense"]
     [[params.skills.categories]]
       name = "Databases"
-      items = ["MySQL", "PostgreSQL", "MangoDB", "SQL Server"]
+      items = ["MySQL", "PostgreSQL", "SQL Server"]
     [[params.skills.categories]]
       name = "Messaging"
       items = ["Kafka", "Redis", "RabbitMQ", "Couchbase"]
@@ -283,6 +283,20 @@ disableHugoGeneratorInject = false
       "Windows" = "/svg/Windows.svg"
       "HCL" = "/svg/HCL.svg"
       "Go" = "/svg/Go.svg"
+      "Zabbix" = "/svg/Zabbix.svg"
+      "Consul" = "/svg/Consul.svg"
+      "Packer" = "/svg/Packer.svg"
+      "Boundary" = "/svg/Boundary.svg"
+      "PostgreSQL" = "/svg/PostgreSQL.svg"
+      "Nagios" = "/svg/Nagios.svg"
+      "Go" = "/svg/Go.svg"
+      "Go" = "/svg/Go.svg"
+      "SQL Server" = "/svg/SQL.svg"
+      "MySQL" = "/svg/MySQL.svg"
+      "Kafka" = "/svg/Kafka.svg"
+      "RabitMQ" = "/svg/RabitMQ.svg"
+      "CouchBase" = "/svg/CouchBase.svg"
+      "Redis" = "/svg/Redis.svg"
 
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
   # Addon: Social icons
