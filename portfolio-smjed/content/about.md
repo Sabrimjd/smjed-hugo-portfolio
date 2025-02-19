@@ -36,6 +36,9 @@ This innovative solution to DDoS attacks remains one of my proudest accomplishme
 
 I work with a diverse range of technologies and tools across storage, databases, security, and CI/CD. My adaptability and eagerness to learn new technologies allow me to tailor solutions to the needs of every project. Here are some highlights of my expertise:
 
+### Open Source Contributions
+🌟 I actively contribute to the open source community through projects like my **Terraform Provider for Centreon V2 API** ([GitHub](https://github.com/Sabrimjd/terraform-provider-centreon/)). This provider enables infrastructure as code capabilities for the Centreon monitoring platform, demonstrating my expertise in Go programming and the HashiCorp ecosystem.
+
 - **CI/CD & Automation:**
   - Proficient in Jenkins and quick to learn tools like GitHub Actions.
   - Experienced in creating VM deployment pipelines using Terraform and deploying with Ansible.

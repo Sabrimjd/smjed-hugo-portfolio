@@ -7,6 +7,14 @@ type: "resume"
 
 > I'm a freelance System/Network/DevOps engineer with a lifelong passion for IT. From tinkering with code at an early age to architecting complex, high-availability infrastructures for enterprise clients, my journey in technology has been driven by curiosity, creativity, and a relentless desire to learn.
 
+## Open Source Contributions
+
+🌟 **Terraform Provider for Centreon V2 API**
+> Developed and maintained a custom Terraform provider for Centreon's V2 API, enabling infrastructure as code capabilities for Centreon monitoring platform.
+- GitHub Repository: [terraform-provider-centreon](https://github.com/Sabrimjd/terraform-provider-centreon/)
+- Key achievement in bridging the gap between infrastructure automation and monitoring
+- Demonstrates expertise in Go programming and HashiCorp's Terraform ecosystem
+
 ## Experience
 
 ### Kindred France | System engineer | 2021 - Present

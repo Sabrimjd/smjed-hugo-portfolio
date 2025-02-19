@@ -7,6 +7,14 @@ type: "resume"
 
 > Je suis un ingénieur System/Network/DevOps freelance passionné par l'IT depuis toujours. De mes premiers pas dans le code à la conception d'infrastructures complexes à haute disponibilité pour des clients entreprise, mon parcours dans la technologie a été guidé par la curiosité, la créativité et une volonté constante d'apprendre.
 
+## Contributions Open Source
+
+🌟 **Provider Terraform pour l'API Centreon V2**
+> Développement et maintenance d'un provider Terraform personnalisé pour l'API V2 de Centreon, permettant les capacités d'infrastructure as code pour la plateforme de monitoring Centreon.
+- Dépôt GitHub : [terraform-provider-centreon](https://github.com/Sabrimjd/terraform-provider-centreon/)
+- Réalisation clé dans l'intégration de l'automatisation d'infrastructure et du monitoring
+- Démontre une expertise en programmation Go et dans l'écosystème Terraform de HashiCorp
+
 ## Expérience
 
 ### Kindred France | Ingénieur Système | 2021 - Présent
