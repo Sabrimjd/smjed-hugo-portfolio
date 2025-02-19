@@ -221,12 +221,6 @@ disableHugoGeneratorInject = false
     enable = true
     title = "Skills"
     [[params.skills.categories]]
-      name = "Hashicorp"
-      items = ["Vault", "Consul", "Packer", "Terraform", "Boundary"]
-    [[params.skills.categories]]
-      name = "Storage"
-      items = ["NFS", "Ceph", "GlusterFS", "MinIO", "NetApp", "iSCSI"]
-    [[params.skills.categories]]
       name = "CI/CD"
       items = ["Jenkins", "GitHub Actions", "GitLab CI"]
     [[params.skills.categories]]
@@ -235,6 +229,12 @@ disableHugoGeneratorInject = false
     [[params.skills.categories]]
       name = "Monitoring"
       items = ["Prometheus", "Grafana", "ELK", "Datadog", "Nagios/Centreon", "Zabbix"]
+    [[params.skills.categories]]
+      name = "Hashicorp"
+      items = ["Vault", "Consul", "Packer", "Terraform", "Boundary"]
+    [[params.skills.categories]]
+      name = "Storage"
+      items = ["NFS", "Ceph", "GlusterFS", "MinIO", "NetApp", "iSCSI"]
     [[params.skills.categories]]
       name = "Security"
       items = ["Vault", "FortiGate", "FirePower/ASA", "PFsense/OPNSense"]
