@@ -221,8 +221,8 @@ disableHugoGeneratorInject = false
     enable = true
     title = "Skills"
     [[params.skills.categories]]
-      name = "Infrastructure"
-      items = ["Docker", "VMware", "Proxmox", "Terraform", "Ansible"]
+      name = "Hashicorp"
+      items = ["Vault", "Consul", "Packer", "Terraform", "Boundary"]
     [[params.skills.categories]]
       name = "Storage"
       items = ["NFS", "Ceph", "GlusterFS", "MinIO", "NetApp", "iSCSI"]
@@ -234,16 +234,25 @@ disableHugoGeneratorInject = false
       items = ["AWS", "Azure", "GCP", "OpenStack", "OVH Cloud"]
     [[params.skills.categories]]
       name = "Monitoring"
-      items = ["Prometheus", "Grafana", "ELK", "Datadog", "Nagios", "Zabbix"]
+      items = ["Prometheus", "Grafana", "ELK", "Datadog", "Nagios/Centreon", "Zabbix"]
     [[params.skills.categories]]
       name = "Security"
-      items = ["Vault", "FortiGate"]
+      items = ["Vault", "FortiGate", "FirePower/ASA", "PFsense/OPNSense"]
+    [[params.skills.categories]]
+      name = "Databases"
+      items = ["MySQL", "PostgreSQL", "MangoDB", "SQL Server"]
+    [[params.skills.categories]]
+      name = "Messaging"
+      items = ["Kafka", "Redis", "RabbitMQ", "Couchbase"]
+    [[params.skills.categories]]
+      name = "Proxies"
+      items = ["BigIP", "F10", "HaProxy", "Nginx", "Traefik", "HTTPD"]
     [[params.skills.categories]]
       name = "Operating Systems"
-      items = ["Linux", "Windows", "Unix"]
+      items = ["Linux", "Windows", "BSD"]
     [[params.skills.categories]]
       name = "Networking"
-      items = ["Load Balancers", "DNS", "CDN", "VPN", "Firewalls", "BigIP", "HaProxy"]
+      items = ["Load Balancers", "DNS", "CDN", "VPN", "Firewalls"]
     [[params.skills.categories]]
       name = "Programming"
       items = ["Python", "Bash", "Go", "YAML", "JSON", "HCL"]
