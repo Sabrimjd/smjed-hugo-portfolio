@@ -435,3 +435,27 @@ hr {
 }
 
 // Note: Skills section has been moved to skills.html template
+
+.skill-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  margin: 4px;
+  border-radius: 15px;
+  font-size: 0.9em;
+  text-decoration: none;
+  background-color: #464646;
+  color: #ffffff;
+  border: 1px solid #555;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #666666;
+    transform: translateY(-1px);
+  }
+}
+
+.skills-container {
+  margin: 0 0 20px 0;
+  padding: 0;
+  line-height: 2;
+}

@@ -17,7 +17,17 @@ type: "resume"
 
 ## Expérience
 
-### Kindred France | Ingénieur Système | 2021 - Présent
+### <a href="https://www.kindredgroup.com/"><img src="/img/Kindred.webp" alt="Kindred France" style="height: 30px; padding-right: 10px; vertical-align: middle;"></a> Kindred France | Ingénieur Système | 2021 - Présent
+
+<div class="skills-container">
+    <a href="/tags/terraform" class="skill-badge">Terraform</a>
+    <a href="/tags/ansible" class="skill-badge">Ansible</a>
+    <a href="/tags/jenkins" class="skill-badge">Jenkins</a>
+    <a href="/tags/elastic" class="skill-badge">Elastic Stack</a>
+    <a href="/tags/proxmox" class="skill-badge">Proxmox</a>
+    <a href="/tags/consul" class="skill-badge">Consul</a>
+    <a href="/tags/vault" class="skill-badge">Vault</a>
+</div>
 
 *   Direction et implémentation du déploiement automatique de VM et d'applications avec CI/CD, permettant plusieurs déploiements par jour.
     *   Utilisation de Jenkins pour le pipeline avec Git
@@ -61,7 +71,13 @@ Autres compétences acquises :
 | Infrastructure | Netbox, Packer |
 | Outils de Collaboration | Bitbucket, Jira, Confluence |
 
-### VINC | Ingénieur Système | 2019 - 2021
+### <a href="https://www.vinc.fr/"><img src="/img/Vinc.png" alt="VINC" style="height: 30px; padding-right: 10px; vertical-align: middle;"></a> VINC | Ingénieur Système | 2019 - 2021
+
+<div class="skills-container">
+    <a href="/tags/proxmox" class="skill-badge">Proxmox</a>
+    <a href="/tags/dns" class="skill-badge">DNS</a>
+    <a href="/tags/ha" class="skill-badge">Haute Disponibilité</a>
+</div>
 
 *   Architecture de la nouvelle plateforme avec nouveaux routeurs BGP et Firewalls
 *   Gestion de cluster Proxmox sur 2 datacenters
@@ -70,6 +86,13 @@ Autres compétences acquises :
 *   Implémentation d'une nouvelle stack DNS avec haute disponibilité
 
 ### Multi-Visp / Azuria | Administrateur Système | 2017 - 2019
+
+<div class="skills-container">
+    <a href="/tags/network" class="skill-badge">Infrastructure Réseau</a>
+    <a href="/tags/vpn" class="skill-badge">VPN</a>
+    <a href="/tags/datacenter" class="skill-badge">Gestion Datacenter</a>
+    <a href="/tags/wifi" class="skill-badge">WiFi</a>
+</div>
 
 *   Installation complète de nouvelles baies dans Telehouse2
 *   Gestion du câblage entre deux salles

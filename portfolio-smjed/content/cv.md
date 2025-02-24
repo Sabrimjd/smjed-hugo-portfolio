@@ -17,7 +17,17 @@ type: "resume"
 
 ## Experience
 
-### Kindred France | System engineer | 2021 - Present
+### <a href="https://www.kindredgroup.com/"><img src="/img/Kindred.webp" alt="Kindred France" style="height: 30px; padding-right: 10px; vertical-align: middle;"></a> Kindred France | System engineer | 2021 - Present
+
+<div class="skills-container">
+    <a href="/tags/terraform" class="skill-badge">Terraform</a>
+    <a href="/tags/ansible" class="skill-badge">Ansible</a>
+    <a href="/tags/jenkins" class="skill-badge">Jenkins</a>
+    <a href="/tags/elastic" class="skill-badge">Elastic Stack</a>
+    <a href="/tags/proxmox" class="skill-badge">Proxmox</a>
+    <a href="/tags/consul" class="skill-badge">Consul</a>
+    <a href="/tags/vault" class="skill-badge">Vault</a>
+</div>
 
 *   Led and implemented the automatic deployment of VM and application with CI/CD, acchieving multiple deployment per day.
     *   Used Jenkins for pipelining with Git
@@ -61,7 +71,13 @@ Other skills acquired:
 | Infrastructure | Netbox, Packer |
 | Collaboration Tools | Bitbucket, Jira, Confluence |
 
-### VINC | System engineer | 2019 - 2021
+### <a href="https://www.vinc.fr/"><img src="/img/Vinc.png" alt="VINC" style="height: 30px; padding-right: 10px; vertical-align: middle;"></a> VINC | System engineer | 2019 - 2021
+
+<div class="skills-container">
+    <a href="/tags/proxmox" class="skill-badge">Proxmox</a>
+    <a href="/tags/dns" class="skill-badge">DNS</a>
+    <a href="/tags/ha" class="skill-badge">High Availability</a>
+</div>
 
 *   Archictured the new plateform with new BGP routers and Firewalls
 *   Managed Proxmox cluster arround 2 datacenters
@@ -69,8 +85,14 @@ Other skills acquired:
 *   Implementation of websites arround client needs
 *   Implemented a new DNS stack with high availability in mind
 
-
 ### Multi-Visp / Azuria | System administrator | 2017 - 2019
+
+<div class="skills-container">
+    <a href="/tags/network" class="skill-badge">Network Infrastructure</a>
+    <a href="/tags/vpn" class="skill-badge">VPN</a>
+    <a href="/tags/datacenter" class="skill-badge">Datacenter Management</a>
+    <a href="/tags/wifi" class="skill-badge">WiFi</a>
+</div>
 
 *   Installed complete new racks in Telehouse2
 *   Cable management between two rooms
