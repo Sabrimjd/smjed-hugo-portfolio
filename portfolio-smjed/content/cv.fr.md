@@ -5,7 +5,7 @@ type: "resume"
 
 ## Résumé
 
-> Je suis un ingénieur System/Network/DevOps freelance passionné par l'IT depuis toujours. De mes premiers pas dans le code à la conception d'infrastructures complexes à haute disponibilité pour des clients entreprise, mon parcours dans la technologie a été guidé par la curiosité, la créativité et une volonté constante d'apprendre.
+> Je suis un ingénieur System/Network/DevOps passionné par l'IT depuis toujours. De mes premiers pas dans le code à la conception d'infrastructures complexes à haute disponibilité pour des clients entreprise, mon parcours dans la technologie a été guidé par la curiosité, la créativité et une volonté constante d'apprendre.
 
 ## Contributions Open Source
 

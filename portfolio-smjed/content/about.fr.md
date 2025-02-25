@@ -8,7 +8,7 @@ author:
 
 ---
 
-Je suis un ingénieur freelance spécialisé en systèmes, réseaux et DevOps, animé par une passion de toujours pour l'informatique. De mes premiers pas avec le code à la conception d'infrastructures complexes et hautement disponibles pour des entreprises, mon parcours technologique est guidé par la curiosité, la créativité et un désir constant d'apprendre.
+Je suis un ingénieur spécialisé en systèmes, réseaux et DevOps, animé par une passion de toujours pour l'informatique. De mes premiers pas avec le code à la conception d'infrastructures complexes et hautement disponibles pour des entreprises, mon parcours technologique est guidé par la curiosité, la créativité et un désir constant d'apprendre.
 
 ## Débuts
 
@@ -48,13 +48,6 @@ Je travaille avec une grande variété de technologies et d'outils dans les doma
 - **Infrastructure & Sécurité :**
   - Gestion de projets on-premise complexes, comme la mise en place d'un Point of Presence (PoP) entièrement redondant à Paris.
     *Ce projet impliquait une refonte complète de l'infrastructure avec un nouveau cluster Proxmox, la configuration de switches réseau, le routage et la mise en place de firewall, tout en maintenant le fonctionnement de la production.*
-
-## Travail en Freelance et Architecture Systèmes
-
-J'adore travailler sur des projets qui me permettent de concevoir des solutions de A à Z. Mon objectif est de créer des systèmes qui sont :
-- **Hautement Disponibles :** Garantissant des performances robustes et fiables.
-- **Rentables :** Trouvant un équilibre entre haute performance et contraintes budgétaires.
-- **Simples & Scalables :** Évitant toute complexité inutile tout en offrant des solutions efficaces.
 
 ## Mon Rôle Actuel chez Kindred France
 

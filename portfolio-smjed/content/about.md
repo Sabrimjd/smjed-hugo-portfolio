@@ -7,7 +7,7 @@ author:
   name: "Sabri MJAHED"
 ---
 
-I'm a freelance System/Network/DevOps engineer with a lifelong passion for IT. From tinkering with code at an early age to architecting complex, high-availability infrastructures for enterprise clients, my journey in technology has been driven by curiosity, creativity, and a relentless desire to learn.
+I'm a System/Network/DevOps engineer with a lifelong passion for IT. From tinkering with code at an early age to architecting complex, high-availability infrastructures for enterprise clients, my journey in technology has been driven by curiosity, creativity, and a relentless desire to learn.
 
 ## Early Beginnings
 
@@ -47,13 +47,6 @@ I work with a diverse range of technologies and tools across storage, databases,
 - **Infrastructure & Security:**
   - Managed complex on-premise projects such as setting up a fully redundant Point of Presence (PoP) in Paris.
     *This project involved overhauling the infrastructure with a new Proxmox cluster, configuring networking switches, routing, and firewalling—all while keeping production systems running smoothly.*
-
-## Freelance Work & System Architecture
-
-I thrive on projects that allow me to architect solutions from the ground up. I focus on designing systems that are:
-- **Highly Available:** Ensuring robust and reliable performance.
-- **Cost-Effective:** Balancing high performance with budget constraints.
-- **Simple & Scalable:** Avoiding unnecessary complexity while delivering effective solutions.
 
 ## Current Role at Kindred France
 
