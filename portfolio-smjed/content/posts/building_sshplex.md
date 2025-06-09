@@ -1,6 +1,6 @@
 ---
 title: "Building SSHplex: A Modern TUI for SSH Connection Multiplexing"
-date: 2025-06-9
+date: 2025-06-09
 tags: ["netbox", "python", "tui", "ssh", "infrastructure", "open-source", "CICD"]
 ---
 
