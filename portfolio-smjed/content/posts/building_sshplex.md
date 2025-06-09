@@ -2,6 +2,9 @@
 title: "Building SSHplex: A Modern TUI for SSH Connection Multiplexing"
 date: 2025-06-09
 tags: ["netbox", "python", "tui", "ssh", "infrastructure", "open-source", "CICD"]
+featured_image: "/images/sshplex-session-manager.png"
+images: ["/images/sshplex-session-manager.png"]
+description: "How I built SSHplex, a modern terminal UI for SSH connection multiplexing, replacing expensive licensing with open-source innovation."
 ---
 
 ![SSHplex Session Manager](/images/sshplex-session-manager.png)

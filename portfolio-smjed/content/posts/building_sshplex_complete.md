@@ -1,5 +1,13 @@
 ---
-title: "Building SSHplex: Technical Deep Dive"
+title: "Building SSHplex: More details"
+date: 2025-06-09
+tags: ["netbox", "python", "tui", "ssh", "infrastructure", "open-source", "CICD"]
+featured_image: "/images/sshplex-session-manager.png"
+images: ["/images/sshplex-session-manager.png"]
+description: "Complete technical deep dive into building SSHplex: development phases, AI collaboration strategies, and implementation details."
+---
+
+![SSHplex Session Manager](/images/sshplex-session-manager.png)le: "Building SSHplex: Technical Deep Dive"
 date: 2025-06-09
 tags: ["netbox", "python", "tui", "ssh", "infrastructure", "open-source", "CICD"]
 ---
