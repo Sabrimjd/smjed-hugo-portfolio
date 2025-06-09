@@ -1,8 +1,10 @@
 ---
-title: "Building SSHplex: More details"
+title: "Building SSHplex: Technical Deep Dive"
 date: 2025-06-09
 tags: ["netbox", "python", "tui", "ssh", "infrastructure", "open-source", "CICD"]
 ---
+
+![SSHplex Session Manager](/images/sshplex-session-manager.png)
 
 ## The Problem
 

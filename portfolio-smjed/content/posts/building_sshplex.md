@@ -4,6 +4,8 @@ date: 2025-06-09
 tags: ["netbox", "python", "tui", "ssh", "infrastructure", "open-source", "CICD"]
 ---
 
+![SSHplex Session Manager](/images/sshplex-session-manager.png)
+
 ## The Problem
 
 At Kindred, we relied on Remote Desktop Manager (RDM) to manage connections to our Windows and Linux hosts for broadcasting commands and checking system states. However, licensing costs were high and every new host required manual database entry. After finding no suitable alternatives, I decided to build my own solution.
