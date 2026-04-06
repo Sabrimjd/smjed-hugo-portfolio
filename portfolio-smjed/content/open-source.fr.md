@@ -13,11 +13,27 @@ draft: false
   }
 
   .oss-card {
+    position: relative;
     border: 1px solid rgba(120, 120, 120, 0.25);
     border-radius: 14px;
     overflow: hidden;
     background: rgba(120, 120, 120, 0.06);
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+    transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+    cursor: pointer;
+  }
+
+  .oss-card:hover,
+  .oss-card:focus-within {
+    transform: translateY(-4px);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.14);
+    border-color: rgba(120, 120, 120, 0.4);
+  }
+
+  .oss-card__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
   }
 
   .oss-card img {
@@ -65,6 +81,8 @@ draft: false
   }
 
   .oss-card__links {
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-wrap: wrap;
     gap: 0.8rem;
@@ -82,10 +100,26 @@ draft: false
   }
 
   .oss-mini-card {
+    position: relative;
     border: 1px solid rgba(120, 120, 120, 0.22);
     border-radius: 12px;
     padding: 1rem;
     background: rgba(120, 120, 120, 0.04);
+    transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+    cursor: pointer;
+  }
+
+  .oss-mini-card:hover,
+  .oss-mini-card:focus-within {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
+    border-color: rgba(120, 120, 120, 0.35);
+  }
+
+  .oss-mini-card__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
   }
 
   .oss-mini-card h3 {
@@ -98,12 +132,18 @@ draft: false
     line-height: 1.55;
     font-size: 0.96rem;
   }
+
+  .oss-mini-card a:not(.oss-mini-card__overlay) {
+    position: relative;
+    z-index: 2;
+  }
 </style>
 
 Je vois l'open source comme une extension directe de mon travail en ingenierie SRE et plateforme : partir de vrais problemes operationnels, construire des outils concrets, puis les rendre utiles au-dela de mon propre contexte.
 
 <div class="oss-grid">
   <article class="oss-card">
+    <a class="oss-card__overlay" href="https://github.com/Sabrimjd/SSHPlex" target="_blank" rel="noopener" aria-label="Ouvrir SSHplex sur GitHub"></a>
     <img src="https://raw.githubusercontent.com/Sabrimjd/SSHPlex/main/demo/demo.gif" alt="Demo SSHplex" />
     <div class="oss-card__body">
       <h3>SSHplex</h3>
@@ -128,6 +168,7 @@ Je vois l'open source comme une extension directe de mon travail en ingenierie S
   </article>
 
   <article class="oss-card">
+    <a class="oss-card__overlay" href="https://github.com/Sabrimjd/openclaw-audit-tui" target="_blank" rel="noopener" aria-label="Ouvrir OpenClaw Audit TUI sur GitHub"></a>
     <img src="https://raw.githubusercontent.com/Sabrimjd/openclaw-audit-tui/main/screenshots/screenshot3.png" alt="Capture OpenClaw Audit TUI" />
     <div class="oss-card__body">
       <h3>OpenClaw Audit TUI</h3>
@@ -151,6 +192,7 @@ Je vois l'open source comme une extension directe de mon travail en ingenierie S
   </article>
 
   <article class="oss-card">
+    <a class="oss-card__overlay" href="https://github.com/Sabrimjd/hypr-codexbar" target="_blank" rel="noopener" aria-label="Ouvrir Hypr CodexBar sur GitHub"></a>
     <img src="https://raw.githubusercontent.com/Sabrimjd/hypr-codexbar/master/assets/waybar-tooltip.png" alt="Capture Hypr CodexBar" />
     <div class="oss-card__body">
       <h3>Hypr CodexBar</h3>
@@ -178,6 +220,7 @@ Je vois l'open source comme une extension directe de mon travail en ingenierie S
 
 <div class="oss-mini-grid">
   <article class="oss-mini-card">
+    <a class="oss-mini-card__overlay" href="https://github.com/Sabrimjd/openclaw-session-audit" target="_blank" rel="noopener" aria-label="Ouvrir openclaw-session-audit sur GitHub"></a>
     <h3>openclaw-session-audit</h3>
     <p>Surveille les sessions OpenClaw et diffuse les evenements vers n'importe quel canal pour sortir l'audit du terminal.</p>
     <div class="oss-badges">
@@ -189,6 +232,7 @@ Je vois l'open source comme une extension directe de mon travail en ingenierie S
   </article>
 
   <article class="oss-mini-card">
+    <a class="oss-mini-card__overlay" href="https://github.com/Sabrimjd/discord-audit-stream" target="_blank" rel="noopener" aria-label="Ouvrir discord-audit-stream sur GitHub"></a>
     <h3>discord-audit-stream</h3>
     <p>Un hook Discord pour OpenClaw qui surveille les fichiers de session et envoie tous les evenements dans un workflow de discussion.</p>
     <div class="oss-badges">
@@ -200,6 +244,7 @@ Je vois l'open source comme une extension directe de mon travail en ingenierie S
   </article>
 
   <article class="oss-mini-card">
+    <a class="oss-mini-card__overlay" href="https://github.com/Sabrimjd/terraform-provider-centreon" target="_blank" rel="noopener" aria-label="Ouvrir terraform-provider-centreon sur GitHub"></a>
     <h3>terraform-provider-centreon</h3>
     <p>Un provider Terraform en Go pour l'API Centreon V2 afin de gerer la configuration de monitoring comme du code.</p>
     <div class="oss-badges">
@@ -211,6 +256,7 @@ Je vois l'open source comme une extension directe de mon travail en ingenierie S
   </article>
 
   <article class="oss-mini-card">
+    <a class="oss-mini-card__overlay" href="https://github.com/Sabrimjd/Proton-Email-Migration-Tracker" target="_blank" rel="noopener" aria-label="Ouvrir Proton-Email-Migration-Tracker sur GitHub"></a>
     <h3>Proton-Email-Migration-Tracker</h3>
     <p>Un outil personnel pour suivre une migration Gmail vers ProtonMail avec categorisation et visibilite sur l'avancement.</p>
     <div class="oss-badges">
@@ -222,6 +268,7 @@ Je vois l'open source comme une extension directe de mon travail en ingenierie S
   </article>
 
   <article class="oss-mini-card">
+    <a class="oss-mini-card__overlay" href="https://github.com/Sabrimjd/bayes-hmailserver" target="_blank" rel="noopener" aria-label="Ouvrir bayes-hmailserver sur GitHub"></a>
     <h3>bayes-hmailserver</h3>
     <p>Un projet d'auto-apprentissage bayesien pour hMailServer, construit autour d'un cas concret de filtrage mail et d'automatisation.</p>
     <div class="oss-badges">
