@@ -7,7 +7,7 @@ author:
   name: "Sabri MJAHED"
 ---
 
-I'm a System/Network/DevOps engineer with a lifelong passion for IT. From tinkering with code at an early age to architecting complex, high-availability infrastructures for enterprise clients, my journey in technology has been driven by curiosity, creativity, and a relentless desire to learn.
+I'm a Site Reliability Engineer with a DevOps background and a lifelong passion for IT. From tinkering with code at an early age to building reliable, observable platforms for enterprise environments, my journey in technology has always been driven by curiosity, creativity, and a relentless desire to learn.
 
 ## Early Beginnings
 
@@ -34,31 +34,45 @@ This innovative solution to DDoS attacks remains one of my proudest accomplishme
 
 ## Professional Expertise
 
-I work with a diverse range of technologies and tools across storage, databases, security, and CI/CD. My adaptability and eagerness to learn new technologies allow me to tailor solutions to the needs of every project. Here are some highlights of my expertise:
+I work at the intersection of reliability engineering, observability, automation, and infrastructure. My background in systems, networking, and DevOps gives me a broad operational view, while my current focus is on Kubernetes platforms, log and metrics pipelines, and tooling that helps teams diagnose problems faster and operate with confidence.
 
 ### Open Source Contributions
-🌟 I actively contribute to the open source community through projects like my **Terraform Provider for Centreon V2 API** ([GitHub](https://github.com/Sabrimjd/terraform-provider-centreon/)). This provider enables infrastructure as code capabilities for the Centreon monitoring platform, demonstrating my expertise in Go programming and the HashiCorp ecosystem.
+🌟 I actively contribute to the open source community through projects like my **Terraform Provider for Centreon V2 API** ([GitHub](https://github.com/Sabrimjd/terraform-provider-centreon/)) and **SSHplex** ([GitHub](https://github.com/Sabrimjd/SSHPlex), [Blog Post](/posts/building_sshplex/)). The Centreon provider enables infrastructure as code capabilities for the Centreon monitoring platform, while SSHplex is a modern terminal UI for SSH connection multiplexing that combines NetBox, Ansible, Consul, and static lists as sources of truth, with three mux backends: tmux standalone, tmux plus iTerm2, and native iTerm2 on macOS.
 
-- **CI/CD & Automation:**
-  - Proficient in Jenkins and quick to learn tools like GitHub Actions.
-  - Experienced in creating VM deployment pipelines using Terraform and deploying with Ansible.
-  - Utilize Consul for service discovery, integrating with HAProxy, Prometheus, and other monitoring systems.
+- **Reliability, Platform & Automation:**
+  - Strong hands-on experience with Kubernetes operations, Helm charts, Argo CD, and container image workflows.
+  - Comfortable building and maintaining CI/CD workflows with Jenkins and GitLab, supported by Terraform and Ansible when automation is needed around the platform.
+  - Focused on turning operational knowledge into internal tooling that improves diagnosis, safety, and day-to-day platform reliability.
 
-- **Infrastructure & Security:**
-  - Managed complex on-premise projects such as setting up a fully redundant Point of Presence (PoP) in Paris.
-    *This project involved overhauling the infrastructure with a new Proxmox cluster, configuring networking switches, routing, and firewalling—all while keeping production systems running smoothly.*
+- **Observability & Operations:**
+  - Daily work with Grafana, Loki, Thanos, Vector, Splunk, and AWS CloudWatch to improve visibility, troubleshooting, and operational maturity.
+  - Strong interest in SLO-driven engineering, query performance analysis, and building guardrails around AI-assisted platform workflows.
+
+- **Infrastructure Foundations:**
+  - Built a solid foundation through on-premise and multi-datacenter projects involving Proxmox, networking, routing, firewalling, and production migrations.
+  - This systems background remains a major strength in my SRE work, especially when reliability issues cross application, platform, and infrastructure boundaries.
 
 ## Current Role at Kindred France
 
-In my current role at Kindred France, I lead initiatives in automation and CI/CD. My daily responsibilities include:
-- Creating VM deployment pipelines that span multiple virtualization environments (vSphere, OpenStack, Proxmox) using Terraform.
-- Deploying VMs with Ansible.
-- Implementing Consul for dynamic service discovery, which integrates with HAProxy, Prometheus, and other monitoring tools.
-- Overseeing a broad scope of security measures across the French market.
+At Kindred France, I evolved from a system engineering role into an SRE position. My current work is centered on observability, diagnostics, and platform reliability, with a strong emphasis on Kubernetes-based systems.
+
+- Managing Loki and Thanos in Kubernetes, with Grafana and Vector as core observability components.
+- Building a HouseKeeping tool to diagnose stale and broken resources in Grafana and improve platform hygiene.
+- Creating a Search Query Exporter to investigate search slowness and define SLOs across Thanos, Loki, and Splunk.
+- Building a Grafana AI Agent with enterprise-ready safeguards, including RBAC-aware behavior and MCP-based diagnosis flows.
+
+## Recent Learning
+
+Over the last six months, I deepened my hands-on expertise in several areas that support my transition toward an SRE-focused profile:
+
+- Kubernetes operations, Helm charts, Argo CD, and container image lifecycle management.
+- Jenkins and GitLab delivery workflows.
+- Splunk, AWS CloudWatch, and CUR2 for observability and cost-aware analysis.
+- AI-assisted tooling used in a pragmatic, enterprise-ready way for operations and diagnosis.
 
 ## Commitment to Open Source & Continuous Learning
 
-I am a passionate advocate for open source and Linux communities. I contribute not only through code but also by enhancing documentation and sharing knowledge. Staying up-to-date is a daily habit—whether through online tutorials, RSS feeds, or Twitter, I constantly explore new technologies and innovations in IT and DevOps.
+I am a passionate advocate for open source and Linux communities. I contribute not only through code but also by improving documentation and sharing knowledge. Staying up-to-date is a daily habit - whether through online tutorials, RSS feeds, or technical communities, I continuously explore new ideas in SRE, observability, infrastructure, and AI-assisted operations.
 
 ## Personal Interests
 

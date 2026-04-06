@@ -3,12 +3,12 @@ title: "Expertise Technique"
 layout: "skills"
 ---
 
-En tant que professionnel DevOps et Ingénierie Système, j'ai développé un ensemble complet de compétences dans plusieurs domaines de l'infrastructure moderne et de l'automatisation. Mon expertise comprend :
+En tant que Site Reliability Engineer avec un background DevOps, mes compétences sont aujourd'hui de plus en plus orientées vers la fiabilité de plateforme, l'observabilité et les opérations Kubernetes. Au cours des six derniers mois, j'ai consolidé ce positionnement par de l'apprentissage pratique et des réalisations concrètes autour des outils et workflows SRE modernes.
 
-- **Automatisation d'Infrastructure** : Expérience approfondie en conteneurisation, virtualisation et Infrastructure as Code
-- **Solutions Cloud** : Expérience éprouvée avec les principaux fournisseurs cloud et les implémentations de cloud privé
-- **CI/CD & Automatisation** : Construction et maintenance de pipelines de déploiement robustes
-- **Architecture Système** : Conception de solutions d'infrastructure évolutives et résilientes
-- **Sécurité & Surveillance** : Mise en place d'infrastructures sécurisées et observables avec une surveillance complète
+- **Observabilité & Fiabilité** : Grafana, Loki, Thanos, Vector, Splunk, CloudWatch et diagnostics orientés SLO
+- **Kubernetes & Plateforme** : administration Kubernetes, charts Helm, Argo CD et workflows autour des images de conteneurs
+- **CI/CD & Automatisation** : Jenkins, GitLab, Terraform et automatisation pragmatique au service de la fiabilité des livraisons
+- **Fondations Infrastructure** : solide expérience en systèmes, réseau, virtualisation et opérations multi-datacenter
+- **Outillage Assisté par l'IA** : construction de workflows IA pragmatiques et enterprise ready avec des garde-fous pour le diagnostic et l'opérabilité
 
-Vous trouverez ci-dessous une répartition détaillée de mes compétences techniques. Chaque compétence est cliquable pour voir les projets et expériences associés :
+Vous trouverez ci-dessous une vue structurée des technologies que j'utilise le plus aujourd'hui, ainsi que des fondations infrastructure qui soutiennent mon travail de SRE :

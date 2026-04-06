@@ -5,7 +5,7 @@ type: "resume"
 
 ## Résumé
 
-> Je suis un ingénieur System/Network/DevOps passionné par l'IT depuis toujours. De mes premiers pas dans le code à la conception d'infrastructures complexes à haute disponibilité pour des clients entreprise, mon parcours dans la technologie a été guidé par la curiosité, la créativité et une volonté constante d'apprendre.
+> Je suis un Site Reliability Engineer avec un solide background DevOps, focalisé sur les plateformes Kubernetes, l'observabilité, l'automatisation et la construction de systèmes fiables permettant aux équipes d'aller vite sans perdre en maîtrise opérationnelle.
 
 ## Contributions Open Source
 
@@ -15,61 +15,54 @@ type: "resume"
 - Réalisation clé dans l'intégration de l'automatisation d'infrastructure et du monitoring
 - Démontre une expertise en programmation Go et dans l'écosystème Terraform de HashiCorp
 
+🌟 **SSHplex**
+> Développement et maintenance d'une interface terminal open source pour le multiplexage de connexions SSH, pensée pour les équipes infrastructure ayant besoin de découverte rapide des hôtes, d'opérations en masse et de sessions persistantes.
+- Dépôt GitHub : [SSHPlex](https://github.com/Sabrimjd/SSHPlex)
+- Article : [Building SSHplex](/posts/building_sshplex/)
+- Combine NetBox, Ansible, Consul et des listes statiques comme sources de vérité pour les hôtes et les équipements
+- Prend en charge trois backends de multiplexage : tmux standalone, tmux + iTerm2 et iTerm2 natif sur macOS
+- Offre le broadcast de commandes et des sessions persistantes pour remplacer des outils legacy coûteux
+
 ## Expérience
 
-### <a href="https://www.kindredgroup.com/"><img src="/img/Kindred.webp" alt="Kindred France" style="height: 30px; padding-right: 10px; vertical-align: middle;"></a> Kindred France | Ingénieur Système | 2021 - Présent
+### <a href="https://www.kindredgroup.com/"><img src="/img/Kindred.webp" alt="Kindred France" style="height: 30px; padding-right: 10px; vertical-align: middle;"></a> Kindred France | Site Reliability Engineer | 2021 - Présent
 
 <div class="skills-container">
-    <a href="/tags/terraform" class="skill-badge">Terraform</a>
-    <a href="/tags/ansible" class="skill-badge">Ansible</a>
+    <a href="/tags/kubernetes" class="skill-badge">Kubernetes</a>
+    <a href="/tags/grafana" class="skill-badge">Grafana</a>
+    <a href="/tags/loki" class="skill-badge">Loki</a>
+    <a href="/tags/thanos" class="skill-badge">Thanos</a>
+    <a href="/tags/vector" class="skill-badge">Vector</a>
     <a href="/tags/jenkins" class="skill-badge">Jenkins</a>
-    <a href="/tags/elastic" class="skill-badge">Elastic Stack</a>
-    <a href="/tags/proxmox" class="skill-badge">Proxmox</a>
-    <a href="/tags/consul" class="skill-badge">Consul</a>
-    <a href="/tags/vault" class="skill-badge">Vault</a>
+    <a href="/tags/gitlab-ci" class="skill-badge">GitLab CI</a>
+    <a href="/tags/terraform" class="skill-badge">Terraform</a>
 </div>
 
-*   Direction et implémentation du déploiement automatique de VM et d'applications avec CI/CD, permettant plusieurs déploiements par jour.
-    *   Utilisation de Jenkins pour le pipeline avec Git
-    *   Utilisation d'Ansible pour déployer les rôles d'initialisation VM et les applications nécessaires
-    *   Utilisation de Terraform pour déployer sur 10 datacenters avec 4 fournisseurs différents (OpenStack, Proxmox, Vsphere, Netbox) en utilisant le même fichier template
-    *   Utilisation de Netbox comme source de vérité pour lier l'ensemble et documenter toute l'infrastructure
-    *   Utilisation de Consul pour alimenter automatiquement les pools de services pour HaProxy et Prometheus
-    *   Utilisation de Vault pour le stockage des credentials
-*   Responsable du périmètre de sécurité français, dirigeant les corrections nécessaires des vulnérabilités
-*   Implémentation complète de la Stack Elastic gérant 200TB de logs avec 10 nœuds et Kafka pour :
-    *   SIEM
-    *   Logging (Réseau, Applications, Système)
-    *   EDR
-    *   Monitoring Springboot avec APM
-    *   Monitoring réseau
-    *   Uptime et SLA/SLOs avec Synthetics
-*   Intégration d'un cluster Proxmox hautement disponible sur 4 racks et 2 datacenters utilisant CEPH
-    *   Gestion du réseau avec 4 * 25GB par hôte (avec 30 hôtes au total)
-    *   Déploiement automatique avec PXE
-*   Proxy Squid multi-datacenter avec EBGP
+*   Évolution interne d'un poste d'ingénieur système vers un rôle de SRE, avec un accent de plus en plus fort sur la fiabilité de plateforme, l'observabilité et le diagnostic.
+*   Gestion et amélioration des workflows d'observabilité autour de Kubernetes, avec Thanos, Loki, Grafana et Vector comme technologies centrales.
+*   Création d'un outil HouseKeeping pour diagnostiquer les ressources Grafana obsolètes ou cassées et améliorer l'hygiène quotidienne de la plateforme.
+*   Création d'un Search Query Exporter pour diagnostiquer les lenteurs de requêtes et établir des SLO sur Thanos, Loki et Splunk.
+*   Construction d'un Grafana AI Agent avec des garde-fous enterprise-ready, notamment un comportement RBAC-aware et des flux de diagnostic basés sur MCP.
+*   Renforcement récent de mon expertise sur les charts Helm, Argo CD, les images de conteneurs, Jenkins, GitLab, Splunk, AWS CloudWatch et CUR2.
 
-#### Responsable technique et/ou implémentation de
+#### Stack actuelle et domaines de responsabilité
 
-| Stack Technologique | Composants/Outils |
-|-----------------|------------------|
-| Elastic Stack | Logstash, Kibana, ElasticSearch, Java APM, Elastic Agents, Intégration Splunk |
-| Hashicorp | Vault, Terraform, Consul, Jenkins |
-| Bases de données | Couchbase, Redis, PostgreSQL, Microsoft SQL |
-| Virtualisation | Proxmox |
-| Files de messages | Kafka |
-| Réseau | Proxy Squid |
-| Outils | Remote Desktop Manager |
+| Domaine | Composants/Outils |
+|---------|-------------------|
+| Observabilité | Grafana, Loki, Thanos, Vector, Splunk, AWS CloudWatch |
+| Ingénierie de plateforme | Kubernetes, Helm, Argo CD, Images de conteneurs |
+| CI/CD & Automatisation | Jenkins, GitLab CI, Terraform, Ansible |
+| Données & Stockage | Kafka, Redis, PostgreSQL, Microsoft SQL, Couchbase |
+| Programmation & IA | Go, Python, Bash, IA, MCP |
 
-Autres compétences acquises :
+#### Impact précédent au sein de la même entreprise
 
-| Catégorie | Technologies/Outils |
-|----------|-------------------|
-| Solutions de Sécurité | FortiGate, FortiAnalyzer, FortiAuthenticator, FortiManager |
-| Équilibrage de charge | F5 BigIP, HaProxy |
-| Réseau | Nftables, Iptables, Juniper JunOS |
-| Infrastructure | Netbox, Packer |
-| Outils de Collaboration | Bitbucket, Jira, Confluence |
+*   Pilotage du déploiement automatisé des VM et des applications via CI/CD, permettant plusieurs mises en production par jour.
+*   Utilisation de Terraform pour déployer sur 10 datacenters et 4 fournisseurs (OpenStack, Proxmox, vSphere, NetBox) à partir de templates partagés.
+*   Utilisation d'Ansible pour l'initialisation des VM et le déploiement applicatif, avec Consul pour alimenter les pools de services de HAProxy et Prometheus.
+*   Mise en place et exploitation d'une plateforme Elastic Stack de grande ampleur gérant 200 TB de logs sur 10 noeuds avec Kafka pour le SIEM, le logging, l'EDR, l'APM et le suivi d'uptime.
+*   Intégration d'un cluster Proxmox hautement disponible sur 4 racks et 2 datacenters avec Ceph, incluant l'automatisation PXE et un réseau 25 Gb par hôte.
+*   Responsable du périmètre sécurité France, avec pilotage des remédiations de vulnérabilités et du durcissement de la production.
 
 ### <a href="https://www.vinc.fr/"><img src="/img/Vinc.png" alt="VINC" style="height: 30px; padding-right: 10px; vertical-align: middle;"></a> VINC | Ingénieur Système | 2019 - 2021
 

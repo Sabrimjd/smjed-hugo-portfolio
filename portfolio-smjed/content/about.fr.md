@@ -8,7 +8,7 @@ author:
 
 ---
 
-Je suis un ingénieur spécialisé en systèmes, réseaux et DevOps, animé par une passion de toujours pour l'informatique. De mes premiers pas avec le code à la conception d'infrastructures complexes et hautement disponibles pour des entreprises, mon parcours technologique est guidé par la curiosité, la créativité et un désir constant d'apprendre.
+Je suis un Site Reliability Engineer avec un solide background DevOps et une passion de toujours pour l'informatique. De mes premiers pas avec le code à la construction de plateformes fiables et observables pour des environnements d'entreprise, mon parcours a toujours été guidé par la curiosité, la créativité et une volonté constante d'apprendre.
 
 ## Débuts
 
@@ -35,31 +35,45 @@ Cette solution innovante contre les attaques DDoS demeure l'une de mes réalisat
 
 ## Expertise Professionnelle
 
-Je travaille avec une grande variété de technologies et d'outils dans les domaines du stockage, des bases de données, de la sécurité et du CI/CD. Mon adaptabilité et ma volonté d'apprendre de nouvelles technologies me permettent d'adapter mes solutions aux besoins de chaque projet. Voici quelques points forts de mon expertise :
+Je travaille à l'intersection de la fiabilité, de l'observabilité, de l'automatisation et de l'infrastructure. Mon parcours en systèmes, réseau et DevOps me donne une vision opérationnelle large, tandis que mon focus actuel porte sur les plateformes Kubernetes, les pipelines de logs et de métriques, ainsi que les outils qui permettent de diagnostiquer plus vite et d'exploiter les systèmes avec davantage de confiance.
 
 ### Contributions Open Source
-🌟 Je contribue activement à la communauté open source à travers des projets comme mon **Provider Terraform pour l'API Centreon V2** ([GitHub](https://github.com/Sabrimjd/terraform-provider-centreon/)). Ce provider permet les capacités d'infrastructure as code pour la plateforme de monitoring Centreon, démontrant mon expertise en programmation Go et dans l'écosystème HashiCorp.
+🌟 Je contribue activement à la communauté open source à travers des projets comme mon **Provider Terraform pour l'API Centreon V2** ([GitHub](https://github.com/Sabrimjd/terraform-provider-centreon/)) et **SSHplex** ([GitHub](https://github.com/Sabrimjd/SSHPlex), [Article](/posts/building_sshplex/)). Le provider Centreon apporte les capacités d'infrastructure as code à la plateforme de monitoring Centreon, tandis que SSHplex est une interface terminal moderne pour le multiplexage de connexions SSH, capable de combiner NetBox, Ansible, Consul et des listes statiques comme sources de vérité, avec trois backends de multiplexage : tmux standalone, tmux avec iTerm2 et iTerm2 natif sur macOS.
 
-- **CI/CD & Automatisation :**
-  - Maîtrise de Jenkins et rapidité d'apprentissage pour des outils comme GitHub Actions.
-  - Expérience dans la création de pipelines de déploiement de machines virtuelles (VM) avec Terraform et le déploiement avec Ansible.
-  - Utilisation de Consul pour la découverte de services, intégrée à HAProxy, Prometheus et d'autres systèmes de monitoring.
+- **Fiabilité, Plateforme & Automatisation :**
+  - Expérience concrète des opérations Kubernetes, des charts Helm, d'Argo CD et des workflows autour des images de conteneurs.
+  - Maîtrise des pipelines CI/CD avec Jenkins et GitLab, complétés par Terraform et Ansible lorsque l'automatisation de la plateforme le nécessite.
+  - Une approche centrée sur la transformation de la connaissance opérationnelle en outils internes utiles pour le diagnostic, la sécurité et la fiabilité au quotidien.
 
-- **Infrastructure & Sécurité :**
-  - Gestion de projets on-premise complexes, comme la mise en place d'un Point of Presence (PoP) entièrement redondant à Paris.
-    *Ce projet impliquait une refonte complète de l'infrastructure avec un nouveau cluster Proxmox, la configuration de switches réseau, le routage et la mise en place de firewall, tout en maintenant le fonctionnement de la production.*
+- **Observabilité & Opérations :**
+  - Travail quotidien avec Grafana, Loki, Thanos, Vector, Splunk et AWS CloudWatch pour améliorer la visibilité, le troubleshooting et la maturité opérationnelle.
+  - Intérêt fort pour les approches pilotées par les SLO, l'analyse de performance des requêtes et la mise en place de garde-fous autour des usages de l'IA dans les workflows de plateforme.
+
+- **Fondations Infrastructure :**
+  - Solide base construite au travers de projets on-premise et multi-datacenter autour de Proxmox, du réseau, du routage, du firewalling et des migrations de production.
+  - Ce socle système reste un atout important dans mon travail de SRE, notamment quand les incidents traversent les couches applicatives, plateforme et infrastructure.
 
 ## Mon Rôle Actuel chez Kindred France
 
-Dans mon rôle actuel chez Kindred France, je dirige les initiatives d'automatisation et de CI/CD. Mes responsabilités quotidiennes incluent :
-- La création de pipelines de déploiement de VM couvrant plusieurs environnements de virtualisation (vSphere, OpenStack, Proxmox) avec Terraform.
-- Le déploiement de machines virtuelles avec Ansible.
-- L'implémentation de Consul pour la découverte dynamique des services, intégrée à HAProxy, Prometheus et d'autres outils de monitoring.
-- La supervision d'un large éventail de mesures de sécurité à l'échelle du marché français.
+Chez Kindred France, j'ai évolué d'un rôle d'ingénieur système vers un poste de SRE. Mon travail actuel est centré sur l'observabilité, le diagnostic et la fiabilité de la plateforme, avec un fort accent sur les systèmes Kubernetes.
+
+- Gestion de Loki et Thanos dans Kubernetes, avec Grafana et Vector comme composants centraux d'observabilité.
+- Création d'un outil HouseKeeping pour diagnostiquer les ressources obsolètes ou cassées dans Grafana et améliorer l'hygiène de la plateforme.
+- Création d'un Search Query Exporter pour analyser les lenteurs de recherche et définir des SLO sur Thanos, Loki et Splunk.
+- Construction d'un Grafana AI Agent avec des garde-fous enterprise ready, notamment un comportement RBAC-aware et des flux de diagnostic basés sur MCP.
+
+## Apprentissages Récents
+
+Au cours des six derniers mois, j'ai renforcé mon expertise pratique sur plusieurs sujets qui accompagnent mon évolution vers un profil davantage orienté SRE :
+
+- Les opérations Kubernetes, les charts Helm, Argo CD et le cycle de vie des images de conteneurs.
+- Les workflows de delivery avec Jenkins et GitLab.
+- Splunk, AWS CloudWatch et CUR2 pour l'observabilité et une meilleure lecture des coûts.
+- Les outils assistés par l'IA, utilisés de manière pragmatique et enterprise-ready pour l'opérabilité et le diagnostic.
 
 ## Engagement pour l'Open Source & Apprentissage Continu
 
-Je suis un fervent défenseur des communautés open source et Linux. Je contribue non seulement par le code, mais aussi en améliorant la documentation et en partageant mes connaissances. Rester à jour est pour moi une habitude quotidienne — que ce soit via des tutoriels en ligne, des flux RSS ou Twitter, j'explore constamment de nouvelles technologies et innovations dans le domaine de l'IT et du DevOps.
+Je suis un fervent défenseur des communautés open source et Linux. Je contribue non seulement par le code, mais aussi en améliorant la documentation et en partageant mes connaissances. Rester à jour est pour moi une habitude quotidienne - que ce soit via des tutoriels en ligne, des flux RSS ou des communautés techniques, j'explore en permanence de nouvelles approches autour du SRE, de l'observabilité, de l'infrastructure et de l'IA appliquée aux opérations.
 
 ## Centres d'Intérêt Personnels
 
