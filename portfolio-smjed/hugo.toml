@@ -170,6 +170,22 @@ unsafe= true
     alt      = "Portrait"
     maxWidth = "150px"
 
+  [params.homeOpenSource]
+    enable = true
+    [[params.homeOpenSource.projects]]
+      key = "sshplex"
+      name = "SSHplex"
+      url = "https://github.com/Sabrimjd/SSHPlex"
+      blog = "/posts/building_sshplex/"
+    [[params.homeOpenSource.projects]]
+      key = "openclaw"
+      name = "OpenClaw Audit TUI"
+      url = "https://github.com/Sabrimjd/openclaw-audit-tui"
+    [[params.homeOpenSource.projects]]
+      key = "codexbar"
+      name = "Hypr CodexBar"
+      url = "https://github.com/Sabrimjd/hypr-codexbar"
+
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
   # Addon: Commento
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
@@ -335,6 +351,10 @@ unsafe= true
     identifier = "posts"
     name       = "Posts"
     url        = "posts/"
+  [[menu.main]]
+    identifier = "open-source"
+    name       = "Open Source"
+    url        = "open-source/"
   [[menu.main]]
     identifier = "skills"
     name       = "Skills"

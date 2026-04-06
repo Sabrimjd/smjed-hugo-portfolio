@@ -9,12 +9,6 @@ type: "resume"
 
 ## Open Source Contributions
 
-🌟 **Terraform Provider for Centreon V2 API**
-> Developed and maintained a custom Terraform provider for Centreon's V2 API, enabling infrastructure as code capabilities for Centreon monitoring platform.
-- GitHub Repository: [terraform-provider-centreon](https://github.com/Sabrimjd/terraform-provider-centreon/)
-- Key achievement in bridging the gap between infrastructure automation and monitoring
-- Demonstrates expertise in Go programming and HashiCorp's Terraform ecosystem
-
 🌟 **SSHplex**
 > Built and maintained an open source terminal UI for SSH connection multiplexing, designed for infrastructure teams that need fast host discovery, bulk operations, and persistent sessions.
 - GitHub Repository: [SSHPlex](https://github.com/Sabrimjd/SSHPlex)
@@ -42,6 +36,7 @@ type: "resume"
 *   Manage and improve observability workflows around Kubernetes, with Thanos, Loki, Grafana, and Vector as core technologies.
 *   Built a HouseKeeping tool to diagnose stale and broken Grafana resources and improve day-to-day platform hygiene.
 *   Built a Search Query Exporter to diagnose query slowness and establish SLOs across Thanos, Loki, and Splunk.
+*   Designed an SLO Dashboard Framework for Kindred to standardize service-level visibility and make reliability reporting easier to adopt across teams.
 *   Built a Grafana AI Agent with enterprise-ready safeguards, including RBAC-aware behavior and MCP-based diagnosis flows.
 *   Expanded recent hands-on expertise with Helm charts, Argo CD, container images, Jenkins, GitLab, Splunk, AWS CloudWatch, and CUR2.
 

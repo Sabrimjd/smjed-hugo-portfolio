@@ -5,23 +5,17 @@ type: "resume"
 
 ## Résumé
 
-> Je suis un Site Reliability Engineer avec un solide background DevOps, focalisé sur les plateformes Kubernetes, l'observabilité, l'automatisation et la construction de systèmes fiables permettant aux équipes d'aller vite sans perdre en maîtrise opérationnelle.
+> Je suis un Site Reliability Engineer avec une solide expérience DevOps, centré sur les plateformes Kubernetes, l'observabilité, l'automatisation et la construction de systèmes fiables qui permettent aux équipes d'aller vite sans perdre en maîtrise opérationnelle.
 
 ## Contributions Open Source
 
-🌟 **Provider Terraform pour l'API Centreon V2**
-> Développement et maintenance d'un provider Terraform personnalisé pour l'API V2 de Centreon, permettant les capacités d'infrastructure as code pour la plateforme de monitoring Centreon.
-- Dépôt GitHub : [terraform-provider-centreon](https://github.com/Sabrimjd/terraform-provider-centreon/)
-- Réalisation clé dans l'intégration de l'automatisation d'infrastructure et du monitoring
-- Démontre une expertise en programmation Go et dans l'écosystème Terraform de HashiCorp
-
 🌟 **SSHplex**
-> Développement et maintenance d'une interface terminal open source pour le multiplexage de connexions SSH, pensée pour les équipes infrastructure ayant besoin de découverte rapide des hôtes, d'opérations en masse et de sessions persistantes.
+> Développement et maintenance d'une interface terminal open source dédiée au multiplexage de connexions SSH, pensée pour les équipes infrastructure qui ont besoin de découverte rapide des hôtes, d'opérations en masse et de sessions persistantes.
 - Dépôt GitHub : [SSHPlex](https://github.com/Sabrimjd/SSHPlex)
 - Article : [Building SSHplex](/posts/building_sshplex/)
 - Combine NetBox, Ansible, Consul et des listes statiques comme sources de vérité pour les hôtes et les équipements
-- Prend en charge trois backends de multiplexage : tmux standalone, tmux + iTerm2 et iTerm2 natif sur macOS
-- Offre le broadcast de commandes et des sessions persistantes pour remplacer des outils legacy coûteux
+- Propose trois modes de multiplexage : tmux standalone, tmux + iTerm2 et iTerm2 natif sur macOS
+- Offre le broadcast de commandes et des sessions persistantes pour remplacer des solutions historiques coûteuses
 
 ## Expérience
 
@@ -42,7 +36,8 @@ type: "resume"
 *   Gestion et amélioration des workflows d'observabilité autour de Kubernetes, avec Thanos, Loki, Grafana et Vector comme technologies centrales.
 *   Création d'un outil HouseKeeping pour diagnostiquer les ressources Grafana obsolètes ou cassées et améliorer l'hygiène quotidienne de la plateforme.
 *   Création d'un Search Query Exporter pour diagnostiquer les lenteurs de requêtes et établir des SLO sur Thanos, Loki et Splunk.
-*   Construction d'un Grafana AI Agent avec des garde-fous enterprise-ready, notamment un comportement RBAC-aware et des flux de diagnostic basés sur MCP.
+*   Conception d'un framework de dashboards SLO pour Kindred afin de standardiser la visibilité sur les niveaux de service et de faciliter l'adoption du reporting de fiabilité par les équipes.
+*   Construction d'un Grafana AI Agent avec des garde-fous adaptés aux exigences d'entreprise, notamment un comportement sensible au RBAC et des flux de diagnostic basés sur MCP.
 *   Renforcement récent de mon expertise sur les charts Helm, Argo CD, les images de conteneurs, Jenkins, GitLab, Splunk, AWS CloudWatch et CUR2.
 
 #### Stack actuelle et domaines de responsabilité

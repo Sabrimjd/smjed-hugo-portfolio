@@ -1,0 +1,102 @@
+{{ define "body" }}
+    <body class="{{ if .Site.Params.backgroundImage }} background-image" style="background-image: url('{{ .Site.Params.backgroundImage }}');" {{ else }}"{{ end }}>
+{{ end }}
+
+{{ define "main" }}
+    <style>
+        .home-open-source {
+            margin: 2.5rem auto 0;
+            width: min(960px, 100%);
+        }
+
+        .home-open-source__intro {
+            margin: 0.75rem auto 0;
+            max-width: 760px;
+            opacity: 0.9;
+        }
+
+        .home-open-source__grid {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            margin-top: 1.5rem;
+            text-align: left;
+        }
+
+        .home-open-source__card {
+            padding: 1rem 1.1rem;
+            border: 1px solid var(--border-color, rgba(120, 120, 120, 0.25));
+            background: var(--background-secondary, rgba(120, 120, 120, 0.08));
+            border-radius: 10px;
+        }
+
+        .home-open-source__card h3 {
+            margin: 0 0 0.45rem;
+            font-size: 1.05rem;
+        }
+
+        .home-open-source__card p {
+            margin: 0;
+            line-height: 1.55;
+        }
+
+        .home-open-source__links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 0.9rem;
+        }
+
+        .home-open-source__links a {
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 640px) {
+            .home-open-source {
+                margin-top: 2rem;
+            }
+        }
+    </style>
+
+    <main>
+        <div>
+            {{ if .Site.Params.Portrait.Path }}
+               <img src="{{ .Site.Params.Portrait.Path }}" class="circle" alt="{{ .Site.Params.Portrait.Alt }}" style="max-width:{{ .Site.Params.Portrait.MaxWidth }}" />
+            {{ end }}
+
+            <h1>{{ .Site.Title }}</h1>
+
+            {{ partial "subtitle.html" . }}
+
+            {{- with .Site.Params.social }}
+                <div>
+                    {{ partial "social-icons.html" . }}
+                </div>
+            {{- end }}
+
+            {{ with .Site.Params.homeOpenSource }}
+                {{ if .enable }}
+                    <section class="home-open-source">
+                        <h2>{{ i18n "homeOpenSourceTitle" }}</h2>
+                        <p class="home-open-source__intro">{{ i18n "homeOpenSourceIntro" }}</p>
+                        <div class="home-open-source__grid">
+                            {{ range .projects }}
+                                <article class="home-open-source__card">
+                                    <h3>{{ .name }}</h3>
+                                    <p>{{ i18n (printf "homeProject_%s" .key) }}</p>
+                                    <div class="home-open-source__links">
+                                        <a href="{{ .url }}" target="_blank" rel="noopener">{{ i18n "homeOpenSourceGitHub" }}</a>
+                                        {{ with .blog }}
+                                            <a href="{{ . }}">{{ i18n "homeOpenSourceBlog" }}</a>
+                                        {{ end }}
+                                    </div>
+                                </article>
+                            {{ end }}
+                        </div>
+                    </section>
+                {{ end }}
+            {{ end }}
+        </div>
+    </main>
+{{ end }}

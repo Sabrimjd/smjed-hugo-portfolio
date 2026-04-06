@@ -1,0 +1,20 @@
+[homeOpenSourceTitle]
+other = "Open Source"
+
+[homeOpenSourceIntro]
+other = "A few tools I build and maintain around infrastructure, observability, auditing, and developer workflows."
+
+[homeOpenSourceGitHub]
+other = "GitHub"
+
+[homeOpenSourceBlog]
+other = "Blog post"
+
+[homeProject_sshplex]
+other = "A modern SSH multiplexer with multi-source inventory, broadcast input, and flexible tmux or iTerm2 backends."
+
+[homeProject_openclaw]
+other = "A terminal audit UI for OpenClaw sessions with live events, advanced filters, and real-time streaming to chat channels."
+
+[homeProject_codexbar]
+other = "A compact Waybar module for Hyprland and Omarchy that tracks Codex usage windows, pacing, and alerts at a glance."

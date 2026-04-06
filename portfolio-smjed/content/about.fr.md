@@ -8,7 +8,7 @@ author:
 
 ---
 
-Je suis un Site Reliability Engineer avec un solide background DevOps et une passion de toujours pour l'informatique. De mes premiers pas avec le code à la construction de plateformes fiables et observables pour des environnements d'entreprise, mon parcours a toujours été guidé par la curiosité, la créativité et une volonté constante d'apprendre.
+Je suis un Site Reliability Engineer avec une solide expérience DevOps et une passion de toujours pour l'informatique. De mes premiers pas avec le code à la construction de plateformes fiables et observables pour des environnements d'entreprise, mon parcours a toujours été guidé par la curiosité, la créativité et une volonté constante d'apprendre.
 
 ## Débuts
 
@@ -35,10 +35,10 @@ Cette solution innovante contre les attaques DDoS demeure l'une de mes réalisat
 
 ## Expertise Professionnelle
 
-Je travaille à l'intersection de la fiabilité, de l'observabilité, de l'automatisation et de l'infrastructure. Mon parcours en systèmes, réseau et DevOps me donne une vision opérationnelle large, tandis que mon focus actuel porte sur les plateformes Kubernetes, les pipelines de logs et de métriques, ainsi que les outils qui permettent de diagnostiquer plus vite et d'exploiter les systèmes avec davantage de confiance.
+Je travaille à l'intersection de la fiabilité, de l'observabilité, de l'automatisation et de l'infrastructure. Mon parcours en systèmes, réseau et DevOps me donne une vision opérationnelle large, tandis que ma spécialisation actuelle porte sur les plateformes Kubernetes, les pipelines de logs et de métriques, ainsi que les outils qui permettent de diagnostiquer plus vite et d'exploiter les systèmes avec davantage de confiance.
 
 ### Contributions Open Source
-🌟 Je contribue activement à la communauté open source à travers des projets comme mon **Provider Terraform pour l'API Centreon V2** ([GitHub](https://github.com/Sabrimjd/terraform-provider-centreon/)) et **SSHplex** ([GitHub](https://github.com/Sabrimjd/SSHPlex), [Article](/posts/building_sshplex/)). Le provider Centreon apporte les capacités d'infrastructure as code à la plateforme de monitoring Centreon, tandis que SSHplex est une interface terminal moderne pour le multiplexage de connexions SSH, capable de combiner NetBox, Ansible, Consul et des listes statiques comme sources de vérité, avec trois backends de multiplexage : tmux standalone, tmux avec iTerm2 et iTerm2 natif sur macOS.
+🌟 Je contribue activement à la communauté open source à travers des projets comme mon **Provider Terraform pour l'API Centreon V2** ([GitHub](https://github.com/Sabrimjd/terraform-provider-centreon/)) et **SSHplex** ([GitHub](https://github.com/Sabrimjd/SSHPlex), [Article](/posts/building_sshplex/)). Le provider Centreon apporte les capacités d'infrastructure as code à la plateforme de monitoring Centreon, tandis que SSHplex est une interface terminal moderne pour le multiplexage de connexions SSH, capable de combiner NetBox, Ansible, Consul et des listes statiques comme sources de vérité, avec trois modes de multiplexage : tmux standalone, tmux avec iTerm2 et iTerm2 natif sur macOS.
 
 - **Fiabilité, Plateforme & Automatisation :**
   - Expérience concrète des opérations Kubernetes, des charts Helm, d'Argo CD et des workflows autour des images de conteneurs.
@@ -46,7 +46,7 @@ Je travaille à l'intersection de la fiabilité, de l'observabilité, de l'autom
   - Une approche centrée sur la transformation de la connaissance opérationnelle en outils internes utiles pour le diagnostic, la sécurité et la fiabilité au quotidien.
 
 - **Observabilité & Opérations :**
-  - Travail quotidien avec Grafana, Loki, Thanos, Vector, Splunk et AWS CloudWatch pour améliorer la visibilité, le troubleshooting et la maturité opérationnelle.
+  - Travail quotidien avec Grafana, Loki, Thanos, Vector, Splunk et AWS CloudWatch pour améliorer la visibilité, la résolution d'incidents et la maturité opérationnelle.
   - Intérêt fort pour les approches pilotées par les SLO, l'analyse de performance des requêtes et la mise en place de garde-fous autour des usages de l'IA dans les workflows de plateforme.
 
 - **Fondations Infrastructure :**
@@ -60,16 +60,16 @@ Chez Kindred France, j'ai évolué d'un rôle d'ingénieur système vers un post
 - Gestion de Loki et Thanos dans Kubernetes, avec Grafana et Vector comme composants centraux d'observabilité.
 - Création d'un outil HouseKeeping pour diagnostiquer les ressources obsolètes ou cassées dans Grafana et améliorer l'hygiène de la plateforme.
 - Création d'un Search Query Exporter pour analyser les lenteurs de recherche et définir des SLO sur Thanos, Loki et Splunk.
-- Construction d'un Grafana AI Agent avec des garde-fous enterprise ready, notamment un comportement RBAC-aware et des flux de diagnostic basés sur MCP.
+- Construction d'un Grafana AI Agent avec des garde-fous adaptés aux exigences d'entreprise, notamment un comportement sensible au RBAC et des flux de diagnostic basés sur MCP.
 
 ## Apprentissages Récents
 
 Au cours des six derniers mois, j'ai renforcé mon expertise pratique sur plusieurs sujets qui accompagnent mon évolution vers un profil davantage orienté SRE :
 
 - Les opérations Kubernetes, les charts Helm, Argo CD et le cycle de vie des images de conteneurs.
-- Les workflows de delivery avec Jenkins et GitLab.
+- Les pipelines de livraison avec Jenkins et GitLab.
 - Splunk, AWS CloudWatch et CUR2 pour l'observabilité et une meilleure lecture des coûts.
-- Les outils assistés par l'IA, utilisés de manière pragmatique et enterprise-ready pour l'opérabilité et le diagnostic.
+- Les outils assistés par l'IA, utilisés de manière pragmatique et adaptés aux exigences d'entreprise pour l'opérabilité et le diagnostic.
 
 ## Engagement pour l'Open Source & Apprentissage Continu
 
