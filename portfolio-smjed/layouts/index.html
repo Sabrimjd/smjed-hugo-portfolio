@@ -17,34 +17,81 @@
 
         .home-open-source__grid {
             display: grid;
-            gap: 1rem;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             margin-top: 1.5rem;
             text-align: left;
         }
 
         .home-open-source__card {
-            padding: 1rem 1.1rem;
             border: 1px solid var(--border-color, rgba(120, 120, 120, 0.25));
-            background: var(--background-secondary, rgba(120, 120, 120, 0.08));
-            border-radius: 10px;
+            background: var(--background-secondary, rgba(120, 120, 120, 0.06));
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+            transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
         }
 
-        .home-open-source__card h3 {
+        .home-open-source__card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 24px 48px rgba(0, 0, 0, 0.14);
+            border-color: rgba(120, 120, 120, 0.4);
+        }
+
+        .home-open-source__image {
+            display: block;
+            width: 100%;
+            aspect-ratio: 16 / 10;
+            object-fit: cover;
+            background: #0f1115;
+            transition: transform 220ms ease;
+        }
+
+        .home-open-source__card:hover .home-open-source__image {
+            transform: scale(1.02);
+        }
+
+        .home-open-source__body {
+            padding: 1rem 1.05rem 1.05rem;
+        }
+
+        .home-open-source__body h3 {
             margin: 0 0 0.45rem;
             font-size: 1.05rem;
         }
 
-        .home-open-source__card p {
-            margin: 0;
-            line-height: 1.55;
+        .home-open-source__body p {
+            margin: 0 0 0.75rem;
+            line-height: 1.45;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .home-open-source__badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.45rem;
+            margin: 0 0 0.75rem;
+        }
+
+        .home-open-source__badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.22rem 0.55rem;
+            border-radius: 999px;
+            border: 1px solid rgba(120, 120, 120, 0.24);
+            background: rgba(120, 120, 120, 0.1);
+            font-size: 0.78rem;
+            line-height: 1.1;
+            white-space: nowrap;
         }
 
         .home-open-source__links {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.75rem;
-            margin-top: 0.9rem;
+            gap: 0.8rem;
         }
 
         .home-open-source__links a {
@@ -82,14 +129,27 @@
                         <p class="home-open-source__intro">{{ i18n "homeOpenSourceIntro" }}</p>
                         <div class="home-open-source__grid">
                             {{ range .projects }}
+                                {{ $project := . }}
                                 <article class="home-open-source__card">
-                                    <h3>{{ .name }}</h3>
-                                    <p>{{ i18n (printf "homeProject_%s" .key) }}</p>
-                                    <div class="home-open-source__links">
-                                        <a href="{{ .url }}" target="_blank" rel="noopener">{{ i18n "homeOpenSourceGitHub" }}</a>
-                                        {{ with .blog }}
-                                            <a href="{{ . }}">{{ i18n "homeOpenSourceBlog" }}</a>
+                                    {{ with .image }}
+                                        <img class="home-open-source__image" src="{{ . }}" alt="{{ $project.name }} preview" loading="lazy" />
+                                    {{ end }}
+                                    <div class="home-open-source__body">
+                                        <h3>{{ .name }}</h3>
+                                        {{ with .badges }}
+                                            <div class="home-open-source__badges">
+                                                {{ range . }}
+                                                    <span class="home-open-source__badge">{{ . }}</span>
+                                                {{ end }}
+                                            </div>
                                         {{ end }}
+                                        <p>{{ i18n (printf "homeProject_%s" .key) }}</p>
+                                        <div class="home-open-source__links">
+                                            <a href="{{ .url }}" target="_blank" rel="noopener">{{ i18n "homeOpenSourceGitHub" }}</a>
+                                            {{ with .blog }}
+                                                <a href="{{ . }}">{{ i18n "homeOpenSourceBlog" }}</a>
+                                            {{ end }}
+                                        </div>
                                     </div>
                                 </article>
                             {{ end }}

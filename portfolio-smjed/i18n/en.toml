@@ -2,7 +2,7 @@
 other = "Open Source"
 
 [homeOpenSourceIntro]
-other = "A few tools I build and maintain around infrastructure, observability, auditing, and developer workflows."
+other = "A few tools I build around infrastructure, observability, and developer workflows."
 
 [homeOpenSourceGitHub]
 other = "GitHub"
@@ -11,10 +11,10 @@ other = "GitHub"
 other = "Blog post"
 
 [homeProject_sshplex]
-other = "A modern SSH multiplexer with multi-source inventory, broadcast input, and flexible tmux or iTerm2 backends."
+other = "Modern SSH multiplexing with multi-source inventory and tmux or iTerm2 backends."
 
 [homeProject_openclaw]
-other = "A terminal audit UI for OpenClaw sessions with live events, advanced filters, and real-time streaming to chat channels."
+other = "Terminal audit UI for OpenClaw sessions with live events and real-time streaming."
 
 [homeProject_codexbar]
-other = "A compact Waybar module for Hyprland and Omarchy that tracks Codex usage windows, pacing, and alerts at a glance."
+other = "Compact Waybar module for Codex usage windows, pacing, and alerts at a glance."

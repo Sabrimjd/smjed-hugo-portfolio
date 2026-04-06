@@ -177,14 +177,20 @@ unsafe= true
       name = "SSHplex"
       url = "https://github.com/Sabrimjd/SSHPlex"
       blog = "/posts/building_sshplex/"
+      image = "https://raw.githubusercontent.com/Sabrimjd/SSHPlex/main/demo/demo.gif"
+      badges = ["Python", "TUI", "SSH", "NetBox", "Consul"]
     [[params.homeOpenSource.projects]]
       key = "openclaw"
       name = "OpenClaw Audit TUI"
       url = "https://github.com/Sabrimjd/openclaw-audit-tui"
+      image = "https://raw.githubusercontent.com/Sabrimjd/openclaw-audit-tui/main/screenshots/screenshot3.png"
+      badges = ["TypeScript", "Audit", "TUI", "OpenClaw", "Observability"]
     [[params.homeOpenSource.projects]]
       key = "codexbar"
       name = "Hypr CodexBar"
       url = "https://github.com/Sabrimjd/hypr-codexbar"
+      image = "https://raw.githubusercontent.com/Sabrimjd/hypr-codexbar/master/assets/waybar-tooltip.png"
+      badges = ["Shell", "Waybar", "Hyprland", "CLI", "Developer UX"]
 
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
   # Addon: Commento
