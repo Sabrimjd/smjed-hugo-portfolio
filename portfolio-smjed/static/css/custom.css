@@ -1,0 +1,27 @@
+/* Global H2 centering - overrides theme's display:flex on headings */
+article h2,
+.post-content h2,
+h2 {
+    display: block;
+    text-align: center;
+}
+
+/* Add colored underline accent to content-page h2s (About, CV, Skills, Open Source) */
+article h2::after,
+.post-content h2::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #5094f0;
+    border-radius: 2px;
+    margin: 0.5rem auto 0;
+}
+
+/* Dark mode accent */
+@media (prefers-color-scheme: dark) {
+    article h2::after,
+    .post-content h2::after {
+        background: #6ba4f5;
+    }
+}
