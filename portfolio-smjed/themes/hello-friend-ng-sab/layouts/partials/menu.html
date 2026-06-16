@@ -2,7 +2,9 @@
     <ul class="menu__inner">
         {{- $currentPage := . -}}
         {{ range sort .Site.Menus.main ".Identifier" -}}
-            <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+            {{- $url := .URL | relLangURL -}}
+            {{- $active := and (ne $url "/") (hasPrefix $currentPage.RelPermalink $url) -}}
+            <li><a{{ if $active }} class="active" aria-current="page"{{ end }} href="{{ $url }}">{{ .Name }}</a></li>
         {{- end }}
 
         {{- if .Site.Params.EnableGlobalLanguageMenu }}

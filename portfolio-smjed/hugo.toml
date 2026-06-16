@@ -70,7 +70,7 @@ unsafe= true
   #
   description = "SRE for observability-heavy platforms. Grafana/Loki/Thanos, Kubernetes, Proxmox/Ceph, Terraform/Ansible, and AI-assisted SRE workflows. Available for freelance missions — Paris / remote."
   keywords = "SRE, freelance, observability, Grafana, Loki, Thanos, Kubernetes, Proxmox, Ceph, AI, Graphia, Paris"
-  images = [""]
+  images = ["/img/og-cover.png"]
 
   # Home subtitle of the index page (used by theme as fallback; landing page overrides).
   #
@@ -177,19 +177,19 @@ unsafe= true
       name = "SSHplex"
       url = "https://github.com/Sabrimjd/SSHPlex"
       blog = "/posts/building_sshplex/"
-      image = "https://raw.githubusercontent.com/Sabrimjd/SSHPlex/main/demo/demo.gif"
+      image = "/img/oss/sshplex.webp"
       badges = ["Python", "TUI", "SSH", "NetBox", "Consul"]
     [[params.homeOpenSource.projects]]
       key = "openclaw"
       name = "OpenClaw Audit TUI"
       url = "https://github.com/Sabrimjd/openclaw-audit-tui"
-      image = "https://raw.githubusercontent.com/Sabrimjd/openclaw-audit-tui/main/screenshots/screenshot3.png"
+      image = "/img/oss/openclaw.webp"
       badges = ["TypeScript", "Audit", "TUI", "OpenClaw", "Observability"]
     [[params.homeOpenSource.projects]]
       key = "centreon"
       name = "terraform-provider-centreon"
       url = "https://github.com/Sabrimjd/terraform-provider-centreon"
-      image = "https://opengraph.githubassets.com/1/Sabrimjd/terraform-provider-centreon"
+      image = "/img/oss/centreon.webp"
       badges = ["Go", "Terraform", "Monitoring", "IaC", "Centreon"]
 
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
@@ -358,12 +358,14 @@ unsafe= true
 [languages]
   [languages.en]
     weight    = 1
+    languageName = "English"
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
   [languages.en.params]
     subtitle  = "Senior freelance SRE — observability, platform engineering, AI-assisted ops"
 
   [languages.fr]
     weight    = 2
+    languageName = "Français"
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
   [languages.fr.params]
     subtitle  = "SRE freelance — observabilité, ingénierie de plateforme, ops augmentées par IA"
