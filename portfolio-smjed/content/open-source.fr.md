@@ -139,7 +139,7 @@ draft: false
   }
 </style>
 
-Je vois l'open source comme une extension directe de mon travail en ingenierie SRE et plateforme : partir de vrais problemes operationnels, construire des outils concrets, puis les rendre utiles au-dela de mon propre contexte.
+Je vois l'open source comme une extension directe de mon travail en ingénierie SRE et plateforme : partir de vrais problèmes opérationnels, construire des outils concrets, puis les rendre utiles au-delà de mon propre contexte.
 
 <div class="oss-grid">
   <article class="oss-card">

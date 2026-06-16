@@ -5,7 +5,7 @@ type: "resume"
 
 ## Summary
 
-> I'm a Site Reliability Engineer with a DevOps background, focused on Kubernetes platforms, observability, automation, and building reliable systems that help teams move fast without losing operational confidence.
+> Senior freelance SRE with 10 years of experience operating infrastructure that can't quietly fail. I work across high-volume observability (Grafana/Loki/Thanos), Kubernetes platform engineering, on-prem Proxmox/Ceph clusters, and AI-assisted SRE tooling. Available for freelance missions — Paris area / remote, 4 days/week.
 
 ## Open Source Contributions
 
@@ -32,13 +32,13 @@ type: "resume"
     <a href="/tags/terraform" class="skill-badge">Terraform</a>
 </div>
 
-*   Progressed internally from System Engineer to Site Reliability Engineer, shifting my focus from infrastructure automation toward platform reliability, observability, and diagnostics.
-*   Manage and improve observability workflows around Kubernetes, with Thanos, Loki, Grafana, and Vector as core technologies.
-*   Built a HouseKeeping tool to diagnose stale and broken Grafana resources and improve day-to-day platform hygiene.
+*   Progressed from System Engineer to Site Reliability Engineer, shifting focus from infrastructure automation toward platform reliability, observability, and diagnostics.
+*   Operate observability workflows around Kubernetes with Thanos, Loki, Grafana, and Vector as core technologies.
+*   Built a HouseKeeping tool to diagnose stale and broken Grafana resources, reducing dashboard/config drift and improving platform hygiene.
 *   Built a Search Query Exporter to diagnose query slowness and establish SLOs across Thanos, Loki, and Splunk.
-*   Designed an SLO Dashboard Framework for Kindred to standardize service-level visibility and make reliability reporting easier to adopt across teams.
-*   Built a Grafana AI Agent with enterprise-ready safeguards, including RBAC-aware behavior and MCP-based diagnosis flows.
-*   Expanded recent hands-on expertise with Helm charts, Argo CD, container images, Jenkins, GitLab, Splunk, AWS CloudWatch, and CUR2.
+*   Designed an SLO Dashboard Framework to standardize service-level visibility and make reliability reporting easier to adopt across teams.
+*   Building Graphia, a domain-specific SRE agent for Grafana diagnosis — RBAC-aware behavior, MCP-based diagnosis flows, and safeguards for enterprise operations.
+*   Daily hands-on work with Helm charts, Argo CD, container image lifecycle, Jenkins, GitLab, Splunk, AWS CloudWatch, and CUR2 cost analysis.
 
 #### Current stack and ownership
 
@@ -67,11 +67,11 @@ type: "resume"
     <a href="/tags/ha" class="skill-badge">High Availability</a>
 </div>
 
-*   Archictured the new plateform with new BGP routers and Firewalls
-*   Managed Proxmox cluster arround 2 datacenters
-*   Responsible for SLA and communication with clients for production accident
-*   Implementation of websites arround client needs
-*   Implemented a new DNS stack with high availability in mind
+*   Architected the new platform with new BGP routers and firewalls.
+*   Managed Proxmox cluster across 2 datacenters.
+*   Responsible for SLA and client communication during production incidents.
+*   Implemented websites around client needs.
+*   Implemented a new DNS stack with high availability in mind.
 
 ### Multi-Visp / Azuria | System administrator | 2017 - 2019
 
@@ -82,10 +82,10 @@ type: "resume"
     <a href="/tags/wifi" class="skill-badge">WiFi</a>
 </div>
 
-*   Installed complete new racks in Telehouse2
-*   Cable management between two rooms
-*   Installed managed wifi equipmenents
-*   Implemented high availability multi datacenter VPN services
+*   Installed complete new racks in Telehouse2.
+*   Cable management between two rooms.
+*   Installed managed Wi-Fi equipment.
+*   Implemented high-availability multi-datacenter VPN services.
 
 ### Education
 
@@ -108,10 +108,10 @@ type: "resume"
 **ESGI | Master degree**
 
 *   As my degree project
-    *  Deployed an Elastic Stack with ML
-    *  Auto detect anomaly with JA3 Signature
-    *  Import JA3er database to automaticaly ban from JunOS Router L3
-    *  Dynamicaly rate limit / block traffic at L7
+    *  Deployed an Elastic Stack with ML.
+    *  Auto-detect anomalies via JA3 signature analysis.
+    *  Import JA3er database to automatically ban at the JunOS L3 router.
+    *  Dynamically rate-limit / block traffic at L7.
 
 ### Personal Website | Developed a personal website to showcase my skills and experience | Hugo, HTML, CSS, JavaScript
 

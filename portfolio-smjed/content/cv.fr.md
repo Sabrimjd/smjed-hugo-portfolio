@@ -5,7 +5,7 @@ type: "resume"
 
 ## Résumé
 
-> Je suis un Site Reliability Engineer avec une solide expérience DevOps, centré sur les plateformes Kubernetes, l'observabilité, l'automatisation et la construction de systèmes fiables qui permettent aux équipes d'aller vite sans perdre en maîtrise opérationnelle.
+> SRE freelance senior avec 10 ans d'expérience sur des infrastructures qui ne peuvent pas tomber en silence. J'interviens sur l'observabilité haut volume (Grafana/Loki/Thanos), l'ingénierie de plateforme Kubernetes, les clusters Proxmox/Ceph on-prem et les outils SRE assistés par IA. Disponible pour missions freelance — Paris / remote, 4 jours/semaine.
 
 ## Contributions Open Source
 
@@ -32,13 +32,13 @@ type: "resume"
     <a href="/tags/terraform" class="skill-badge">Terraform</a>
 </div>
 
-*   Évolution interne d'un poste d'ingénieur système vers un rôle de SRE, avec un accent de plus en plus fort sur la fiabilité de plateforme, l'observabilité et le diagnostic.
-*   Gestion et amélioration des workflows d'observabilité autour de Kubernetes, avec Thanos, Loki, Grafana et Vector comme technologies centrales.
-*   Création d'un outil HouseKeeping pour diagnostiquer les ressources Grafana obsolètes ou cassées et améliorer l'hygiène quotidienne de la plateforme.
+*   Évolution interne d'un poste d'ingénieur système vers un rôle de SRE, avec un accent fort sur la fiabilité de plateforme, l'observabilité et le diagnostic.
+*   Opération des workflows d'observabilité autour de Kubernetes, avec Thanos, Loki, Grafana et Vector comme technologies centrales.
+*   Création d'un outil HouseKeeping pour diagnostiquer les ressources Grafana obsolètes ou cassées, réduire la dérive de configuration et améliorer l'hygiène de plateforme.
 *   Création d'un Search Query Exporter pour diagnostiquer les lenteurs de requêtes et établir des SLO sur Thanos, Loki et Splunk.
-*   Conception d'un framework de dashboards SLO pour Kindred afin de standardiser la visibilité sur les niveaux de service et de faciliter l'adoption du reporting de fiabilité par les équipes.
-*   Construction d'un Grafana AI Agent avec des garde-fous adaptés aux exigences d'entreprise, notamment un comportement sensible au RBAC et des flux de diagnostic basés sur MCP.
-*   Renforcement récent de mon expertise sur les charts Helm, Argo CD, les images de conteneurs, Jenkins, GitLab, Splunk, AWS CloudWatch et CUR2.
+*   Conception d'un framework de dashboards SLO afin de standardiser la visibilité sur les niveaux de service et faciliter l'adoption du reporting de fiabilité.
+*   Construction de Graphia, un agent SRE spécialisé pour le diagnostic Grafana — comportement RBAC-aware, workflows de diagnostic MCP et garde-fous pour opérations enterprise.
+*   Travail quotidien sur Helm, Argo CD, cycle de vie des images container, Jenkins, GitLab, Splunk, AWS CloudWatch et analyse de coûts CUR2.
 
 #### Stack actuelle et domaines de responsabilité
 

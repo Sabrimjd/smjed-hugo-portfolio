@@ -1,8 +1,105 @@
+# ─── Landing page ────────────────────────────────────────────────
+
+[heroTitle]
+other = "Senior freelance SRE for observability-heavy platforms"
+
+[heroTagline]
+other = "I help engineering teams debug faster, reduce operational noise, and harden the platforms behind critical services — across Grafana/Loki/Thanos, Kubernetes, Proxmox/Ceph, and AI-assisted SRE workflows."
+
+[heroAvailability]
+other = "Available for freelance missions — Paris area / remote — 4 days/week"
+
+[heroCTAprimary]
+other = "Discuss a mission"
+
+[heroCTAsecondary]
+other = "View CV"
+
+# ─── Stats strip ────────────────────────────────────────────────
+
+[statYears]
+other = "Years infra/SRE"
+
+[statLogs]
+other = "Observability platform"
+
+[statDCs]
+other = "Multi-datacenter delivery"
+
+[statVirtualization]
+other = "Virtualization"
+
+[statStorage]
+other = "Distributed storage"
+
+# ─── Services ───────────────────────────────────────────────────
+
+[servicesTitle]
+other = "How I can help"
+
+[servicesIntro]
+other = "Senior SRE work, grounded in real production operations. Not a generic DevOps body — a focused operator for teams that need reliability, not tickets."
+
+[svcObsTitle]
+other = "Observability at scale"
+
+[svcObsDesc]
+other = "Grafana, Loki, Thanos, Vector, Splunk. Stack audits, migrations, query performance work, SLO dashboards, and platform hygiene."
+
+[svcPlatformTitle]
+other = "Platform & Kubernetes engineering"
+
+[svcPlatformDesc]
+other = "Kubernetes operations, Helm, Argo CD, CI/CD (Jenkins, GitLab), Terraform and Ansible automation for safer, repeatable delivery."
+
+[svcOnpremTitle]
+other = "Proxmox / Ceph / on-prem HA"
+
+[svcOnpremDesc]
+other = "Virtualization and distributed storage on bare metal. Multi-datacenter clusters, migrations from legacy virtualization, HA and network design."
+
+[svcAITitle]
+other = "AI-assisted SRE tooling"
+
+[svcAIDesc]
+other = "Graphia — a domain-specific SRE agent for Grafana diagnosis. MCP-based workflows with RBAC-aware safeguards, built for real operations, not demos."
+
+# ─── Proof ──────────────────────────────────────────────────────
+
+[proofTitle]
+other = "Selected work"
+
+[proofIntro]
+other = "A few receipts from 10 years operating infrastructure that can't quietly fail."
+
+[proof1Title]
+other = "High-volume observability platform"
+
+[proof1Desc]
+other = "Operated an Elastic Stack handling 200 TB of logs across 10 nodes, with Kafka for SIEM, logging, EDR, APM, and uptime monitoring."
+
+[proof2Title]
+other = "Proxmox / Ceph HA platform"
+
+[proof2Desc]
+other = "Integrated a highly available Proxmox cluster across 4 racks and 2 datacenters with Ceph storage, PXE automation, and 25 Gb networking per host."
+
+[proof3Title]
+other = "Multi-provider platform automation"
+
+[proof3Desc]
+other = "Led automated VM and application delivery across 10 datacenters and 4 providers (OpenStack, Proxmox, vSphere, NetBox) from shared Terraform templates."
+
+[proofFullCV]
+other = "See full CV"
+
+# ─── Open source ────────────────────────────────────────────────
+
 [homeOpenSourceTitle]
 other = "Open Source"
 
 [homeOpenSourceIntro]
-other = "A few tools I build around infrastructure, observability, and developer workflows."
+other = "Tools I build around real operational pain points — kept practical, open, and useful beyond my own environment."
 
 [homeOpenSourceGitHub]
 other = "GitHub"
@@ -16,5 +113,19 @@ other = "Modern SSH multiplexing with multi-source inventory and tmux or iTerm2 
 [homeProject_openclaw]
 other = "Terminal audit UI for OpenClaw sessions with live events and real-time streaming."
 
-[homeProject_codexbar]
-other = "Compact Waybar module for Codex usage windows, pacing, and alerts at a glance."
+[homeProject_centreon]
+other = "Terraform provider for Centreon API V2 — monitoring configuration managed as infrastructure as code."
+
+[ossSeeAll]
+other = "See all open source work"
+
+# ─── Final CTA ──────────────────────────────────────────────────
+
+[ctaFinalTitle]
+other = "Let's talk"
+
+[ctaFinalDesc]
+other = "If your team runs critical infrastructure and needs SRE work that doesn't add theatre, get in touch."
+
+[ctaFinalButton]
+other = "Email me"

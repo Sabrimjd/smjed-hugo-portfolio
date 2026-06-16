@@ -3,12 +3,12 @@ title: "Technical Expertise"
 layout: "skills"
 ---
 
-As a Site Reliability Engineer with a DevOps background, my skill set is increasingly centered on platform reliability, observability, and Kubernetes operations. Over the last six months, I reinforced that focus through hands-on work and learning across modern SRE tooling and workflows.
+As a senior freelance SRE, my work spans high-volume observability, Kubernetes platform operations, on-prem Proxmox/Ceph infrastructure, and AI-assisted SRE tooling. The stack below reflects what I run in production today, alongside the infrastructure foundations that let me operate confidently across hybrid environments.
 
-- **Observability & Reliability**: Grafana, Loki, Thanos, Vector, Splunk, CloudWatch, and SLO-oriented diagnostics
-- **Kubernetes & Platform Operations**: Kubernetes administration, Helm charts, Argo CD, and container image workflows
-- **CI/CD & Automation**: Jenkins, GitLab, Terraform, and practical automation that improves delivery safety and repeatability
-- **Infrastructure Foundations**: Strong background in systems, networking, virtualization, and multi-datacenter operations
-- **AI-Assisted Tooling**: Building pragmatic, enterprise-ready AI workflows with guardrails for diagnosis and platform operations
+- **Observability & Reliability**: Grafana, Loki, Thanos, Vector, Splunk, CloudWatch — SLO-oriented diagnostics and platform hygiene at scale
+- **Kubernetes & Platform Operations**: Kubernetes administration, Helm charts, Argo CD, container image lifecycle
+- **CI/CD & Automation**: Jenkins, GitLab CI, GitHub Actions, Terraform, Ansible — delivery workflows that improve safety and repeatability
+- **On-prem & Hybrid Infrastructure**: Proxmox, Ceph, multi-datacenter HA, virtualization, networking, firewalls
+- **AI-Assisted Tooling**: Graphia — pragmatic, enterprise-ready AI workflows with guardrails for diagnosis and platform operations
 
-Below you'll find a structured view of the technologies I use most today, along with the infrastructure foundations that support my SRE work:
+Below is a structured view of the technologies I use most, along with the infrastructure foundations that support my SRE work:

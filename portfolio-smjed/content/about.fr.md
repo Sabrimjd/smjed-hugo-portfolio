@@ -1,87 +1,37 @@
 ---
-title: "À propos de moi"
-date: 2025-02-04
+title: "À propos"
+date: "2025-01-01"
 draft: false
-aliases: ["a-propos", "contact"]
+aliases: ["about-us", "about", "contact"]
 author:
   name: "Sabri MJAHED"
-
 ---
 
-Je suis un Site Reliability Engineer avec une solide expérience DevOps et une passion de toujours pour l'informatique. De mes premiers pas avec le code à la construction de plateformes fiables et observables pour des environnements d'entreprise, mon parcours a toujours été guidé par la curiosité, la créativité et une volonté constante d'apprendre.
+Je suis Site Reliability Engineer avec 10 ans d'expérience sur des infrastructures qui ne peuvent pas tomber en silence — de la virtualisation et du stockage on-prem jusqu'aux plateformes d'observabilité haut volume et Kubernetes.
 
-## Débuts
+Je travaille à l'intersection de la fiabilité, de l'observabilité, de l'automatisation et des opérations assistées par IA. Mon background systèmes, réseau et infrastructure on-prem me donne une vision plus large qu'un profil DevOps uniquement cloud ; mon focus actuel est l'observabilité, les workflows SLO, et les outils IA pragmatiques pour les équipes d'exploitation.
 
-### L'Étincelle
-Dès mon plus jeune âge, j'ai été captivé par la puissance de l'interface en ligne de commande (CLI) et par les possibilités infinies qu'offrait la programmation. Pouvoir faire ce que je voulais grâce à la CLI était extrêmement enrichissant et a jeté les bases de ma carrière dans l'informatique.
+## Ce que je fais
 
-### Projet Mémorable
-À seulement 15 ans, j'ai lancé l'un des serveurs Minecraft les plus réussis, gérant 10 serveurs interconnectés hébergés sur une infrastructure dédiée chez OVH. Ce projet précoce a été un tournant déterminant qui a alimenté ma passion pour l'architecture système et la gestion de réseaux.
+- **Observabilité à grande échelle** : Grafana, Loki, Thanos, Vector, Splunk, CloudWatch — design de stack, performance des requêtes, frameworks SLO, hygiène de plateforme.
+- **Platform engineering** : opérations Kubernetes, Helm, Argo CD, CI/CD (Jenkins, GitLab), Terraform et Ansible pour des livraisons reproductibles.
+- **Infrastructure on-prem & hybride** : Proxmox, Ceph, HA multi-datacenter, migrations depuis des plateformes de virtualisation legacy.
+- **Outils SRE assistés par IA** : Graphia, un agent SRE spécialisé pour le diagnostic Grafana — RBAC-aware, basé MCP, conçu pour de vraies opérations plutôt que des démos.
 
-## Formation et Projets Marquants
+## Open source
 
-### Études Fondamentales
-- **Lycée :** J'ai acquis une solide base en réseautique de bas niveau, apprenant les concepts essentiels qui sous-tendent les infrastructures informatiques modernes.
-- **Master :** Mes études avancées m'ont familiarisé avec des outils de haut niveau comme Jenkins et les plateformes de cloud computing, façonnant ainsi de manière significative mes compétences professionnelles.
+Je construis des outils autour de vrais problèmes opérationnels, et je les garde ouverts. Quelques projets :
 
-### Réalisation Académique
-Pour mon projet de fin d'études, j'ai développé un système d'alerte et de blocage automatique des attaques DDoS. Ce projet a combiné :
-- **BGP (Border Gateway Protocol)**
-- **ElasticSearch**
-- **Machine Learning (ML)**
-- **Analyse de signature JA3**
+- **[SSHplex](https://github.com/Sabrimjd/SSHPlex)** — Multiplexeur SSH moderne avec inventaire multi-sources (NetBox, Ansible, Consul) et backends tmux/iTerm2. Conçu pour remplacer de l'outillage legacy coûteux.
+- **[terraform-provider-centreon](https://github.com/Sabrimjd/terraform-provider-centreon)** — Provider Terraform en Go pour l'API Centreon V2. Permet de gérer la configuration de supervision comme de l'infrastructure as code.
+- **[OpenClaw Audit TUI](https://github.com/Sabrimjd/openclaw-audit-tui)** — Interface terminal pour auditer des sessions d'agents, l'usage des outils et les événements live, avec streaming vers Discord/Telegram/Slack.
 
-Cette solution innovante contre les attaques DDoS demeure l'une de mes réalisations dont je suis le plus fier, démontrant ma capacité à intégrer des mesures de sécurité de pointe avec des solutions réseau pratiques.
+Plus de détails sur la page [Open Source](/fr/open-source/).
 
-## Expertise Professionnelle
+## Parcours
 
-Je travaille à l'intersection de la fiabilité, de l'observabilité, de l'automatisation et de l'infrastructure. Mon parcours en systèmes, réseau et DevOps me donne une vision opérationnelle large, tandis que ma spécialisation actuelle porte sur les plateformes Kubernetes, les pipelines de logs et de métriques, ainsi que les outils qui permettent de diagnostiquer plus vite et d'exploiter les systèmes avec davantage de confiance.
+J'opère de l'infrastructure depuis mes 15 ans, en commençant par une plateforme Minecraft multi-nœuds sur serveurs dédiés OVH. Depuis : un projet de fin d'études autour de BGP + ElasticSearch + ML + signatures JA3 pour l'auto-mitigation DDoS, puis 10 ans entre administration système, virtualisation, stockage on-prem et SRE sur des plateformes de production traitant jusqu'à 200 TB de données d'observabilité.
 
-### Contributions Open Source
-🌟 Je contribue activement à la communauté open source à travers des projets comme mon **Provider Terraform pour l'API Centreon V2** ([GitHub](https://github.com/Sabrimjd/terraform-provider-centreon/)) et **SSHplex** ([GitHub](https://github.com/Sabrimjd/SSHPlex), [Article](/posts/building_sshplex/)). Le provider Centreon apporte les capacités d'infrastructure as code à la plateforme de monitoring Centreon, tandis que SSHplex est une interface terminal moderne pour le multiplexage de connexions SSH, capable de combiner NetBox, Ansible, Consul et des listes statiques comme sources de vérité, avec trois modes de multiplexage : tmux standalone, tmux avec iTerm2 et iTerm2 natif sur macOS.
+## Contact
 
-- **Fiabilité, Plateforme & Automatisation :**
-  - Expérience concrète des opérations Kubernetes, des charts Helm, d'Argo CD et des workflows autour des images de conteneurs.
-  - Maîtrise des pipelines CI/CD avec Jenkins et GitLab, complétés par Terraform et Ansible lorsque l'automatisation de la plateforme le nécessite.
-  - Une approche centrée sur la transformation de la connaissance opérationnelle en outils internes utiles pour le diagnostic, la sécurité et la fiabilité au quotidien.
-
-- **Observabilité & Opérations :**
-  - Travail quotidien avec Grafana, Loki, Thanos, Vector, Splunk et AWS CloudWatch pour améliorer la visibilité, la résolution d'incidents et la maturité opérationnelle.
-  - Intérêt fort pour les approches pilotées par les SLO, l'analyse de performance des requêtes et la mise en place de garde-fous autour des usages de l'IA dans les workflows de plateforme.
-
-- **Fondations Infrastructure :**
-  - Solide base construite au travers de projets on-premise et multi-datacenter autour de Proxmox, du réseau, du routage, du firewalling et des migrations de production.
-  - Ce socle système reste un atout important dans mon travail de SRE, notamment quand les incidents traversent les couches applicatives, plateforme et infrastructure.
-
-## Mon Rôle Actuel chez Kindred France
-
-Chez Kindred France, j'ai évolué d'un rôle d'ingénieur système vers un poste de SRE. Mon travail actuel est centré sur l'observabilité, le diagnostic et la fiabilité de la plateforme, avec un fort accent sur les systèmes Kubernetes.
-
-- Gestion de Loki et Thanos dans Kubernetes, avec Grafana et Vector comme composants centraux d'observabilité.
-- Création d'un outil HouseKeeping pour diagnostiquer les ressources obsolètes ou cassées dans Grafana et améliorer l'hygiène de la plateforme.
-- Création d'un Search Query Exporter pour analyser les lenteurs de recherche et définir des SLO sur Thanos, Loki et Splunk.
-- Construction d'un Grafana AI Agent avec des garde-fous adaptés aux exigences d'entreprise, notamment un comportement sensible au RBAC et des flux de diagnostic basés sur MCP.
-
-## Apprentissages Récents
-
-Au cours des six derniers mois, j'ai renforcé mon expertise pratique sur plusieurs sujets qui accompagnent mon évolution vers un profil davantage orienté SRE :
-
-- Les opérations Kubernetes, les charts Helm, Argo CD et le cycle de vie des images de conteneurs.
-- Les pipelines de livraison avec Jenkins et GitLab.
-- Splunk, AWS CloudWatch et CUR2 pour l'observabilité et une meilleure lecture des coûts.
-- Les outils assistés par l'IA, utilisés de manière pragmatique et adaptés aux exigences d'entreprise pour l'opérabilité et le diagnostic.
-
-## Engagement pour l'Open Source & Apprentissage Continu
-
-Je suis un fervent défenseur des communautés open source et Linux. Je contribue non seulement par le code, mais aussi en améliorant la documentation et en partageant mes connaissances. Rester à jour est pour moi une habitude quotidienne - que ce soit via des tutoriels en ligne, des flux RSS ou des communautés techniques, j'explore en permanence de nouvelles approches autour du SRE, de l'observabilité, de l'infrastructure et de l'IA appliquée aux opérations.
-
-## Centres d'Intérêt Personnels
-
-En dehors du monde informatique, je cultive diverses passions qui enrichissent également ma vie professionnelle :
-- **Voitures & Mécanique :** Ma passion pour les automobiles et la mécanique aiguise mes compétences en résolution de problèmes et mon sens du détail.
-- **Montres & Photographie :** Ces hobbies nourrissent mon appréciation de la précision et de l'esthétique.
-- **Sport :** La pratique régulière du sport, notamment à la salle de gym, me permet de rester énergique, concentré et prêt à relever de nouveaux défis.
-
----
-
-Si vous souhaitez en savoir plus sur mon travail ou discuter d'un projet, n'hésitez pas à [me contacter](mailto:contact@smjed.net).
+Email : [contact@smjed.net](mailto:contact@smjed.net) · Paris / remote · Disponible pour missions freelance.
