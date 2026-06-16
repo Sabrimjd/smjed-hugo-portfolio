@@ -22,7 +22,7 @@
 {{ end }}
 
 <!-- CSS -->
-{{ $opts := dict "transpiler" "libsass" "targetPath" "main.css" "outputStyle" "compressed" "enableSourceMap" true }}
+{{ $opts := dict "transpiler" "dartsass" "targetPath" "main.css" "outputStyle" "compressed" "enableSourceMap" true }}
 {{ with resources.Get "scss/main.scss" | toCSS $opts | minify | fingerprint }}
   <link rel="stylesheet" href="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
 {{ end }}
@@ -39,10 +39,7 @@
 
 {{ template "_internal/schema.html" . }}
 {{ template "_internal/twitter_cards.html" . }}
-
-{{ if isset .Site.Taxonomies "series" }}
-    {{ template "_internal/opengraph.html" . }}
-{{ end }}
+{{ template "_internal/opengraph.html" . }}
 
 {{ range .Params.categories }}
     <meta property="article:section" content="{{ . }}" />
