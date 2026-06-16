@@ -140,7 +140,7 @@ The most effective approach was treating the LLM as a highly skilled pair progra
 - **Domain expertise** guided prompt engineering and validation
 - **Code review** ensured real-world applicability
 
-This collaboration model increased development velocity by approximately 40% while maintaining code quality and architectural integrity.
+This collaboration model increased development velocity by approximately <span class="key">40%</span> while maintaining code quality and architectural integrity.
 
 ### 💡 Code Generation & Boilerplate
 - **Configuration parsing** - Copilot excelled at generating YAML validation schemas

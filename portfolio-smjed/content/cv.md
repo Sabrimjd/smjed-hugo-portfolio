@@ -5,7 +5,7 @@ type: "resume"
 
 ## Summary
 
-> Senior freelance SRE with 10 years of experience operating infrastructure that can't quietly fail. I work across high-volume observability, Kubernetes platform engineering, on-prem Proxmox/Ceph clusters, and AI-assisted SRE tooling.
+> Senior freelance <span class="key">SRE</span> with <span class="key">10 years</span> of experience operating infrastructure that can't quietly fail. I work across high-volume observability, <span class="key">Kubernetes</span> platform engineering, on-prem <span class="key">Proxmox/Ceph</span> clusters, and AI-assisted SRE tooling.
 
 ## Open Source Contributions
 
@@ -55,7 +55,7 @@ type: "resume"
 *   Led the automated deployment of VMs and applications through CI/CD, enabling multiple deployments per day.
 *   Used Terraform to deploy across 10 datacenters and 4 providers (OpenStack, Proxmox, vSphere, NetBox) from shared templates.
 *   Used Ansible for VM initialization and application deployment, with Consul feeding service pools for HAProxy and Prometheus.
-*   Operated multi-cluster observability at multi-TB/day ingestion across logs, metrics, and traces, with Kafka pipelines feeding SIEM, logging, EDR, APM, and uptime monitoring.
+*   Operated multi-cluster observability at <span class="key">multi-TB/day</span> ingestion across logs, metrics, and traces, with <span class="key">Kafka</span> pipelines feeding SIEM, logging, EDR, APM, and uptime monitoring.
 *   Integrated a highly available Proxmox cluster across 4 racks and 2 datacenters with Ceph, including PXE-based automation and 25 Gb networking per host.
 *   Accountable for the French security scope, driving remediation work for vulnerabilities and production hardening.
 

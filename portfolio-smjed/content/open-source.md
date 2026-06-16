@@ -139,7 +139,7 @@ draft: false
   }
 </style>
 
-I treat open source as an extension of my SRE and platform engineering work: build tools around real operational pain points, keep them practical, and make them useful beyond my own environment.
+I treat open source as an extension of my <span class="key">SRE</span> and platform engineering work: build tools around real operational pain points, keep them practical, and make them useful beyond my own environment.
 
 <div class="oss-grid">
   <article class="oss-card">
@@ -285,6 +285,6 @@ I treat open source as an extension of my SRE and platform engineering work: bui
 - Start from a real operational or workflow problem
 - Prefer tools that stay fast, inspectable, and easy to operate
 - Keep the UX practical for engineers who live in the terminal
-- Use open source projects to sharpen reliability, observability, and developer tooling skills
+- Use open source projects to sharpen reliability, <span class="key">observability</span>, and developer tooling skills
 
 You can browse more of my public work on [my GitHub repositories](https://github.com/Sabrimjd?tab=repositories).

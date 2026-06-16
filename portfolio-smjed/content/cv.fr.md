@@ -5,7 +5,7 @@ type: "resume"
 
 ## Résumé
 
-> SRE freelance senior avec 10 ans d'expérience sur des infrastructures qui ne peuvent pas tomber en silence. J'interviens sur l'observabilité haut volume, l'ingénierie de plateforme Kubernetes, les clusters Proxmox/Ceph on-prem et les outils SRE assistés par IA.
+> <span class="key">SRE</span> freelance senior avec <span class="key">10 ans</span> d'expérience sur des infrastructures qui ne peuvent pas tomber en silence. J'interviens sur l'observabilité haut volume, l'ingénierie de plateforme <span class="key">Kubernetes</span>, les clusters <span class="key">Proxmox/Ceph</span> on-prem et les outils SRE assistés par IA.
 
 ## Contributions Open Source
 
@@ -55,7 +55,7 @@ type: "resume"
 *   Pilotage du déploiement automatisé des VM et des applications via CI/CD, permettant plusieurs mises en production par jour.
 *   Utilisation de Terraform pour déployer sur 10 datacenters et 4 fournisseurs (OpenStack, Proxmox, vSphere, NetBox) à partir de templates partagés.
 *   Utilisation d'Ansible pour l'initialisation des VM et le déploiement applicatif, avec Consul pour alimenter les pools de services de HAProxy et Prometheus.
-*   Mise en place et exploitation d'une plateforme d'observabilité multi-cluster avec ingestion de plusieurs TB/jour sur logs, métriques et traces, pipelines Kafka alimentant SIEM, logging, EDR, APM et suivi d'uptime.
+*   Mise en place et exploitation d'une plateforme d'observabilité multi-cluster avec ingestion de <span class="key">plusieurs TB/jour</span> sur logs, métriques et traces, pipelines <span class="key">Kafka</span> alimentant SIEM, logging, EDR, APM et suivi d'uptime.
 *   Intégration d'un cluster Proxmox hautement disponible sur 4 racks et 2 datacenters avec Ceph, incluant l'automatisation PXE et un réseau 25 Gb par hôte.
 *   Responsable du périmètre sécurité France, avec pilotage des remédiations de vulnérabilités et du durcissement de la production.
 

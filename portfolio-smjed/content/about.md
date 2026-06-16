@@ -2,14 +2,14 @@
 title: "About Me"
 date: "2025-01-01"
 draft: false
-aliases: ["about-us", "about", "contact"]
+aliases: ["about-us", "contact"]
 author:
   name: "Sabri MJAHED"
 ---
 
-I'm a Site Reliability Engineer with 10 years of experience operating infrastructure that can't quietly fail, from on-prem virtualization and storage to high-volume observability platforms and Kubernetes.
+I'm a Site Reliability Engineer with <span class="key">10 years</span> of experience operating infrastructure that can't quietly fail, from <span class="key">on-prem</span> virtualization and storage to high-volume observability platforms and <span class="key">Kubernetes</span>.
 
-I work at the intersection of reliability engineering, observability, automation, and AI-assisted operations. My background in systems, networking, and on-prem infrastructure gives me a broader operational view than cloud-only DevOps profiles; my current focus is on observability pipelines, SLO-driven engineering, and practical AI tooling for operations teams.
+I work at the intersection of reliability engineering, <span class="key">observability</span>, automation, and AI-assisted operations. My background in systems, networking, and on-prem infrastructure gives me a broader operational view than cloud-only DevOps profiles; my current focus is on observability pipelines, SLO-driven engineering, and practical AI tooling for operations teams.
 
 ## What I do
 
