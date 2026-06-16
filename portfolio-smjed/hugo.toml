@@ -250,7 +250,7 @@ unsafe= true
     title = "Skills"
     [[params.skills.categories]]
       name = "Observability"
-      items = ["Grafana", "Prometheus", "Loki", "Thanos", "Vector", "Splunk", "CloudWatch", "ELK"]
+      items = ["Grafana", "Prometheus", "Loki", "Thanos", "Vector", "CloudWatch", "ELK"]
     [[params.skills.categories]]
       name = "Kubernetes & Platform"
       items = ["Kubernetes", "Helm", "Argo CD", "Docker", "Container Images"]

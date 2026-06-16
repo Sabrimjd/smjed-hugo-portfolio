@@ -35,16 +35,16 @@ type: "resume"
 *   Progressed from System Engineer to Site Reliability Engineer, shifting focus from infrastructure automation toward platform reliability, observability, and diagnostics.
 *   Operate observability workflows around Kubernetes with Thanos, Loki, Grafana, and Vector as core technologies.
 *   Built a HouseKeeping tool to diagnose stale and broken Grafana resources, reducing dashboard/config drift and improving platform hygiene.
-*   Built a Search Query Exporter to diagnose query slowness and establish SLOs across Thanos, Loki, and Splunk.
+*   Built a Search Query Exporter to diagnose query slowness and establish SLOs across Thanos and Loki.
 *   Designed an SLO Dashboard Framework to standardize service-level visibility and make reliability reporting easier to adopt across teams.
 *   Building Graphia, a domain-specific SRE agent for Grafana diagnosis — RBAC-aware behavior, MCP-based diagnosis flows, and safeguards for enterprise operations.
-*   Daily hands-on work with Helm charts, Argo CD, container image lifecycle, Jenkins, GitLab, Splunk, AWS CloudWatch, and CUR2 cost analysis.
+*   Daily hands-on work with Helm charts, Argo CD, container image lifecycle, Jenkins, GitLab, AWS CloudWatch, and CUR2 cost analysis.
 
 #### Current stack and ownership
 
 | Area | Components/Tools |
 |------|------------------|
-| Observability | Grafana, Loki, Thanos, Vector, Splunk, AWS CloudWatch |
+| Observability | Grafana, Loki, Thanos, Vector, AWS CloudWatch |
 | Platform Engineering | Kubernetes, Helm, Argo CD, Container Images |
 | CI/CD & Automation | Jenkins, GitLab CI, Terraform, Ansible |
 | Data & Storage | Kafka, Redis, PostgreSQL, Microsoft SQL, Couchbase |
@@ -55,7 +55,7 @@ type: "resume"
 *   Led the automated deployment of VMs and applications through CI/CD, enabling multiple deployments per day.
 *   Used Terraform to deploy across 10 datacenters and 4 providers (OpenStack, Proxmox, vSphere, NetBox) from shared templates.
 *   Used Ansible for VM initialization and application deployment, with Consul feeding service pools for HAProxy and Prometheus.
-*   Implemented and operated a large Elastic Stack platform handling 200 TB of logs across 10 nodes with Kafka for SIEM, logging, EDR, APM, and uptime monitoring.
+*   Operated multi-cluster observability at multi-TB/day ingestion across logs, metrics, and traces, with Kafka pipelines feeding SIEM, logging, EDR, APM, and uptime monitoring.
 *   Integrated a highly available Proxmox cluster across 4 racks and 2 datacenters with Ceph, including PXE-based automation and 25 Gb networking per host.
 *   Accountable for the French security scope, driving remediation work for vulnerabilities and production hardening.
 

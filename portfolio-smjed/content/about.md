@@ -13,7 +13,7 @@ I work at the intersection of reliability engineering, observability, automation
 
 ## What I do
 
-- **Observability at scale**: Grafana, Loki, Thanos, Vector, Splunk, CloudWatch — stack design, query performance, SLO frameworks, platform hygiene.
+- **Observability at scale**: Grafana, Loki, Thanos, Vector, CloudWatch — stack design, query performance, SLO frameworks, platform hygiene.
 - **Platform engineering**: Kubernetes operations, Helm, Argo CD, CI/CD (Jenkins, GitLab), Terraform and Ansible for repeatable delivery.
 - **On-prem & hybrid infrastructure**: Proxmox, Ceph, multi-datacenter HA, migrations from legacy virtualization.
 - **AI-assisted SRE tooling**: Graphia, a domain-specific SRE agent for Grafana diagnosis — RBAC-aware, MCP-based, built for real operations rather than demos.
@@ -30,7 +30,7 @@ More on the [Open Source](/open-source/) page.
 
 ## Background
 
-I've been operating infrastructure since I was 15, starting with a multi-node Minecraft platform on OVH dedicated servers. Since then: a Master's degree project on BGP + ElasticSearch + ML + JA3 signature analysis for DDoS auto-mitigation, then 10 years across system administration, virtualization, on-prem storage, and SRE work on production platforms handling 200 TB of observability data.
+I've been operating infrastructure since I was 15, starting with a multi-node Minecraft platform on OVH dedicated servers. Since then: a Master's degree project on BGP + ElasticSearch + ML + JA3 signature analysis for DDoS auto-mitigation, then 10 years across system administration, virtualization, on-prem storage, and SRE work on production platforms ingesting multiple TB of observability data per day.
 
 ## Contact
 

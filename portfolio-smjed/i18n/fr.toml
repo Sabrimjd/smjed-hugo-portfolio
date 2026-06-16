@@ -21,7 +21,7 @@ other = "Voir le CV"
 other = "Ans infra/SRE"
 
 [statLogs]
-other = "Plateforme d'observabilité"
+other = "Ingestion observabilité"
 
 [statDCs]
 other = "Livraison multi-datacenter"
@@ -44,7 +44,7 @@ other = "Du travail SRE senior, ancré dans des opérations réelles. Pas un Dev
 other = "Observabilité à grande échelle"
 
 [svcObsDesc]
-other = "Grafana, Loki, Thanos, Vector, Splunk. Audits de stack, migrations, performance des requêtes, dashboards SLO et hygiène de plateforme."
+other = "Grafana, Loki, Thanos, Vector, CloudWatch. Audits de stack, migrations, performance des requêtes, dashboards SLO et hygiène de plateforme."
 
 [svcPlatformTitle]
 other = "Plateforme & engineering Kubernetes"
@@ -75,8 +75,11 @@ other = "Quelques preuves sur 10 ans d'infrastructure qui ne peut pas tomber en 
 [proof1Title]
 other = "Plateforme d'observabilité haut volume"
 
+[proof1Metric]
+other = "Ingestion TB/jour · multi-cluster"
+
 [proof1Desc]
-other = "Opération d'un Elastic Stack traitant 200 TB de logs sur 10 nœuds, avec Kafka pour SIEM, logging, EDR, APM et supervision."
+other = "Opération d'une plateforme d'observabilité multi-cluster avec ingestion de plusieurs TB/jour sur logs, métriques et traces, pipelines Kafka alimentant SIEM, logging, EDR, APM et supervision."
 
 [proof2Title]
 other = "Plateforme Proxmox / Ceph HA"
