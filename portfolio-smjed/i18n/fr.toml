@@ -1,16 +1,16 @@
 # ─── Landing page ────────────────────────────────────────────────
 
 [heroTitle]
-other = "SRE freelance, observabilité & plateformes critiques"
+other = "SRE, observabilité & plateformes critiques"
 
 [heroTagline]
-other = "J'aide les équipes engineering à debugger plus vite, réduire le bruit opérationnel et fiabiliser les plateformes derrière des services critiques : Grafana/Loki/Thanos, Kubernetes, Proxmox/Ceph et workflows SRE assistés par IA."
+other = "J'aide les équipes engineering à debugger plus vite, réduire le bruit opérationnel et fiabiliser les plateformes derrière des services critiques."
 
 [heroAvailability]
-other = "Disponible pour missions freelance - Paris / remote - 4 jours/semaine"
+other = "Disponible pour missions freelance - Paris / remote"
 
 [heroCTAprimary]
-other = "Discuter d'une mission"
+other = "Discutons"
 
 [heroCTAsecondary]
 other = "Voir le CV"
@@ -38,13 +38,13 @@ other = "Stockage distribué"
 other = "Comment je peux aider"
 
 [servicesIntro]
-other = "Du travail SRE senior, ancré dans des opérations réelles. Pas un DevOps générique, un opérateur ciblé pour les équipes qui veulent de la fiabilité, pas des tickets."
+other = "Du SRE ancré dans des opérations réelles. Un opérateur ciblé pour les équipes qui ont besoin de fiabilité automatisée, pas des tickets."
 
 [svcObsTitle]
 other = "Observabilité à grande échelle"
 
 [svcObsDesc]
-other = "Grafana, Loki, Thanos, Vector, CloudWatch. Audits de stack, migrations, performance des requêtes, dashboards SLO et hygiène de plateforme."
+other = "Grafana, Loki, Thanos, Vector, Alloy. Audits de stack, migrations, performance des requêtes, dashboards SLO et hygiène de plateforme."
 
 [svcPlatformTitle]
 other = "Plateforme & engineering Kubernetes"
@@ -57,12 +57,6 @@ other = "Proxmox / Ceph / on-prem HA"
 
 [svcOnpremDesc]
 other = "Virtualisation et stockage distribué sur bare metal. Clusters multi-datacenter, migrations depuis de la virtualisation legacy, conception HA et réseau."
-
-[svcAITitle]
-other = "Outils SRE assistés par IA"
-
-[svcAIDesc]
-other = "Graphia, un agent SRE spécialisé pour le diagnostic Grafana. Workflows MCP avec garanties RBAC, conçu pour de vraies opérations, pas des démos."
 
 # ─── Sovereign AI ───────────────────────────────────────────────
 
@@ -105,10 +99,10 @@ other = "Opération d'une plateforme d'observabilité multi-cluster avec ingesti
 other = "Plateforme Proxmox / Ceph HA"
 
 [proof2Metric]
-other = "4 baies - 2 datacenters - 25 Gb/hôte"
+other = "10 baies - 4 datacenters - 200 Gb/hôte"
 
 [proof2Desc]
-other = "Intégration d'un cluster Proxmox haute disponibilité sur 4 baies et 2 datacenters avec stockage Ceph, automatisation PXE et réseau 25 Gb par hôte."
+other = "Intégration d'un cluster Proxmox haute disponibilité automatisé avec stockage Ceph, automatisation PXE et réseau 200 Gb par hôte."
 
 [proof3Title]
 other = "Automatisation multi-provider"
@@ -117,7 +111,7 @@ other = "Automatisation multi-provider"
 other = "10 datacenters - 4 providers"
 
 [proof3Desc]
-other = "Livraison automatisée de VMs et applications sur 10 datacenters et 4 providers (OpenStack, Proxmox, vSphere, NetBox) via templates Terraform partagés."
+other = "Livraison automatisée de VMs et applications sur 10 datacenters et 4 providers (OpenStack, Proxmox, vSphere, K8S) via templates Terraform partagés."
 
 [proofFullCV]
 other = "Voir le CV complet"
