@@ -5,7 +5,7 @@ type: "resume"
 
 ## Résumé
 
-> Je suis un Site Reliability Engineer avec une solide expérience DevOps, centré sur les plateformes Kubernetes, l'observabilité, l'automatisation et la construction de systèmes fiables qui permettent aux équipes d'aller vite sans perdre en maîtrise opérationnelle.
+> SRE freelance senior avec 10 ans d'expérience sur des infrastructures qui ne peuvent pas tomber en silence. J'interviens sur l'observabilité haut volume (Grafana/Loki/Thanos), l'ingénierie de plateforme Kubernetes, les clusters Proxmox/Ceph on-prem et les outils SRE assistés par IA. Disponible pour missions freelance — Paris / remote, 4 jours/semaine.
 
 ## Contributions Open Source
 
@@ -32,19 +32,19 @@ type: "resume"
     <a href="/tags/terraform" class="skill-badge">Terraform</a>
 </div>
 
-*   Évolution interne d'un poste d'ingénieur système vers un rôle de SRE, avec un accent de plus en plus fort sur la fiabilité de plateforme, l'observabilité et le diagnostic.
-*   Gestion et amélioration des workflows d'observabilité autour de Kubernetes, avec Thanos, Loki, Grafana et Vector comme technologies centrales.
-*   Création d'un outil HouseKeeping pour diagnostiquer les ressources Grafana obsolètes ou cassées et améliorer l'hygiène quotidienne de la plateforme.
-*   Création d'un Search Query Exporter pour diagnostiquer les lenteurs de requêtes et établir des SLO sur Thanos, Loki et Splunk.
-*   Conception d'un framework de dashboards SLO pour Kindred afin de standardiser la visibilité sur les niveaux de service et de faciliter l'adoption du reporting de fiabilité par les équipes.
-*   Construction d'un Grafana AI Agent avec des garde-fous adaptés aux exigences d'entreprise, notamment un comportement sensible au RBAC et des flux de diagnostic basés sur MCP.
-*   Renforcement récent de mon expertise sur les charts Helm, Argo CD, les images de conteneurs, Jenkins, GitLab, Splunk, AWS CloudWatch et CUR2.
+*   Évolution interne d'un poste d'ingénieur système vers un rôle de SRE, avec un accent fort sur la fiabilité de plateforme, l'observabilité et le diagnostic.
+*   Opération des workflows d'observabilité autour de Kubernetes, avec Thanos, Loki, Grafana et Vector comme technologies centrales.
+*   Création d'un outil HouseKeeping pour diagnostiquer les ressources Grafana obsolètes ou cassées, réduire la dérive de configuration et améliorer l'hygiène de plateforme.
+*   Création d'un Search Query Exporter pour diagnostiquer les lenteurs de requêtes et établir des SLO sur Thanos et Loki.
+*   Conception d'un framework de dashboards SLO afin de standardiser la visibilité sur les niveaux de service et faciliter l'adoption du reporting de fiabilité.
+*   Construction de Graphia, un agent SRE spécialisé pour le diagnostic Grafana — comportement RBAC-aware, workflows de diagnostic MCP et garde-fous pour opérations enterprise.
+*   Travail quotidien sur Helm, Argo CD, cycle de vie des images container, Jenkins, GitLab, AWS CloudWatch et analyse de coûts CUR2.
 
 #### Stack actuelle et domaines de responsabilité
 
 | Domaine | Composants/Outils |
 |---------|-------------------|
-| Observabilité | Grafana, Loki, Thanos, Vector, Splunk, AWS CloudWatch |
+| Observabilité | Grafana, Loki, Thanos, Vector, AWS CloudWatch |
 | Ingénierie de plateforme | Kubernetes, Helm, Argo CD, Images de conteneurs |
 | CI/CD & Automatisation | Jenkins, GitLab CI, Terraform, Ansible |
 | Données & Stockage | Kafka, Redis, PostgreSQL, Microsoft SQL, Couchbase |
@@ -55,7 +55,7 @@ type: "resume"
 *   Pilotage du déploiement automatisé des VM et des applications via CI/CD, permettant plusieurs mises en production par jour.
 *   Utilisation de Terraform pour déployer sur 10 datacenters et 4 fournisseurs (OpenStack, Proxmox, vSphere, NetBox) à partir de templates partagés.
 *   Utilisation d'Ansible pour l'initialisation des VM et le déploiement applicatif, avec Consul pour alimenter les pools de services de HAProxy et Prometheus.
-*   Mise en place et exploitation d'une plateforme Elastic Stack de grande ampleur gérant 200 TB de logs sur 10 noeuds avec Kafka pour le SIEM, le logging, l'EDR, l'APM et le suivi d'uptime.
+*   Mise en place et exploitation d'une plateforme d'observabilité multi-cluster avec ingestion de plusieurs TB/jour sur logs, métriques et traces, pipelines Kafka alimentant SIEM, logging, EDR, APM et suivi d'uptime.
 *   Intégration d'un cluster Proxmox hautement disponible sur 4 racks et 2 datacenters avec Ceph, incluant l'automatisation PXE et un réseau 25 Gb par hôte.
 *   Responsable du périmètre sécurité France, avec pilotage des remédiations de vulnérabilités et du durcissement de la production.
 

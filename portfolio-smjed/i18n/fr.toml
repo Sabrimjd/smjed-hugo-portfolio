@@ -1,8 +1,108 @@
+# ─── Landing page ────────────────────────────────────────────────
+
+[heroTitle]
+other = "SRE freelance — observabilité & platforms critiques"
+
+[heroTagline]
+other = "J'aide les équipes engineering à debugger plus vite, réduire le bruit opérationnel et fiabiliser les plateformes derrière des services critiques — Grafana/Loki/Thanos, Kubernetes, Proxmox/Ceph et workflows SRE assistés par IA."
+
+[heroAvailability]
+other = "Disponible pour missions freelance — Paris / remote — 4 jours/semaine"
+
+[heroCTAprimary]
+other = "Discuter d'une mission"
+
+[heroCTAsecondary]
+other = "Voir le CV"
+
+# ─── Stats ──────────────────────────────────────────────────────
+
+[statYears]
+other = "Ans infra/SRE"
+
+[statLogs]
+other = "Ingestion observabilité"
+
+[statDCs]
+other = "Livraison multi-datacenter"
+
+[statVirtualization]
+other = "Virtualisation"
+
+[statStorage]
+other = "Stockage distribué"
+
+# ─── Services ───────────────────────────────────────────────────
+
+[servicesTitle]
+other = "Comment je peux aider"
+
+[servicesIntro]
+other = "Du travail SRE senior, ancré dans des opérations réelles. Pas un DevOps générique — un opérateur ciblé pour les équipes qui veulent de la fiabilité, pas des tickets."
+
+[svcObsTitle]
+other = "Observabilité à grande échelle"
+
+[svcObsDesc]
+other = "Grafana, Loki, Thanos, Vector, CloudWatch. Audits de stack, migrations, performance des requêtes, dashboards SLO et hygiène de plateforme."
+
+[svcPlatformTitle]
+other = "Plateforme & engineering Kubernetes"
+
+[svcPlatformDesc]
+other = "Opérations Kubernetes, Helm, Argo CD, CI/CD (Jenkins, GitLab), automatisation Terraform et Ansible pour des livraisons sûres et reproductibles."
+
+[svcOnpremTitle]
+other = "Proxmox / Ceph / on-prem HA"
+
+[svcOnpremDesc]
+other = "Virtualisation et stockage distribué sur bare metal. Clusters multi-datacenter, migrations depuis de la virtualisation legacy, conception HA et réseau."
+
+[svcAITitle]
+other = "Outils SRE assistés par IA"
+
+[svcAIDesc]
+other = "Graphia — un agent SRE spécialisé pour le diagnostic Grafana. Workflows MCP avec garanties RBAC, conçu pour de vraies opérations, pas des démos."
+
+# ─── Proof ──────────────────────────────────────────────────────
+
+[proofTitle]
+other = "Sélection de réalisations"
+
+[proofIntro]
+other = "Quelques preuves sur 10 ans d'infrastructure qui ne peut pas tomber en silence."
+
+[proof1Title]
+other = "Plateforme d'observabilité haut volume"
+
+[proof1Metric]
+other = "Ingestion TB/jour · multi-cluster"
+
+[proof1Desc]
+other = "Opération d'une plateforme d'observabilité multi-cluster avec ingestion de plusieurs TB/jour sur logs, métriques et traces, pipelines Kafka alimentant SIEM, logging, EDR, APM et supervision."
+
+[proof2Title]
+other = "Plateforme Proxmox / Ceph HA"
+
+[proof2Desc]
+other = "Intégration d'un cluster Proxmox haute disponibilité sur 4 baies et 2 datacenters avec stockage Ceph, automatisation PXE et réseau 25 Gb par hôte."
+
+[proof3Title]
+other = "Automatisation multi-provider"
+
+[proof3Desc]
+other = "Livraison automatisée de VMs et applications sur 10 datacenters et 4 providers (OpenStack, Proxmox, vSphere, NetBox) via templates Terraform partagés."
+
+[proofFullCV]
+other = "Voir le CV complet"
+
+# ─── Open source ────────────────────────────────────────────────
+
 [homeOpenSourceTitle]
-other = "Projets open source"
+other = "Open Source"
 
 [homeOpenSourceIntro]
-other = "Quelques outils que je construis autour de l'infrastructure, de l'observabilité et des workflows de développement."
+other = "Des outils construits autour de vrais problèmes opérationnels — pratiques, ouverts et utiles au-delà de mon environnement."
 
 [homeOpenSourceGitHub]
 other = "GitHub"
@@ -11,10 +111,24 @@ other = "GitHub"
 other = "Article"
 
 [homeProject_sshplex]
-other = "Un multiplexeur SSH moderne avec inventaire multi-sources et modes tmux ou iTerm2."
+other = "Multiplexeur SSH moderne avec inventaire multi-sources et backends tmux ou iTerm2."
 
 [homeProject_openclaw]
-other = "Une interface terminal d'audit pour les sessions OpenClaw avec événements en direct et diffusion temps réel."
+other = "Interface terminal d'audit pour sessions OpenClaw avec événements en direct et streaming temps réel."
 
-[homeProject_codexbar]
-other = "Un module Waybar compact pour suivre l'usage Codex, le rythme de consommation et les alertes."
+[homeProject_centreon]
+other = "Provider Terraform pour l'API Centreon V2 — configuration de supervision gérée comme infrastructure as code."
+
+[ossSeeAll]
+other = "Voir tous les projets open source"
+
+# ─── Final CTA ──────────────────────────────────────────────────
+
+[ctaFinalTitle]
+other = "Discutons"
+
+[ctaFinalDesc]
+other = "Si votre équipe fait tourner une infrastructure critique et a besoin de SRE sans théâtre, contactez-moi."
+
+[ctaFinalButton]
+other = "M'envoyer un email"

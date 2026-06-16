@@ -68,13 +68,13 @@ unsafe= true
 
   # Metadata mostly used in document's head
   #
-  description = "Site Reliability Engineer with a DevOps background, focused on Kubernetes, observability, automation, and platform reliability"
-  keywords = ""
+  description = "Senior freelance SRE for observability-heavy platforms. Grafana/Loki/Thanos, Kubernetes, Proxmox/Ceph, Terraform/Ansible, and AI-assisted SRE workflows. Available for freelance missions — Paris / remote."
+  keywords = "SRE, freelance, observability, Grafana, Loki, Thanos, Kubernetes, Proxmox, Ceph, AI, Graphia, Paris"
   images = [""]
 
-  # Home subtitle of the index page.
+  # Home subtitle of the index page (used by theme as fallback; landing page overrides).
   #
-  homeSubtitle = "Site Reliability Engineer with a DevOps background"
+  homeSubtitle = "Senior freelance SRE — observability, platform engineering, Proxmox/Ceph, AI-assisted ops"
 
   # Set a background for the homepage
   # backgroundImage = "assets/images/background.jpg"
@@ -186,11 +186,11 @@ unsafe= true
       image = "https://raw.githubusercontent.com/Sabrimjd/openclaw-audit-tui/main/screenshots/screenshot3.png"
       badges = ["TypeScript", "Audit", "TUI", "OpenClaw", "Observability"]
     [[params.homeOpenSource.projects]]
-      key = "codexbar"
-      name = "Hypr CodexBar"
-      url = "https://github.com/Sabrimjd/hypr-codexbar"
-      image = "https://raw.githubusercontent.com/Sabrimjd/hypr-codexbar/master/assets/waybar-tooltip.png"
-      badges = ["Shell", "Waybar", "Hyprland", "CLI", "Developer UX"]
+      key = "centreon"
+      name = "terraform-provider-centreon"
+      url = "https://github.com/Sabrimjd/terraform-provider-centreon"
+      image = "https://opengraph.githubassets.com/1/Sabrimjd/terraform-provider-centreon"
+      badges = ["Go", "Terraform", "Monitoring", "IaC", "Centreon"]
 
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
   # Addon: Commento
@@ -250,7 +250,7 @@ unsafe= true
     title = "Skills"
     [[params.skills.categories]]
       name = "Observability"
-      items = ["Grafana", "Prometheus", "Loki", "Thanos", "Vector", "Splunk", "CloudWatch", "ELK"]
+      items = ["Grafana", "Prometheus", "Loki", "Thanos", "Vector", "CloudWatch", "ELK"]
     [[params.skills.categories]]
       name = "Kubernetes & Platform"
       items = ["Kubernetes", "Helm", "Argo CD", "Docker", "Container Images"]
@@ -340,13 +340,13 @@ unsafe= true
     weight    = 1
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
   [languages.en.params]
-    subtitle  = "Site Reliability & Platform Engineering"
+    subtitle  = "Senior freelance SRE — observability, platform engineering, AI-assisted ops"
 
   [languages.fr]
     weight    = 2
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
   [languages.fr.params]
-    subtitle  = "SRE & ingénierie de plateforme"
+    subtitle  = "SRE freelance — observabilité, ingénierie de plateforme, ops augmentées par IA"
 
 [menu]
   [[menu.main]]
