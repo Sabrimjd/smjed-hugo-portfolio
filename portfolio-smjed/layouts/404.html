@@ -1,0 +1,77 @@
+{{ define "main" }}
+<style>
+    .notfound {
+        max-width: 620px;
+        margin: 4rem auto;
+        text-align: center;
+        padding: 0 1.2rem;
+    }
+    .notfound .code {
+        font-size: 5rem;
+        font-weight: 700;
+        line-height: 1;
+        color: var(--accent, #5094f0);
+        letter-spacing: -0.02em;
+    }
+    .notfound .code::after {
+        content: "";
+        display: block;
+        width: 48px;
+        height: 3px;
+        background: var(--accent, #5094f0);
+        border-radius: 2px;
+        margin: 0.8rem auto 0;
+    }
+    .notfound h1 {
+        font-size: 1.3rem;
+        margin: 1.2rem 0 0.5rem;
+    }
+    .notfound p {
+        opacity: 0.8;
+        margin: 0 auto 1.6rem;
+        line-height: 1.55;
+        max-width: 460px;
+    }
+    .notfound .links {
+        display: flex;
+        gap: 0.7rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .notfound .links a {
+        display: inline-block;
+        padding: 0.55rem 1.1rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 0.92rem;
+        font-weight: 500;
+        border: 1px solid rgba(120, 120, 120, 0.35);
+    }
+    .notfound .links a.primary {
+        background: var(--accent, #5094f0);
+        color: #fff;
+        border-color: transparent;
+    }
+    @media (max-width: 480px) {
+        .notfound .code { font-size: 3.6rem; }
+    }
+</style>
+
+<main>
+    <section class="notfound">
+        <div class="code">404</div>
+        <h1>This page drifted off-cluster</h1>
+        <p>
+            The page you're looking for doesn't exist or has been moved.
+            Here are a few places worth landing on instead.
+        </p>
+        <div class="links">
+            <a class="primary" href="{{ "" | relLangURL }}">Home</a>
+            <a href="{{ "cv/" | relLangURL }}">CV</a>
+            <a href="{{ "skills/" | relLangURL }}">Skills</a>
+            <a href="{{ "open-source/" | relLangURL }}">Open Source</a>
+            <a href="mailto:contact@smjed.net">Contact</a>
+        </div>
+    </section>
+</main>
+{{ end }}

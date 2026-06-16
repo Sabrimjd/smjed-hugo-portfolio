@@ -25,3 +25,12 @@ article h2::after,
         background: #6ba4f5;
     }
 }
+
+/* Active nav item */
+nav.menu a.active {
+    color: var(--accent, #5094f0);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}

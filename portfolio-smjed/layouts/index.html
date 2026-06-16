@@ -356,7 +356,7 @@
             {{/* HERO */}}
             <section class="hero">
                 {{ if .Site.Params.Portrait.Path }}
-                   <img src="{{ .Site.Params.Portrait.Path }}" class="portrait" alt="{{ .Site.Params.Portrait.Alt }}" />
+                   <img src="{{ .Site.Params.Portrait.Path }}" class="portrait" alt="{{ .Site.Params.Portrait.Alt }}" width="130" height="130" fetchpriority="high" />
                 {{ end }}
 
                 <h1>{{ i18n "heroTitle" }}</h1>
@@ -400,7 +400,7 @@
                             <span class="tag">Loki</span>
                             <span class="tag">Thanos</span>
                             <span class="tag">Vector</span>
-                            <span class="tag">CloudWatch</span>
+                            <span class="tag">Alloy</span>
                         </div>
                     </article>
 

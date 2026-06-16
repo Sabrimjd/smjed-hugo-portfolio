@@ -93,7 +93,7 @@
         {{ if .IsTranslated }}
           {{ i18n "postAvailable" }}
           {{ range .Translations }}
-            <a href="{{ .Permalink }}"><span class="flag fi fi-{{ index $.Site.Data.langFlags (.Lang) }}"></span></a>
+            <a href="{{ .Permalink }}" aria-label="{{ .Language.LanguageName }}"><span class="flag fi fi-{{ index $.Site.Data.langFlags (.Lang) }}"></span></a>
           {{ end}}
         {{ end }}
         </p>
