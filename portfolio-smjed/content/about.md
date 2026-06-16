@@ -7,7 +7,7 @@ author:
   name: "Sabri MJAHED"
 ---
 
-I'm a Site Reliability Engineer with 10 years of experience operating infrastructure that can't quietly fail - from on-prem virtualization and storage to high-volume observability platforms and Kubernetes.
+I'm a Site Reliability Engineer with 10 years of experience operating infrastructure that can't quietly fail, from on-prem virtualization and storage to high-volume observability platforms and Kubernetes.
 
 I work at the intersection of reliability engineering, observability, automation, and AI-assisted operations. My background in systems, networking, and on-prem infrastructure gives me a broader operational view than cloud-only DevOps profiles; my current focus is on observability pipelines, SLO-driven engineering, and practical AI tooling for operations teams.
 

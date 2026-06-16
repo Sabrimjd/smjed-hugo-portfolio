@@ -5,7 +5,7 @@ type: "resume"
 
 ## Summary
 
-> Senior freelance SRE with 10 years of experience operating infrastructure that can't quietly fail. I work across high-volume observability (Grafana/Loki/Thanos), Kubernetes platform engineering, on-prem Proxmox/Ceph clusters, and AI-assisted SRE tooling. Available for freelance missions - Paris area / remote, 4 days/week.
+> Senior freelance SRE with 10 years of experience operating infrastructure that can't quietly fail. I work across high-volume observability, Kubernetes platform engineering, on-prem Proxmox/Ceph clusters, and AI-assisted SRE tooling.
 
 ## Open Source Contributions
 
@@ -32,7 +32,7 @@ type: "resume"
     <a href="/tags/terraform" class="skill-badge">Terraform</a>
 </div>
 
-*   Progressed from System Engineer to Site Reliability Engineer, shifting focus from infrastructure automation toward platform reliability, observability, and diagnostics.
+*   Progressed from System Engineer to Site Reliability Engineer, shifting focus from infrastructure automation toward platform reliability, observability, diagnostics and performance.
 *   Operate observability workflows around Kubernetes with Thanos, Loki, Grafana, and Vector as core technologies.
 *   Built a HouseKeeping tool to diagnose stale and broken Grafana resources, reducing dashboard/config drift and improving platform hygiene.
 *   Built a Search Query Exporter to diagnose query slowness and establish SLOs across Thanos and Loki.
@@ -86,37 +86,6 @@ type: "resume"
 *   Cable management between two rooms.
 *   Installed managed Wi-Fi equipment.
 *   Implemented high-availability multi-datacenter VPN services.
-
-### Education
-
-**Louis Armand | BAC**
-
-*   Learned the basics of
-    *   Networking
-    *   Firewalling
-    *   Electricity
-
-
-**Louis Armand | BTS**
-
-*   Learned basics of
-    *   Algorithm with Python
-    *   Web development with PHP
-    *   Distributed Storage
-    *   Routing with OSPF
-
-**ESGI | Master degree**
-
-*   As my degree project
-    *  Deployed an Elastic Stack with ML.
-    *  Auto-detect anomalies via JA3 signature analysis.
-    *  Import JA3er database to automatically ban at the JunOS L3 router.
-    *  Dynamically rate-limit / block traffic at L7.
-
-### Personal Website | Developed a personal website to showcase my skills and experience | Hugo, HTML, CSS, JavaScript
-
-*   Designed and developed a responsive website using Hugo, HTML, CSS, and JavaScript.
-*   Implemented a blog to share my thoughts on software development and technology.
 
 ## Contact Information
 

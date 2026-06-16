@@ -111,10 +111,9 @@
                 <h2>{{ .name }}</h2>
                 <div class="skill-items">
                     {{ range .items }}
+                    {{ $icon := index $.Site.Params.skills.icons . | default "/svg/default.svg" }}
                     <a href="/tags/{{ . | urlize }}" class="skill-item">
-                        {{ if index $.Site.Params.skills.icons . }}
-                            <img src="{{ index $.Site.Params.skills.icons . }}" alt="{{ . }}" class="skill-icon">
-                        {{ end }}
+                        <img src="{{ $icon }}" alt="{{ . }}" class="skill-icon">
                         <span>{{ . }}</span>
                     </a>
                     {{ end }}

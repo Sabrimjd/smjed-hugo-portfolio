@@ -5,7 +5,7 @@ type: "resume"
 
 ## Résumé
 
-> SRE freelance senior avec 10 ans d'expérience sur des infrastructures qui ne peuvent pas tomber en silence. J'interviens sur l'observabilité haut volume (Grafana/Loki/Thanos), l'ingénierie de plateforme Kubernetes, les clusters Proxmox/Ceph on-prem et les outils SRE assistés par IA. Disponible pour missions freelance - Paris / remote, 4 jours/semaine.
+> SRE freelance senior avec 10 ans d'expérience sur des infrastructures qui ne peuvent pas tomber en silence. J'interviens sur l'observabilité haut volume, l'ingénierie de plateforme Kubernetes, les clusters Proxmox/Ceph on-prem et les outils SRE assistés par IA.
 
 ## Contributions Open Source
 
@@ -32,7 +32,7 @@ type: "resume"
     <a href="/tags/terraform" class="skill-badge">Terraform</a>
 </div>
 
-*   Évolution interne d'un poste d'ingénieur système vers un rôle de SRE, avec un accent fort sur la fiabilité de plateforme, l'observabilité et le diagnostic.
+*   Évolution interne d'un poste d'ingénieur système vers un rôle de SRE, avec un accent fort sur la fiabilité de plateforme, l'observabilité, le diagnostic et la performance.
 *   Opération des workflows d'observabilité autour de Kubernetes, avec Thanos, Loki, Grafana et Vector comme technologies centrales.
 *   Création d'un outil HouseKeeping pour diagnostiquer les ressources Grafana obsolètes ou cassées, réduire la dérive de configuration et améliorer l'hygiène de plateforme.
 *   Création d'un Search Query Exporter pour diagnostiquer les lenteurs de requêtes et établir des SLO sur Thanos et Loki.
@@ -86,36 +86,6 @@ type: "resume"
 *   Gestion du câblage entre deux salles
 *   Installation d'équipements wifi managés
 *   Implémentation de services VPN haute disponibilité multi-datacenter
-
-### Formation
-
-**Louis Armand | BAC**
-
-*   Apprentissage des bases de
-    *   Réseau
-    *   Pare-feu
-    *   Électricité
-
-**Louis Armand | BTS**
-
-*   Apprentissage des bases de
-    *   Algorithme avec Python
-    *   Développement web avec PHP
-    *   Stockage distribué
-    *   Routage avec OSPF
-
-**ESGI | Master**
-
-*   Projet de fin d'études
-    *  Déploiement d'une Stack Elastic avec ML
-    *  Détection automatique d'anomalies avec signature JA3
-    *  Import de la base de données JA3er pour blocage automatique depuis le routeur JunOS L3
-    *  Limitation de débit / blocage dynamique du trafic au niveau L7
-
-### Site Personnel | Développement d'un site personnel pour présenter mes compétences et expérience | Hugo, HTML, CSS, JavaScript
-
-*   Conception et développement d'un site web responsive utilisant Hugo, HTML, CSS et JavaScript
-*   Implémentation d'un blog pour partager mes réflexions sur le développement logiciel et la technologie
 
 ## Informations de Contact
 
