@@ -68,13 +68,13 @@ unsafe= true
 
   # Metadata mostly used in document's head
   #
-  description = "Senior freelance SRE for observability-heavy platforms. Grafana/Loki/Thanos, Kubernetes, Proxmox/Ceph, Terraform/Ansible, and AI-assisted SRE workflows. Available for freelance missions — Paris / remote."
+  description = "SRE for observability-heavy platforms. Grafana/Loki/Thanos, Kubernetes, Proxmox/Ceph, Terraform/Ansible, and AI-assisted SRE workflows. Available for freelance missions — Paris / remote."
   keywords = "SRE, freelance, observability, Grafana, Loki, Thanos, Kubernetes, Proxmox, Ceph, AI, Graphia, Paris"
   images = [""]
 
   # Home subtitle of the index page (used by theme as fallback; landing page overrides).
   #
-  homeSubtitle = "Senior freelance SRE — observability, platform engineering, Proxmox/Ceph, AI-assisted ops"
+  homeSubtitle = "SRE — observability, platform engineering, Proxmox/Ceph, AI-assisted ops"
 
   # Set a background for the homepage
   # backgroundImage = "assets/images/background.jpg"
@@ -112,7 +112,7 @@ unsafe= true
   # Integrate Javascript files or stylesheets by adding the url to the external assets or by
   # linking local files with their path relative to the static folder, e.g. "css/styles.css"
   #
-  customCSS = ["css/custom.css"]
+  customCSS = ["/css/custom.css", "/css/flag-icons.min.css"]
   customJS  = []
 
   # Toggle this option need to rebuild SCSS, requires extended version of Hugo
@@ -310,13 +310,33 @@ unsafe= true
       "RabbitMQ" = "/svg/RabbitMQ.svg"
       "Couchbase" = "/svg/CouchBase.svg"
       "Redis" = "/svg/Redis.svg"
+      "Loki" = "/svg/Loki.svg"
+      "Thanos" = "/svg/Thanos.svg"
+      "Vector" = "/svg/Vector.svg"
+      "CloudWatch" = "/svg/CloudWatch.svg"
+      "Kubernetes" = "/svg/Kubernetes.svg"
+      "Helm" = "/svg/Helm.svg"
+      "Argo CD" = "/svg/Argo-CD.svg"
+      "Container Images" = "/svg/Container-Images.svg"
+      "NetBox" = "/svg/NetBox.svg"
+      "HaProxy" = "/svg/HaProxy.svg"
+      "Nginx" = "/svg/Nginx.svg"
+      "Traefik" = "/svg/Traefik.svg"
+      "Load Balancers" = "/svg/Load-Balancers.svg"
+      "DNS" = "/svg/DNS.svg"
+      "VPN" = "/svg/VPN.svg"
+      "Firewalls" = "/svg/Firewalls.svg"
+      "YAML" = "/svg/YAML.svg"
+      "JSON" = "/svg/JSON.svg"
+      "AI" = "/svg/AI.svg"
+      "MCP" = "/svg/MCP.svg"
 
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
   # Addon: Social icons
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
   #
   [[params.social]]
-    name = "twitter"
+    name = "X"
     url  = "https://x.com/SabriMjd"
 
   [[params.social]]
