@@ -2,14 +2,14 @@
 title: "À propos"
 date: "2025-01-01"
 draft: false
-aliases: ["about-us", "about", "contact"]
+aliases: ["about-us", "contact"]
 author:
   name: "Sabri MJAHED"
 ---
 
-Je suis Site Reliability Engineer avec 10 ans d'expérience sur des infrastructures qui ne peuvent pas tomber en silence - de la virtualisation et du stockage on-prem jusqu'aux plateformes d'observabilité haut volume et Kubernetes.
+Je suis Site Reliability Engineer avec <span class="key">10 ans</span> d'expérience sur des infrastructures qui ne peuvent pas tomber en silence - de la virtualisation et du stockage <span class="key">on-prem</span> jusqu'aux plateformes d'observabilité haut volume et <span class="key">Kubernetes</span>.
 
-Je travaille à l'intersection de la fiabilité, de l'observabilité, de l'automatisation et des opérations assistées par IA. Mon background systèmes, réseau et infrastructure on-prem me donne une vision plus large qu'un profil DevOps uniquement cloud ; mon focus actuel est l'observabilité, les workflows SLO, et les outils IA pragmatiques pour les équipes d'exploitation.
+Je travaille à l'intersection de la fiabilité, de l'<span class="key">observabilité</span>, de l'automatisation et des opérations assistées par IA. Mon background systèmes, réseau et infrastructure on-prem me donne une vision plus large qu'un profil DevOps uniquement cloud ; mon focus actuel est l'observabilité, les workflows SLO, et les outils IA pragmatiques pour les équipes d'exploitation.
 
 ## Ce que je fais
 

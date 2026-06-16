@@ -4,7 +4,7 @@ date: 2025-02-25
 tags: ["Go", "Terraform", "Github", "Github Actions", "CICD", "Open Source"]
 ---
 
-As a day-to-day Terraform user with a decent foundation in Python, I never imagined that developing a Terraform provider would significantly impact my system engineering skills. Yet, leveraging AI tools enabled me to build a provider for Centreon API V2 and step into the Go ecosystem—an essential leap for my work at Kindred.
+As a day-to-day <span class="key">Terraform</span> user with a decent foundation in Python, I never imagined that developing a Terraform provider would significantly impact my system engineering skills. Yet, leveraging AI tools enabled me to build a provider for Centreon API V2 and step into the <span class="key">Go</span> ecosystem—an essential leap for my work at Kindred.
 
 ## Overview
 

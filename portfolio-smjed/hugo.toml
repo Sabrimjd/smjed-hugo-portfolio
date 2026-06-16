@@ -33,6 +33,9 @@ disableHugoGeneratorInject = false
 [markup.goldmark.renderer]
 unsafe= true
 
+[markup.goldmark.parser]
+attribute = true
+
 
 [pagination]
   disableAliases = false

@@ -3,7 +3,7 @@ title: "Expertise technique"
 layout: "skills"
 ---
 
-En tant que SRE freelance senior, mon travail couvre l'observabilité haut volume, les opérations Kubernetes, l'infrastructure on-prem Proxmox/Ceph et les outils SRE assistés par IA. La stack ci-dessous reflète ce que j'utilise en production aujourd'hui, ainsi que les fondations infrastructure qui me permettent d'intervenir sur des environnements hybrides.
+En tant que <span class="key">SRE</span> freelance senior, mon travail couvre l'<span class="key">observabilité</span> haut volume, les opérations <span class="key">Kubernetes</span>, l'infrastructure on-prem <span class="key">Proxmox/Ceph</span> et les outils SRE assistés par IA. La stack ci-dessous reflète ce que j'utilise en production aujourd'hui, ainsi que les fondations infrastructure qui me permettent d'intervenir sur des environnements hybrides.
 
 - **Observabilité & fiabilité** : Grafana, Loki, Thanos, Vector, CloudWatch - diagnostics orientés SLO et hygiène de plateforme à grande échelle
 - **Kubernetes & platform operations** : administration Kubernetes, Helm charts, Argo CD, cycle de vie des images container

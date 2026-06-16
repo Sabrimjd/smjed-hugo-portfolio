@@ -139,7 +139,7 @@ draft: false
   }
 </style>
 
-Je vois l'open source comme une extension directe de mon travail en ingénierie SRE et plateforme : partir de vrais problèmes opérationnels, construire des outils concrets, puis les rendre utiles au-delà de mon propre contexte.
+Je vois l'open source comme une extension directe de mon travail en ingénierie <span class="key">SRE</span> et plateforme : partir de vrais problèmes opérationnels, construire des outils concrets, puis les rendre utiles au-delà de mon propre contexte.
 
 <div class="oss-grid">
   <article class="oss-card">
@@ -285,6 +285,6 @@ Je vois l'open source comme une extension directe de mon travail en ingénierie 
 - Partir d'un probleme operationnel ou d'un irritant concret
 - Privilegier des outils rapides, lisibles et faciles a exploiter
 - Garder une experience pratique pour les ingenieurs qui vivent dans le terminal
-- Utiliser ces projets pour renforcer mes competences en fiabilite, observabilite et outillage developpeur
+- Utiliser ces projets pour renforcer mes competences en fiabilite, <span class="key">observabilite</span> et outillage developpeur
 
 Vous pouvez voir davantage de projets publics sur [mes depots GitHub](https://github.com/Sabrimjd?tab=repositories).

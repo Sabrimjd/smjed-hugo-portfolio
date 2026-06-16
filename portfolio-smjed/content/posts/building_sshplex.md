@@ -15,7 +15,7 @@ At Kindred, we relied on Remote Desktop Manager (RDM) to manage connections to o
 
 ## Solution Design
 
-SSHplex needed three core capabilities: a modern terminal UI with host selection and bulk operations, flexible data source integration (NetBox and Ansible inventory), and terminal multiplexer support with session persistence for background tasks.
+SSHplex needed three core capabilities: a modern terminal UI with host selection and bulk operations, flexible data source integration (<span class="key">NetBox</span> and Ansible inventory), and terminal multiplexer support with session persistence for background tasks.
 
 ## Development Approach
 
@@ -35,7 +35,7 @@ Rather than random suggestions, I used structured prompts like: "Create a NetBox
 
 The LLM excelled at boilerplate elimination, API integration patterns, test coverage generation, and maintaining consistent code patterns. I treated it as a sophisticated pair programmer where architecture decisions remained human-driven while leveraging AI efficiency for implementation details.
 
-This collaboration increased development velocity by approximately 40% while maintaining code quality. The key was keeping human judgment central to design decisions while using AI as an advanced autocomplete tool for consistent implementation patterns.
+This collaboration increased development velocity by approximately <span class="key">40%</span> while maintaining code quality. The key was keeping human judgment central to design decisions while using AI as an advanced autocomplete tool for consistent implementation patterns.
 
 The result is a robust tool that addresses real infrastructure management challenges through methodical development and strategic AI assistance.
 
