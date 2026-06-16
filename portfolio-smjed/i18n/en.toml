@@ -4,10 +4,10 @@
 other = "Senior freelance SRE for observability-heavy platforms"
 
 [heroTagline]
-other = "I help engineering teams debug faster, reduce operational noise, and harden the platforms behind critical services — across Grafana/Loki/Thanos, Kubernetes, Proxmox/Ceph, and AI-assisted SRE workflows."
+other = "I help engineering teams debug faster, reduce operational noise, and harden the platforms behind critical services: Grafana/Loki/Thanos, Kubernetes, Proxmox/Ceph, and AI-assisted SRE workflows."
 
 [heroAvailability]
-other = "Available for freelance missions — Paris area / remote — 4 days/week"
+other = "Available for freelance missions - Paris area / remote - 4 days/week"
 
 [heroCTAprimary]
 other = "Discuss a mission"
@@ -38,7 +38,7 @@ other = "Distributed storage"
 other = "How I can help"
 
 [servicesIntro]
-other = "Senior SRE work, grounded in real production operations. Not a generic DevOps body — a focused operator for teams that need reliability, not tickets."
+other = "Senior SRE work, grounded in real production operations. Not a generic DevOps body, a focused operator for teams that need reliability, not tickets."
 
 [svcObsTitle]
 other = "Observability at scale"
@@ -62,7 +62,27 @@ other = "Virtualization and distributed storage on bare metal. Multi-datacenter 
 other = "AI-assisted SRE tooling"
 
 [svcAIDesc]
-other = "Graphia — a domain-specific SRE agent for Grafana diagnosis. MCP-based workflows with RBAC-aware safeguards, built for real operations, not demos."
+other = "Graphia, a domain-specific SRE agent for Grafana diagnosis. MCP-based workflows with RBAC-aware safeguards, built for real operations, not demos."
+
+# ─── Sovereign AI ───────────────────────────────────────────────
+
+[sovereignTitle]
+other = "On-prem AI: run models on your own infra"
+
+[sovereignDesc]
+other = "For teams that need AI capabilities without sending data to third-party clouds: local LLM serving, private RAG pipelines, and AI-assisted diagnosis running entirely on your Proxmox/Kubernetes infrastructure. GDPR-compliant by design, full control over models and data."
+
+[sovereignTag1]
+other = "Local LLM serving"
+
+[sovereignTag2]
+other = "GDPR-compliant"
+
+[sovereignTag3]
+other = "Private RAG pipelines"
+
+[sovereignTag4]
+other = "Data sovereignty"
 
 # ─── Proof ──────────────────────────────────────────────────────
 
@@ -76,7 +96,7 @@ other = "A few receipts from 10 years operating infrastructure that can't quietl
 other = "High-volume observability platform"
 
 [proof1Metric]
-other = "TB/day ingestion · multi-cluster"
+other = "TB/day ingestion - multi-cluster"
 
 [proof1Desc]
 other = "Operated multi-cluster observability at multi-TB/day ingestion across logs, metrics, and traces, with Kafka pipelines feeding SIEM, logging, EDR, APM, and uptime monitoring."
@@ -84,11 +104,17 @@ other = "Operated multi-cluster observability at multi-TB/day ingestion across l
 [proof2Title]
 other = "Proxmox / Ceph HA platform"
 
+[proof2Metric]
+other = "4 racks - 2 datacenters - 25 Gb/host"
+
 [proof2Desc]
 other = "Integrated a highly available Proxmox cluster across 4 racks and 2 datacenters with Ceph storage, PXE automation, and 25 Gb networking per host."
 
 [proof3Title]
 other = "Multi-provider platform automation"
+
+[proof3Metric]
+other = "10 datacenters - 4 providers"
 
 [proof3Desc]
 other = "Led automated VM and application delivery across 10 datacenters and 4 providers (OpenStack, Proxmox, vSphere, NetBox) from shared Terraform templates."
@@ -102,7 +128,7 @@ other = "See full CV"
 other = "Open Source"
 
 [homeOpenSourceIntro]
-other = "Tools I build around real operational pain points — kept practical, open, and useful beyond my own environment."
+other = "Tools I build around real operational pain points, kept practical, open, and useful beyond my own environment."
 
 [homeOpenSourceGitHub]
 other = "GitHub"
@@ -117,7 +143,7 @@ other = "Modern SSH multiplexing with multi-source inventory and tmux or iTerm2 
 other = "Terminal audit UI for OpenClaw sessions with live events and real-time streaming."
 
 [homeProject_centreon]
-other = "Terraform provider for Centreon API V2 — monitoring configuration managed as infrastructure as code."
+other = "Terraform provider for Centreon API V2, monitoring configuration managed as infrastructure as code."
 
 [ossSeeAll]
 other = "See all open source work"
