@@ -5,7 +5,7 @@ type: "resume"
 
 ## Résumé
 
-> SRE freelance senior avec 10 ans d'expérience sur des infrastructures qui ne peuvent pas tomber en silence. J'interviens sur l'observabilité haut volume (Grafana/Loki/Thanos), l'ingénierie de plateforme Kubernetes, les clusters Proxmox/Ceph on-prem et les outils SRE assistés par IA. Disponible pour missions freelance — Paris / remote, 4 jours/semaine.
+> SRE freelance senior avec 10 ans d'expérience sur des infrastructures qui ne peuvent pas tomber en silence. J'interviens sur l'observabilité haut volume (Grafana/Loki/Thanos), l'ingénierie de plateforme Kubernetes, les clusters Proxmox/Ceph on-prem et les outils SRE assistés par IA. Disponible pour missions freelance - Paris / remote, 4 jours/semaine.
 
 ## Contributions Open Source
 
@@ -37,7 +37,7 @@ type: "resume"
 *   Création d'un outil HouseKeeping pour diagnostiquer les ressources Grafana obsolètes ou cassées, réduire la dérive de configuration et améliorer l'hygiène de plateforme.
 *   Création d'un Search Query Exporter pour diagnostiquer les lenteurs de requêtes et établir des SLO sur Thanos et Loki.
 *   Conception d'un framework de dashboards SLO afin de standardiser la visibilité sur les niveaux de service et faciliter l'adoption du reporting de fiabilité.
-*   Construction de Graphia, un agent SRE spécialisé pour le diagnostic Grafana — comportement RBAC-aware, workflows de diagnostic MCP et garde-fous pour opérations enterprise.
+*   Construction de Graphia, un agent SRE spécialisé pour le diagnostic Grafana - comportement RBAC-aware, workflows de diagnostic MCP et garde-fous pour opérations enterprise.
 *   Travail quotidien sur Helm, Argo CD, cycle de vie des images container, Jenkins, GitLab, AWS CloudWatch et analyse de coûts CUR2.
 
 #### Stack actuelle et domaines de responsabilité
