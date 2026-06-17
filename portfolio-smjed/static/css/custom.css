@@ -299,7 +299,7 @@ article h2::after,
    transform would just spin the whole rectangle and cut across). */
 @property --avail-angle {
     syntax: "<angle>";
-    inherits: false;
+    inherits: true;
     initial-value: 0deg;
 }
 
