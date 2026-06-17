@@ -1,16 +1,17 @@
 ---
 title: "My Resume"
 type: "resume"
+description: "Senior freelance SRE with 10 years of experience across observability, Kubernetes, Proxmox/Ceph, automation, and AI-assisted SRE tooling."
 ---
+
+## Summary
+
+> Senior freelance <span class="key">SRE</span> with <span class="key">10 years</span> of experience operating infrastructure that can't quietly fail. I work across high-volume observability, <span class="key">Kubernetes</span> platform engineering, on-prem <span class="key">Proxmox/Ceph</span> clusters, and AI-assisted SRE tooling.
 
 <div class="cv-downloads">
   <a href="/files/sabri-mjahed-cv-en.pdf" download>Download CV PDF - English</a>
   <a href="/files/sabri-mjahed-cv-fr.pdf" download>Download CV PDF - French</a>
 </div>
-
-## Summary
-
-> Senior freelance <span class="key">SRE</span> with <span class="key">10 years</span> of experience operating infrastructure that can't quietly fail. I work across high-volume observability, <span class="key">Kubernetes</span> platform engineering, on-prem <span class="key">Proxmox/Ceph</span> clusters, and AI-assisted SRE tooling.
 
 ## Open Source Contributions
 
