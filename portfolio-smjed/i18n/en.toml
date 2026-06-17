@@ -152,3 +152,41 @@ other = "If your team runs critical infrastructure and needs SRE work that doesn
 
 [ctaFinalButton]
 other = "Email me"
+
+# ─── Missions section ──────────────────────────────────────────
+
+[missionLabel]
+other = "Mission"
+
+[missionDetails]
+other = "Read brief"
+
+[missionBack]
+other = "All missions"
+
+[missionDuration]
+other = "Duration"
+
+[missionFormat]
+other = "Format"
+
+[missionPricing]
+other = "Rate"
+
+[missionScope]
+other = "What's included"
+
+[missionDeliverables]
+other = "Deliverables"
+
+[missionIdealFor]
+other = "Ideal for"
+
+[missionStack]
+other = "Tech stack"
+
+[missionCTAtext]
+other = "Think this fits your needs? Let's scope it together."
+
+[missionCTAbutton]
+other = "Start a conversation"

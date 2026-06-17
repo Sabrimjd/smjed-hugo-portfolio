@@ -152,3 +152,41 @@ other = "Si votre équipe fait tourner une infrastructure critique et a besoin d
 
 [ctaFinalButton]
 other = "M'envoyer un email"
+
+# ─── Section Missions ──────────────────────────────────────────
+
+[missionLabel]
+other = "Mission"
+
+[missionDetails]
+other = "Voir le detail"
+
+[missionBack]
+other = "Toutes les missions"
+
+[missionDuration]
+other = "Duree"
+
+[missionFormat]
+other = "Format"
+
+[missionPricing]
+other = "Tarif"
+
+[missionScope]
+other = "Ce qui est inclus"
+
+[missionDeliverables]
+other = "Livrables"
+
+[missionIdealFor]
+other = "Ideal pour"
+
+[missionStack]
+other = "Stack technique"
+
+[missionCTAtext]
+other = "Cette mission correspond a votre besoin? Definissons le scope ensemble."
+
+[missionCTAbutton]
+other = "Demarrer la discussion"

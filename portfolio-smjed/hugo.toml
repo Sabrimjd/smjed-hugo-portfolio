@@ -382,6 +382,11 @@ attribute = true
     name       = "About"
     url        = "about/"
   [[menu.main]]
+    identifier = "missions"
+    name       = "Missions"
+    url        = "missions/"
+    weight     = 1
+  [[menu.main]]
     identifier = "posts"
     name       = "Posts"
     url        = "posts/"
