@@ -75,6 +75,9 @@ attribute = true
   keywords = "SRE, freelance, observability, Grafana, Loki, Thanos, Kubernetes, Proxmox, Ceph, AI, Graphia, Paris"
   images = ["/img/og-cover.png"]
 
+  # Browser chrome / PWA theme color (dark, matches the brand background).
+  themeColor = "#0d0e10"
+
   # Home subtitle of the index page (used by theme as fallback; landing page overrides).
   #
   homeSubtitle = "SRE — observability, platform engineering, Proxmox/Ceph, AI-assisted ops"
@@ -116,7 +119,7 @@ attribute = true
   # linking local files with their path relative to the static folder, e.g. "css/styles.css"
   #
   customCSS = ["/css/custom.css", "/css/flag-icons.min.css"]
-  customJS  = []
+  customJS  = ["/js/smjed.js"]
 
   # Toggle this option need to rebuild SCSS, requires extended version of Hugo
   #
@@ -157,7 +160,7 @@ attribute = true
     # Set true to remove the logo cursor entirely.
     # logoCursorDisabled = false
     # Set to a valid CSS color to change the cursor in the logo.
-    # logoCursorColor    = "#67a2c9"
+    logoCursorColor    = "#3b82f6"
     # Set to a valid CSS time value to change the animation duration, "0s" to disable.
     # logoCursorAnimate  = "2s"
     # Append the current url pathname to logoText

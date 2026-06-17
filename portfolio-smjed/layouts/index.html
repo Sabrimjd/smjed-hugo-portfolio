@@ -69,17 +69,9 @@
             text-decoration: none;
             font-size: 0.95rem;
             font-weight: 500;
-            transition: transform 150ms ease, opacity 150ms ease;
         }
-        .hero .ctas a:hover { transform: translateY(-1px); }
-        .hero .ctas .primary {
-            background: var(--accent, #5094f0);
-            color: #fff;
-        }
-        .hero .ctas .secondary {
-            border: 1px solid rgba(120,120,120,0.35);
-            opacity: 0.9;
-        }
+        .hero .ctas .primary { color: #fff; }
+        .hero .ctas .secondary { opacity: 0.9; }
         .hero .socials {
             margin-top: 1.2rem;
         }
@@ -101,7 +93,6 @@
             font-size: 1.6rem;
             font-weight: 700;
             line-height: 1;
-            color: var(--accent, #5094f0);
         }
         .stats .stat .label {
             display: block;
@@ -126,7 +117,6 @@
             display: block;
             width: 40px;
             height: 3px;
-            background: var(--accent, #5094f0);
             border-radius: 2px;
             margin: 0.5rem auto 0;
         }
@@ -151,16 +141,7 @@
             gap: 1rem;
         }
         .service {
-            border: 1px solid rgba(120,120,120,0.22);
-            border-radius: 12px;
             padding: 1.1rem 1.15rem;
-            background: rgba(120,120,120,0.05);
-            transition: transform 180ms ease, border-color 180ms ease;
-            border-left: 3px solid var(--card-accent, #5094f0);
-        }
-        .service:hover {
-            transform: translateY(-3px);
-            border-color: rgba(120,120,120,0.4);
         }
         .service h3 {
             font-size: 1rem;
@@ -181,16 +162,7 @@
             font-size: 0.72rem;
             padding: 0.18rem 0.5rem;
             border-radius: 999px;
-            background: var(--tag-bg, rgba(80,148,240,0.1));
-            border: 1px solid var(--tag-border, rgba(80,148,240,0.2));
-            color: var(--tag-text, inherit);
         }
-
-        /* Category accent colors */
-        .service.obs { --card-accent: #3b82f6; --tag-bg: rgba(59,130,246,0.1); --tag-border: rgba(59,130,246,0.25); }
-        .service.platform { --card-accent: #10b981; --tag-bg: rgba(16,185,129,0.1); --tag-border: rgba(16,185,129,0.25); }
-        .service.onprem { --card-accent: #f59e0b; --tag-bg: rgba(245,158,11,0.1); --tag-border: rgba(245,158,11,0.25); }
-        .service.ai { --card-accent: #8b5cf6; --tag-bg: rgba(139,92,246,0.1); --tag-border: rgba(139,92,246,0.25); }
 
         /* Proof cards */
         .proof {
@@ -199,11 +171,7 @@
             gap: 1rem;
         }
         .proof-card {
-            border: 1px solid rgba(120,120,120,0.22);
-            border-radius: 12px;
             padding: 1.2rem 1.15rem;
-            background: rgba(120,120,120,0.04);
-            border-top: 3px solid var(--accent, #5094f0);
         }
         .proof-card h3 {
             font-size: 1.02rem;
@@ -211,7 +179,6 @@
         }
         .proof-card .metric {
             font-size: 0.85rem;
-            color: var(--accent, #5094f0);
             font-weight: 600;
             margin: 0 0 0.6rem;
         }
@@ -224,10 +191,7 @@
 
         /* Sovereign highlight block */
         .sovereign {
-            border: 1px solid rgba(139,92,246,0.25);
-            border-radius: 14px;
             padding: 1.6rem 1.4rem;
-            background: rgba(139,92,246,0.04);
             text-align: center;
             margin: 2.6rem 0;
         }
@@ -261,8 +225,6 @@
             font-size: 0.75rem;
             padding: 0.22rem 0.6rem;
             border-radius: 999px;
-            background: rgba(139,92,246,0.1);
-            border: 1px solid rgba(139,92,246,0.2);
         }
 
         /* Open source cards */
@@ -275,22 +237,8 @@
         }
         .home-open-source__card {
             position: relative;
-            border: 1px solid var(--border-color, rgba(120, 120, 120, 0.25));
-            background: var(--background-secondary, rgba(120, 120, 120, 0.06));
-            border-radius: 14px; overflow: hidden;
-            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
-            transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+            overflow: hidden;
             cursor: pointer;
-        }
-        .home-open-source__card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 24px 48px rgba(0, 0, 0, 0.14);
-            border-color: rgba(120, 120, 120, 0.4);
-        }
-        .home-open-source__card:focus-within {
-            transform: translateY(-4px);
-            box-shadow: 0 24px 48px rgba(0, 0, 0, 0.14);
-            border-color: rgba(120, 120, 120, 0.45);
         }
         .home-open-source__overlay { position: absolute; inset: 0; z-index: 1; }
         .home-open-source__image {
@@ -327,16 +275,12 @@
             text-align: center;
             margin: 3rem 0 2rem;
             padding: 2rem 1.2rem;
-            border: 1px solid rgba(120,120,120,0.22);
-            border-radius: 14px;
-            background: rgba(120,120,120,0.05);
         }
         .cta-final h2 { margin: 0 0 0.5rem; font-size: 1.3rem; }
         .cta-final p { margin: 0 0 1rem; opacity: 0.85; }
         .cta-final a {
             display: inline-block;
             padding: 0.6rem 1.3rem;
-            background: var(--accent, #5094f0);
             color: #fff;
             border-radius: 8px;
             text-decoration: none;
@@ -355,10 +299,6 @@
 
             {{/* HERO */}}
             <section class="hero">
-                {{ if .Site.Params.Portrait.Path }}
-                   <img src="{{ .Site.Params.Portrait.Path }}" class="portrait" alt="{{ .Site.Params.Portrait.Alt }}" width="130" height="130" fetchpriority="high" />
-                {{ end }}
-
                 <h1>{{ i18n "heroTitle" }}</h1>
                 <p class="tagline">{{ i18n "heroTagline" }}</p>
 
@@ -377,21 +317,21 @@
             </section>
 
             {{/* CREDIBILITY STRIP */}}
-            <section class="stats">
-                <div class="stat"><span class="num">10+</span><span class="label">{{ i18n "statYears" }}</span></div>
+            <section class="stats" data-reveal>
+                <div class="stat"><span class="num"><span data-countup data-target="10">10</span>+</span><span class="label">{{ i18n "statYears" }}</span></div>
                 <div class="stat"><span class="num">TB/day</span><span class="label">{{ i18n "statLogs" }}</span></div>
-                <div class="stat"><span class="num">10 DCs</span><span class="label">{{ i18n "statDCs" }}</span></div>
+                <div class="stat"><span class="num"><span data-countup data-target="10">10</span> DCs</span><span class="label">{{ i18n "statDCs" }}</span></div>
                 <div class="stat"><span class="num">Proxmox</span><span class="label">{{ i18n "statVirtualization" }}</span></div>
                 <div class="stat"><span class="num">Ceph</span><span class="label">{{ i18n "statStorage" }}</span></div>
             </section>
 
             {{/* SERVICES */}}
-            <section class="section">
+            <section class="section" data-reveal>
                 <h2>{{ i18n "servicesTitle" }}</h2>
                 <p class="section-intro">{{ i18n "servicesIntro" }}</p>
 
                 <div class="section-content">
-                <div class="services">
+                <div class="services" data-reveal-stagger>
                     <article class="service obs">
                         <h3>{{ i18n "svcObsTitle" }}</h3>
                         <p>{{ i18n "svcObsDesc" }}</p>
@@ -432,7 +372,7 @@
             </section>
 
             {{/* SOVEREIGN AI */}}
-            <section class="sovereign">
+            <section class="sovereign" data-reveal>
                 <h2>{{ i18n "sovereignTitle" }}</h2>
                 <p>{{ i18n "sovereignDesc" }}</p>
                 <div class="tags">
@@ -444,12 +384,12 @@
             </section>
 
             {{/* PROOF */}}
-            <section class="section">
+            <section class="section" data-reveal>
                 <h2>{{ i18n "proofTitle" }}</h2>
                 <p class="section-intro">{{ i18n "proofIntro" }}</p>
 
                 <div class="section-content">
-                <div class="proof">
+                <div class="proof" data-reveal-stagger>
                     <article class="proof-card">
                         <h3>{{ i18n "proof1Title" }}</h3>
                         <div class="metric">{{ i18n "proof1Metric" }}</div>
@@ -476,11 +416,11 @@
             {{/* OPEN SOURCE */}}
             {{ with .Site.Params.homeOpenSource }}
                 {{ if .enable }}
-                    <section class="section home-open-source">
+                    <section class="section home-open-source" data-reveal>
                         <h2>{{ i18n "homeOpenSourceTitle" }}</h2>
                         <p class="home-open-source__intro">{{ i18n "homeOpenSourceIntro" }}</p>
                         <div class="section-content">
-                        <div class="home-open-source__grid">
+                        <div class="home-open-source__grid" data-reveal-stagger>
                             {{ range .projects }}
                                 {{ $project := . }}
                                 <article class="home-open-source__card">
@@ -515,7 +455,7 @@
             {{ end }}
 
             {{/* FINAL CTA */}}
-            <section class="cta-final">
+            <section class="cta-final" data-reveal>
                 <h2>{{ i18n "ctaFinalTitle" }}</h2>
                 <p>{{ i18n "ctaFinalDesc" }}</p>
                 <a href="mailto:contact@smjed.net">{{ i18n "ctaFinalButton" }}</a>

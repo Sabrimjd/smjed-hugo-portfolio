@@ -1,17 +1,5 @@
 {{ define "main" }}
 <style>
-:root {
-    --border-color: #dcdcdc;
-    --background-secondary: #eaeaea;
-    --hover-color: #f0f0f0;
-}
-
-[data-theme=dark] {
-    --border-color: #4a4a4a;
-    --background-secondary: #3b3b3b;
-    --hover-color: #4a4a4a;
-}
-
 .skills {
     margin: 1.5rem 0;
     border: none;
@@ -55,26 +43,26 @@
 
 .skill-item {
     margin: 0.2rem 0;
-    padding: 5px;
-    border-radius: 4px;
+    padding: 0.4rem 0.8rem;
+    border-radius: var(--radius-sm, 6px);
     font-size: 0.9rem;
-    background-color: #464646;
-    color: #ffffff;
+    border: 1px solid var(--glass-border, rgba(120,120,120,0.18));
+    background: var(--glass-bg, rgba(120,120,120,0.05));
+    -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+    color: var(--color);
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.4rem 0.8rem;
     text-decoration: none;
-    transition: transform 0.2s, background-color 0.2s;
-}
-
-[data-theme=dark] .skill-item {
-    background-color: #333;
-    color: #fff;
+    transition: transform 0.2s, background-color 0.2s, border-color 0.2s, color 0.2s;
 }
 
 .skill-item:hover {
     transform: translateY(-2px);
+    border-color: var(--blue-border, rgba(59,130,246,0.25));
+    background: var(--blue-soft, rgba(59,130,246,0.08));
+    color: var(--blue, #3b82f6);
 }
 
 .skill-icon {
@@ -107,7 +95,7 @@
     <div class="skills">
         <div class="skills-categories">
             {{ range .Site.Params.skills.categories }}
-            <div class="skill-category">
+            <div class="skill-category" data-reveal>
                 <h2>{{ .name }}</h2>
                 <div class="skill-items">
                     {{ range .items }}
