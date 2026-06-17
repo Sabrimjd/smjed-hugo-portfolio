@@ -1,11 +1,15 @@
 /* ═══════════════════════════════════════════════════════════
-   SMJED custom styles — clean + color edition
-   Flat colors (no gradients), typography emphasis tools,
-   terminal-inspired mono labels.
+   SMJED custom styles — depth + motion edition
+   Layered glassmorphism, accent-glow hover, scroll reveal.
+   Terminal-inspired mono labels, per-domain accent colors.
    ═══════════════════════════════════════════════════════════ */
 
 /* ─── Color tokens ───────────────────────────────────────────── */
 :root {
+    /* Primary accent — fixes the undefined --accent gap referenced
+       by index.html (previously fell back to a mismatched #5094f0). */
+    --accent: #3b82f6;
+
     /* Primary accent */
     --blue: #3b82f6;
     --blue-soft: rgba(59, 130, 246, 0.08);
@@ -29,19 +33,156 @@
 
     --red: #ef4444;
 
-    --surface: rgba(120, 120, 120, 0.03);
+    --surface: rgba(120, 120, 120, 0.04);
     --border: rgba(120, 120, 120, 0.15);
     --border-hover: rgba(120, 120, 120, 0.3);
+
+    /* ─── Depth tokens (glassmorphism) ──────────────────────── */
+    --surface-1: rgba(125, 125, 135, 0.05);
+    --surface-2: rgba(125, 125, 135, 0.08);
+    --glass-bg: rgba(255, 255, 255, 0.04);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-blur: 14px;
+
+    /* Radii scale */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-pill: 999px;
+
+    /* Elevation */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 12px 30px rgba(0, 0, 0, 0.12);
+    --shadow-lg: 0 24px 50px rgba(0, 0, 0, 0.18);
+
+    /* Per-accent glow (used on card hover) */
+    --glow-blue:   0 12px 36px rgba(59, 130, 246, 0.22);
+    --glow-green:  0 12px 36px rgba(16, 185, 129, 0.22);
+    --glow-amber:  0 12px 36px rgba(245, 158, 11, 0.22);
+    --glow-purple: 0 12px 36px rgba(139, 92, 246, 0.22);
+
+    /* Motion */
+    --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+    --dur-1: 180ms;
+    --dur-2: 320ms;
+    --dur-3: 620ms;
 
     --mono: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --surface: rgba(255, 255, 255, 0.03);
+        --surface: rgba(255, 255, 255, 0.035);
+        --surface-1: rgba(255, 255, 255, 0.04);
+        --surface-2: rgba(255, 255, 255, 0.06);
+        --glass-bg: rgba(255, 255, 255, 0.045);
+        --glass-border: rgba(255, 255, 255, 0.1);
         --border: rgba(255, 255, 255, 0.1);
-        --border-hover: rgba(255, 255, 255, 0.2);
+        --border-hover: rgba(255, 255, 255, 0.22);
+        --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.4);
+        --shadow-md: 0 14px 34px rgba(0, 0, 0, 0.5);
+        --shadow-lg: 0 28px 60px rgba(0, 0, 0, 0.6);
     }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   AMBIENT BACKGROUND — aurora + dot grid, fixed behind content.
+   Gives the void depth without touching any template.
+   ═══════════════════════════════════════════════════════════ */
+body {
+    position: relative;
+    isolation: isolate;
+}
+body::before {
+    content: "";
+    position: fixed;
+    inset: -20vmax;
+    z-index: -2;
+    pointer-events: none;
+    background:
+        radial-gradient(42vw 42vw at 18% 12%, rgba(59, 130, 246, 0.14), transparent 60%),
+        radial-gradient(46vw 46vw at 84% 18%, rgba(139, 92, 246, 0.12), transparent 62%),
+        radial-gradient(50vw 50vw at 70% 88%, rgba(16, 185, 129, 0.08), transparent 60%);
+    filter: blur(6px);
+    animation: aurora-drift 24s var(--ease-out) infinite alternate;
+}
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image: radial-gradient(rgba(125, 125, 135, 0.18) 1px, transparent 1px);
+    background-size: 26px 26px;
+    -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, #000 30%, transparent 80%);
+            mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, #000 30%, transparent 80%);
+    opacity: 0.4;
+}
+@keyframes aurora-drift {
+    0%   { transform: translate3d(0, 0, 0) rotate(0deg); }
+    100% { transform: translate3d(2vw, -2vw, 0) rotate(4deg); }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   UTILITIES
+   ═══════════════════════════════════════════════════════════ */
+
+/* Frosted-glass surface */
+.glass {
+    background: var(--glass-bg);
+    -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(140%);
+            backdrop-filter: blur(var(--glass-blur)) saturate(140%);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--shadow-sm);
+}
+
+/* Hero entrance animation — title + tagline rise in on load */
+@keyframes hero-rise {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: none; }
+}
+.landing .hero h1,
+.landing .hero .tagline,
+.landing .hero .availability,
+.landing .hero .ctas,
+.landing .hero .socials {
+    opacity: 0;
+    animation: hero-rise 0.7s var(--ease-out) forwards;
+}
+.landing .hero h1         { animation-delay: 0.05s; }
+.landing .hero .tagline   { animation-delay: 0.18s; }
+.landing .hero .availability { animation-delay: 0.30s; }
+.landing .hero .ctas      { animation-delay: 0.42s; }
+.landing .hero .socials   { animation-delay: 0.54s; }
+
+/* ─── Scroll-reveal primitives ───────────────────────────────── */
+[data-reveal] {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity var(--dur-3) var(--ease-out), transform var(--dur-3) var(--ease-out);
+    will-change: opacity, transform;
+}
+[data-reveal].is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* Count-up numerics — keep digits from shifting width mid-count */
+[data-countup] {
+    font-variant-numeric: tabular-nums;
+}
+
+/* Staggered children — cards/items inside [data-reveal-stagger]
+   containers animate in one by one (delay set by JS). */
+[data-reveal-stagger] > * {
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity var(--dur-3) var(--ease-out), transform var(--dur-3) var(--ease-out);
+    will-change: opacity, transform;
+}
+[data-reveal-stagger] > *.is-visible {
+    opacity: 1;
+    transform: none;
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -147,62 +288,100 @@ article h2::after,
 
 /* ─── Hero ───────────────────────────────────────────────────── */
 .landing .hero h1 {
-    background: none !important;
-    -webkit-text-fill-color: initial !important;
-    animation: none !important;
     font-weight: 800;
     letter-spacing: -0.03em;
     font-size: 2.2rem;
 }
 
-.landing .hero .portrait {
-    border: 2px solid var(--blue-border);
-    transition: border-color 200ms ease;
-}
-.landing .hero .portrait:hover {
-    border-color: var(--blue);
+/* Rotating border-light: a bright arc traces the pill's perimeter.
+   The conic-gradient `from` angle is driven by an animatable custom
+   property so the bright spot travels ALONG the border line (a box
+   transform would just spin the whole rectangle and cut across). */
+@property --avail-angle {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
 }
 
 .landing .hero .availability {
-    border: 1px solid rgba(34, 197, 94, 0.25);
+    position: relative;
+    border: 1px solid rgba(34, 197, 94, 0.2);
     background: rgba(34, 197, 94, 0.06);
     color: #22c55e;
     font-family: var(--mono);
     font-size: 0.78rem;
+    isolation: isolate;
+    --avail-angle: 0deg; /* driven by smjed.js (rAF), immune to reduced-motion clamps */
 }
+.landing .hero .availability::after {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px; /* border-ring width the mask leaves visible */
+    background: conic-gradient(
+        from var(--avail-angle),
+        rgba(34, 197, 94, 0) 0deg,
+        rgba(34, 197, 94, 0) 280deg,
+        rgba(74, 222, 128, 0.9) 340deg,
+        rgba(255, 255, 255, 0.95) 360deg
+    );
+    -webkit-mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    pointer-events: none;
+    z-index: -1;
+}
+/* --avail-angle is driven by smjed.js (requestAnimationFrame), not a
+   CSS keyframe — see note on .availability above. */
+
 .landing .hero .availability::before {
     background: #22c55e;
-    box-shadow: none;
-    animation: none;
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.5);
+    animation: pulse-dot 2.4s ease-out infinite;
+}
+@keyframes pulse-dot {
+    0%   { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.55); }
+    70%  { box-shadow: 0 0 0 8px rgba(34, 197, 94, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
 }
 
-/* Buttons: solid flat color */
+/* Buttons: solid color, satisfying lift + glow on hover */
+.landing .hero .ctas a,
+.landing .cta-final a {
+    transition: transform var(--dur-1) var(--ease-out),
+                box-shadow var(--dur-1) var(--ease-out),
+                background-color var(--dur-1) var(--ease-out),
+                color var(--dur-1) var(--ease-out);
+}
 .landing .hero .ctas .primary {
     background: var(--blue);
-    box-shadow: none;
-    transition: opacity 150ms ease;
+    box-shadow: 0 6px 18px rgba(59, 130, 246, 0.28);
     font-weight: 600;
 }
 .landing .hero .ctas .primary:hover {
-    opacity: 0.85;
-    transform: none;
-    box-shadow: none;
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 16px 36px rgba(59, 130, 246, 0.5);
 }
 .landing .hero .ctas .secondary {
-    border: 1px solid var(--border);
-    transition: border-color 150ms ease, color 150ms ease;
+    border: 1px solid var(--glass-border);
+    background: var(--glass-bg);
 }
 .landing .hero .ctas .secondary:hover {
     border-color: var(--blue);
     background: var(--blue-soft);
     color: var(--blue);
+    transform: translateY(-4px) scale(1.03);
 }
 
 /* ─── Stats strip ────────────────────────────────────────────── */
 .landing .stats {
-    border-top: 1px solid var(--border) !important;
-    border-bottom: 1px solid var(--border) !important;
+    border-top: 1px solid var(--glass-border) !important;
+    border-bottom: 1px solid var(--glass-border) !important;
     border-image: none !important;
+    background: linear-gradient(90deg, transparent, var(--surface-1), transparent);
 }
 
 .landing .stats .stat:nth-child(1) .num { color: var(--blue); }
@@ -211,10 +390,21 @@ article h2::after,
 .landing .stats .stat:nth-child(4) .num { color: var(--purple); }
 .landing .stats .stat:nth-child(5) .num { color: var(--pink); }
 
+.landing .stats .stat {
+    transition: transform var(--dur-2) var(--ease-out);
+}
+.landing .stats .stat:hover {
+    transform: translateY(-4px);
+}
+
 .landing .stats .stat .num {
     font-family: var(--mono);
     font-size: 1.4rem;
     font-weight: 700;
+    transition: transform var(--dur-2) var(--ease-out);
+}
+.landing .stats .stat:hover .num {
+    transform: scale(1.08);
 }
 
 .landing .stats .stat .label {
@@ -238,6 +428,10 @@ article h2::after,
     background: var(--blue) !important;
     width: 28px !important;
     height: 2px !important;
+    transition: width var(--dur-2) var(--ease-out) !important;
+}
+.landing .section > h2:hover::after {
+    width: 56px !important;
 }
 
 .landing .section .section-intro {
@@ -245,20 +439,24 @@ article h2::after,
     max-width: 580px;
 }
 
-/* ─── Service cards: per-category color ──────────────────────── */
+/* ─── Service cards: per-category color + glass ──────────────── */
 .landing .service {
-    border: 1px solid var(--border);
+    border: 1px solid var(--glass-border);
     border-left: 3px solid var(--card-accent);
-    border-radius: 6px;
-    background: var(--surface);
-    box-shadow: none;
-    transition: border-color 200ms ease, background 200ms ease;
+    border-radius: var(--radius-md);
+    background: var(--glass-bg);
+    -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(140%);
+            backdrop-filter: blur(var(--glass-blur)) saturate(140%);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--dur-2) var(--ease-out),
+                box-shadow var(--dur-2) var(--ease-out),
+                border-color var(--dur-2) var(--ease-out);
 }
 
 .landing .service:hover {
-    transform: none;
-    box-shadow: none;
-    border-color: var(--border-hover);
+    transform: translateY(-8px) scale(1.015);
+    box-shadow: var(--card-glow);
+    border-color: var(--card-accent-border);
     background: var(--card-accent-soft);
 }
 
@@ -266,6 +464,10 @@ article h2::after,
     font-size: 0.95rem;
     font-weight: 700;
     color: var(--card-accent);
+    transition: transform var(--dur-1) var(--ease-out);
+}
+.landing .service:hover h3 {
+    transform: translateX(2px);
 }
 
 .landing .service p {
@@ -276,37 +478,50 @@ article h2::after,
     font-family: var(--mono);
     font-size: 0.68rem;
     padding: 0.15rem 0.45rem;
-    border-radius: 3px;
+    border-radius: var(--radius-sm);
     background: var(--card-accent-soft);
     border: 1px solid var(--card-accent-border);
     color: var(--card-accent);
     font-weight: 500;
     text-transform: lowercase;
+    transition: background var(--dur-1) var(--ease-out),
+                transform var(--dur-1) var(--ease-out);
+}
+.landing .service .tag:hover {
+    background: var(--card-accent);
+    color: #fff;
+    transform: translateY(-2px);
 }
 
-.service.obs      { --card-accent: var(--blue);   --card-accent-soft: var(--blue-soft);   --card-accent-border: var(--blue-border); }
-.service.platform { --card-accent: var(--green);  --card-accent-soft: var(--green-soft);  --card-accent-border: var(--green-border); }
-.service.onprem   { --card-accent: var(--amber);  --card-accent-soft: var(--amber-soft);  --card-accent-border: var(--amber-border); }
-.service.ai       { --card-accent: var(--purple); --card-accent-soft: var(--purple-soft); --card-accent-border: var(--purple-border); }
+.service.obs      { --card-accent: var(--blue);   --card-accent-soft: var(--blue-soft);   --card-accent-border: var(--blue-border);   --card-glow: var(--glow-blue); }
+.service.platform { --card-accent: var(--green);  --card-accent-soft: var(--green-soft);  --card-accent-border: var(--green-border);  --card-glow: var(--glow-green); }
+.service.onprem   { --card-accent: var(--amber);  --card-accent-soft: var(--amber-soft);  --card-accent-border: var(--amber-border);  --card-glow: var(--glow-amber); }
+.service.ai       { --card-accent: var(--purple); --card-accent-soft: var(--purple-soft); --card-accent-border: var(--purple-border); --card-glow: var(--glow-purple); }
 
 /* ─── Proof cards ────────────────────────────────────────────── */
 .landing .proof-card {
-    border: 1px solid var(--border);
+    border: 1px solid var(--glass-border);
     border-top: 3px solid var(--blue);
-    border-radius: 6px;
-    background: var(--surface);
-    box-shadow: none;
-    transition: border-color 200ms ease;
+    border-radius: var(--radius-md);
+    background: var(--glass-bg);
+    -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(140%);
+            backdrop-filter: blur(var(--glass-blur)) saturate(140%);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--dur-2) var(--ease-out),
+                box-shadow var(--dur-2) var(--ease-out),
+                border-color var(--dur-2) var(--ease-out);
 }
 
 .landing .proof-card:nth-child(2) { border-top-color: var(--green); }
 .landing .proof-card:nth-child(3) { border-top-color: var(--amber); }
 
 .landing .proof-card:hover {
-    transform: none;
-    box-shadow: none;
-    border-color: var(--border-hover);
+    transform: translateY(-8px) scale(1.015);
+    box-shadow: var(--glow-blue);
 }
+
+.landing .proof-card:nth-child(2):hover { box-shadow: var(--glow-green); }
+.landing .proof-card:nth-child(3):hover { box-shadow: var(--glow-amber); }
 
 .landing .proof-card .metric {
     font-family: var(--mono);
@@ -320,16 +535,22 @@ article h2::after,
 .landing .proof-card:nth-child(2) .metric { color: var(--green); }
 .landing .proof-card:nth-child(3) .metric { color: var(--amber); }
 
-/* ─── Sovereign: flat, solid purple tint ─────────────────────── */
+/* ─── Sovereign: glass + purple glow ─────────────────────────── */
 .landing .sovereign {
     border: 1px solid var(--purple-border);
-    border-radius: 6px;
+    border-radius: var(--radius-lg);
     background: var(--purple-soft);
-    box-shadow: none;
+    -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(140%);
+            backdrop-filter: blur(var(--glass-blur)) saturate(140%);
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow var(--dur-2) var(--ease-out), transform var(--dur-2) var(--ease-out), border-color var(--dur-2) var(--ease-out);
+}
+.landing .sovereign:hover {
+    transform: translateY(-3px);
 }
 
 .landing .sovereign:hover {
-    box-shadow: none;
+    box-shadow: var(--glow-purple);
 }
 
 .landing .sovereign h2 {
@@ -352,39 +573,79 @@ article h2::after,
     font-family: var(--mono);
     font-size: 0.7rem;
     padding: 0.18rem 0.5rem;
-    border-radius: 3px;
+    border-radius: var(--radius-sm);
     background: var(--purple-soft);
     border: 1px solid var(--purple-border);
     color: var(--purple);
     font-weight: 500;
+    transition: background var(--dur-1) var(--ease-out),
+                color var(--dur-1) var(--ease-out),
+                transform var(--dur-1) var(--ease-out);
+}
+.landing .sovereign .tag:hover {
+    background: var(--purple);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Social icons — gentle lift on hover */
+.landing .hero .socials a {
+    transition: transform var(--dur-1) var(--ease-out), color var(--dur-1) var(--ease-out);
+}
+.landing .hero .socials a:hover {
+    transform: translateY(-3px);
+    color: var(--blue);
 }
 
 /* ─── Open Source cards ──────────────────────────────────────── */
 .landing .home-open-source__card {
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    box-shadow: none;
-    transition: transform 200ms ease, border-color 200ms ease;
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    background: var(--glass-bg);
+    -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(140%);
+            backdrop-filter: blur(var(--glass-blur)) saturate(140%);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--dur-2) var(--ease-out),
+                box-shadow var(--dur-2) var(--ease-out),
+                border-color var(--dur-2) var(--ease-out);
 }
 
-.landing .home-open-source__card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-    border-color: var(--border-hover);
-}
-
+.landing .home-open-source__card:hover,
 .landing .home-open-source__card:focus-within {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-    border-color: var(--border-hover);
+    transform: translateY(-8px) scale(1.015);
+    box-shadow: var(--glow-blue);
+    border-color: var(--blue-border);
+}
+
+/* Preview image zoom + arrow nudge on hover */
+.landing .home-open-source__image {
+    transition: transform 360ms var(--ease-out);
+}
+.landing .home-open-source__card:hover .home-open-source__image,
+.landing .home-open-source__card:focus-within .home-open-source__image {
+    transform: scale(1.06);
+}
+.landing .home-open-source__body h3 {
+    transition: color var(--dur-2) var(--ease-out);
+}
+.landing .home-open-source__card:hover .home-open-source__body h3 {
+    color: var(--blue);
+}
+.landing .home-open-source__links a {
+    transition: color var(--dur-1) var(--ease-out), transform var(--dur-1) var(--ease-out);
+    display: inline-block;
+}
+.landing .home-open-source__links a:hover {
+    color: var(--blue);
+    transform: translateX(3px);
 }
 
 .landing .home-open-source__badge {
     font-family: var(--mono);
     font-size: 0.68rem;
     padding: 0.15rem 0.45rem;
-    border-radius: 3px;
-    background: var(--surface);
+    border-radius: var(--radius-sm);
+    background: var(--surface-1);
     border: 1px solid var(--border);
     font-weight: 500;
     text-transform: lowercase;
@@ -398,43 +659,65 @@ article h2::after,
 
 /* ─── Final CTA ──────────────────────────────────────────────── */
 .landing .cta-final {
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    background: var(--surface);
-    box-shadow: none;
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    background: var(--glass-bg);
+    -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(140%);
+            backdrop-filter: blur(var(--glass-blur)) saturate(140%);
+    box-shadow: var(--shadow-sm);
 }
 
 .landing .cta-final:hover {
-    box-shadow: none;
+    box-shadow: var(--shadow-md);
 }
 
 .landing .cta-final a {
     background: var(--blue);
-    box-shadow: none;
+    box-shadow: 0 6px 18px rgba(59, 130, 246, 0.28);
     font-weight: 600;
-    transition: opacity 150ms ease;
 }
 .landing .cta-final a:hover {
-    opacity: 0.85;
-    transform: none;
-    box-shadow: none;
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 16px 36px rgba(59, 130, 246, 0.5);
 }
 
 /* ═══════════════════════════════════════════════════════════
    SITE-WIDE
    ═══════════════════════════════════════════════════════════ */
 
-/* Nav */
+/* Nav — animated underline-grow + color lift (replaces theme's
+   plain text-decoration: underline) */
 nav.menu a {
-    transition: color 150ms ease;
+    position: relative;
+    text-decoration: none !important;
+    transition: color var(--dur-1) var(--ease-out);
     font-size: 0.9rem;
+}
+nav.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background: var(--blue);
+    border-radius: 1px;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform var(--dur-2) var(--ease-out);
+}
+nav.menu a:hover,
+nav.menu a:focus-visible {
+    color: var(--blue);
+}
+nav.menu a:hover::after,
+nav.menu a:focus-visible::after,
+nav.menu a.active::after {
+    transform: scaleX(1);
 }
 nav.menu a.active {
     color: var(--blue);
     font-weight: 600;
-}
-nav.menu a:hover {
-    color: var(--blue);
 }
 
 /* Skill badges */
@@ -442,35 +725,37 @@ nav.menu a:hover {
     display: inline-block;
     padding: 0.2rem 0.55rem;
     margin: 0.12rem;
-    border-radius: 4px;
+    border-radius: var(--radius-sm);
     font-family: var(--mono);
     font-size: 0.72rem;
     font-weight: 500;
     text-decoration: none;
     border: 1px solid var(--border);
-    background: var(--surface);
-    transition: border-color 150ms ease, color 150ms ease;
+    background: var(--surface-1);
+    transition: border-color var(--dur-1) var(--ease-out), color var(--dur-1) var(--ease-out), transform var(--dur-1) var(--ease-out);
 }
 .skill-badge:hover {
     border-color: var(--blue-border);
     color: var(--blue);
     background: var(--blue-soft);
-    transform: none;
+    transform: translateY(-2px);
 }
 
 /* Skills categories */
 .skills-category {
-    border: 1px solid var(--border);
-    border-radius: 6px;
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-md);
     padding: 1.1rem;
-    background: var(--surface);
-    transition: border-color 200ms ease;
+    background: var(--glass-bg);
+    -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(140%);
+            backdrop-filter: blur(var(--glass-blur)) saturate(140%);
+    box-shadow: var(--shadow-sm);
+    transition: border-color var(--dur-2) var(--ease-out), box-shadow var(--dur-2) var(--ease-out);
     margin-bottom: 1rem;
 }
 .skills-category:hover {
-    border-color: var(--border-hover);
-    transform: none;
-    box-shadow: none;
+    border-color: var(--blue-border);
+    box-shadow: var(--glow-blue);
 }
 .skills-category h3 {
     color: var(--blue);
@@ -542,10 +827,57 @@ nav.menu a:hover {
     color: var(--blue);
 }
 
-/* Reduced motion */
+/* Reduced motion — stop big/distacting motion (aurora drift,
+   entrance + reveal slides, count-up) but KEEP short interactive
+   hover transitions so the UI still gives feedback. */
 @media (prefers-reduced-motion: reduce) {
+    body::before { animation: none !important; }
+
+    /* Kill entrance/reveal animations, show content immediately.
+       NOTE: .availability is intentionally EXCLUDED here so its
+       rotating border-light + dot ripple survive — they're re-enabled
+       explicitly below. */
+    [data-reveal] { opacity: 1 !important; transform: none !important; }
+    [data-reveal-stagger] > * { opacity: 1 !important; transform: none !important; }
+    .landing .hero h1,
+    .landing .hero .tagline,
+    .landing .hero .ctas,
+    .landing .hero .socials { opacity: 1 !important; animation: none !important; }
+    .landing .hero .availability { opacity: 1 !important; }
+
+    /* Cap long animations, but let hover transitions (<=250ms) run.
+       This universal clamp comes BEFORE the specific re-enable rules
+       below (availability glow/dot) so they can override it. */
     *, *::before, *::after {
         animation-duration: 0.01ms !important;
-        transition-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+    }
+
+    /* Availability dot ripple — re-enable with full duration + loop */
+    .landing .hero .availability::before {
+        animation: pulse-dot 2.4s ease-out infinite !important;
+        animation-duration: 2.4s !important;
+        animation-iteration-count: infinite !important;
+    }
+    /* Availability border-light is driven by JS (rAF on --avail-angle),
+       so no CSS animation re-enable needed here. */
+    /* Re-enable short hover transitions explicitly */
+    .landing .service,
+    .landing .proof-card,
+    .landing .sovereign,
+    .landing .home-open-source__card,
+    .landing .home-open-source__card *,
+    .landing .stats .stat,
+    .landing .stats .stat .num,
+    .landing .hero .ctas a,
+    .landing .cta-final a,
+    .landing .section > h2::after,
+    .landing .service .tag,
+    .landing .sovereign .tag,
+    .landing .skill-badge,
+    .skills-category,
+    nav.menu a {
+        transition-duration: 250ms !important;
     }
 }
