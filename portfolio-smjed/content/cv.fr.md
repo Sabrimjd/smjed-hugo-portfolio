@@ -3,6 +3,11 @@ title: "Mon CV"
 type: "resume"
 ---
 
+<div class="cv-downloads">
+  <a href="/files/sabri-mjahed-cv-fr.pdf" download>Télécharger le CV PDF - Français</a>
+  <a href="/files/sabri-mjahed-cv-en.pdf" download>Télécharger le CV PDF - Anglais</a>
+</div>
+
 ## Résumé
 
 > <span class="key">SRE</span> freelance senior avec <span class="key">10 ans</span> d'expérience sur des infrastructures qui ne peuvent pas tomber en silence. J'interviens sur l'observabilité haut volume, l'ingénierie de plateforme <span class="key">Kubernetes</span>, les clusters <span class="key">Proxmox/Ceph</span> on-prem et les outils SRE assistés par IA.
