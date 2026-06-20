@@ -34,6 +34,12 @@ jobs:
           hugo-version: '0.140.2'
           extended: true
 
+      - name: Setup Dart Sass
+        run: |
+          curl -fsSL -o /tmp/dart-sass.tar.gz https://github.com/sass/dart-sass/releases/download/1.83.4/dart-sass-1.83.4-linux-x64.tar.gz
+          tar -xzf /tmp/dart-sass.tar.gz -C /tmp
+          echo "/tmp/dart-sass" >> "$GITHUB_PATH"
+
       - name: Build
         run: hugo --gc --minify --baseURL https://smjed.net/
 
