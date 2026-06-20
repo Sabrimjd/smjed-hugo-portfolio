@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="{{ .Site.Language.Lang | default "en" }}">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body class="smjed-site section-{{ .Section | default "home" }}">
+  {{ partial "header.html" . }}
+  <div class="site-main">
+    {{ block "main" . }}{{ end }}
+  </div>
+  {{ partial "footer.html" . }}
+  <script src="{{ "js/smjed-plain.js" | relURL }}" defer></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{{ define "main" }}
+<main class="page-shell">
+  <article class="prose-card">
+    <header class="page-header">
+      <p class="kicker">{{ .Section | default "page" }}</p>
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p>{{ . }}</p>{{ end }}
+    </header>
+    <div class="prose">{{ .Content }}</div>
+  </article>
+</main>
+{{ end }}

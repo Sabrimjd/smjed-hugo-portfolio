@@ -1,7 +1,7 @@
-baseURL = "https://smjed.net"
-title   = "SMJED"
+baseURL = "https://retakedata.com/"
+title   = "(Re)Take"
 languageCode = "en-us"
-theme = "hello-friend-ng-sab"
+theme = "smjed-plain"
 
 PygmentsCodeFences = true
 PygmentsStyle = "monokai"
@@ -118,7 +118,7 @@ attribute = true
   # Integrate Javascript files or stylesheets by adding the url to the external assets or by
   # linking local files with their path relative to the static folder, e.g. "css/styles.css"
   #
-  customCSS = ["/css/custom.css", "/css/flag-icons.min.css"]
+  customCSS = ["/css/theme-control.css", "/css/flag-icons.min.css"]
   customJS  = ["/js/smjed.js"]
 
   # Toggle this option need to rebuild SCSS, requires extended version of Hugo
@@ -155,7 +155,7 @@ attribute = true
 
   [params.logo]
     logoMark     = ">"
-    logoText     = "SMJED Engineering"
+    logoText     = "(Re)Take"
     logoHomeLink = "/"
     # Set true to remove the logo cursor entirely.
     # logoCursorDisabled = false

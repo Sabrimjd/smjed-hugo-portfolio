@@ -1,0 +1,13 @@
+{{ define "main" }}
+<main class="page-shell">
+  <article class="prose-card">
+    <header class="page-header">
+      <p class="kicker">Capability map</p>
+      <h1>{{ .Title }}</h1>
+    </header>
+    <div class="prose">{{ .Content }}</div>
+    {{ partial "skills-search.html" . }}
+    {{ partial "skills-content.html" . }}
+  </article>
+</main>
+{{ end }}

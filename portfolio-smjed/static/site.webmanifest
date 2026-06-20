@@ -1,7 +1,13 @@
 {
-  "name": "SMJED",
-  "short_name": "SMJED",
+  "name": "(Re)Take",
+  "short_name": "(Re)Take",
   "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
     {
       "src": "/web-app-manifest-192x192.png",
       "sizes": "192x192",
@@ -15,7 +21,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
+  "theme_color": "#15120d",
+  "background_color": "#fffdf7",
   "display": "standalone"
 }

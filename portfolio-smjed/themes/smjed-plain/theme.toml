@@ -1,0 +1,11 @@
+name = "smjed-plain"
+license = "MIT"
+description = "From-scratch light Hugo portfolio theme for SMJED. No parent theme, no gradients, no glassmorphism."
+homepage = "https://smjed.net"
+tags = ["portfolio", "light", "freelance", "sre", "minimal"]
+features = ["responsive", "i18n", "missions", "plain-css"]
+min_version = "0.120.0"
+
+[author]
+  name = "Sabri MJAHED"
+  homepage = "https://smjed.net"

@@ -685,6 +685,43 @@ article h2::after,
    SITE-WIDE
    ═══════════════════════════════════════════════════════════ */
 
+/* Header — widen from theme's 760px so all nav items fit on one line */
+.header .header__inner {
+    width: 1080px;
+    max-width: calc(100vw - 40px);
+}
+
+/* Keep the right-side header from compressing the menu */
+.header .header__right {
+    flex: 0 0 auto;
+    min-width: max-content;
+}
+
+/* Correct selectors: .menu is on <nav>, .menu__inner is on <ul> */
+.header nav.menu > ul.menu__inner {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: none;
+    white-space: nowrap;
+}
+
+.header nav.menu > ul.menu__inner > li {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    margin: 0 8px;
+}
+
+.header nav.menu > ul.menu__inner > li > a {
+    white-space: nowrap;
+    margin-right: 10px;
+}
+
+/* Language submenu */
+.header nav.menu > ul.menu__inner > ul.submenu {
+    flex: 0 0 auto;
+    white-space: nowrap;
+}
+
 /* Nav — animated underline-grow + color lift (replaces theme's
    plain text-decoration: underline) */
 nav.menu a {

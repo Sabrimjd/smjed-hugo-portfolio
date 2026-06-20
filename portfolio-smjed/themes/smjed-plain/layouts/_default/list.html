@@ -1,0 +1,17 @@
+{{ define "main" }}
+<main class="page-shell">
+  <header class="page-header list-header">
+    <p class="kicker">Archive</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+  </header>
+  <div class="archive-list">
+    {{ range .Pages.ByDate.Reverse }}
+      <a class="archive-item" href="{{ .RelPermalink }}">
+        <span>{{ .Title }}</span>
+        <time>{{ .Date.Format "2006-01-02" }}</time>
+      </a>
+    {{ end }}
+  </div>
+</main>
+{{ end }}

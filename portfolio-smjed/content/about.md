@@ -1,5 +1,5 @@
 ---
-title: "About Me"
+title: "About"
 date: "2025-01-01"
 draft: false
 aliases: ["about-us", "contact"]
@@ -7,31 +7,31 @@ author:
   name: "Sabri MJAHED"
 ---
 
-I'm a Site Reliability Engineer with <span class="key">10 years</span> of experience operating infrastructure that can't quietly fail, from <span class="key">on-prem</span> virtualization and storage to high-volume observability platforms and <span class="key">Kubernetes</span>.
+SMJED is the independent infrastructure engineering practice of Sabri MJAHED, SRE with 10+ years across sysadmin and platform engineering roles. We build on-prem, private-cloud, and hybrid platforms for teams that need full control over their infrastructure and their data — not a dependency on someone else's cloud.
 
-I work at the intersection of reliability engineering, <span class="key">observability</span>, automation, and AI-assisted operations. My background in systems, networking, and on-prem infrastructure gives me a broader operational view than cloud-only DevOps profiles; my current focus is on observability pipelines, SLO-driven engineering, and practical AI tooling for operations teams.
+## The approach
 
-## What I do
+Generalists by design. Real infrastructure problems don't stay inside one specialty. They cross observability, automation, storage, networking, and security in ways that require someone who can operate across all of them. Rack and cable on Monday, debug a Loki ingestion bottleneck on Tuesday, architect a Proxmox HA cluster on Wednesday.
 
-- **Observability at scale**: Grafana, Loki, Thanos, Vector, CloudWatch - stack design, query performance, SLO frameworks, platform hygiene.
-- **Platform engineering**: Kubernetes operations, Helm, Argo CD, CI/CD (Jenkins, GitLab), Terraform and Ansible for repeatable delivery.
-- **On-prem & hybrid infrastructure**: Proxmox, Ceph, multi-datacenter HA, migrations from legacy virtualization.
-- **AI-assisted SRE tooling**: Graphia, a domain-specific SRE agent for Grafana diagnosis - RBAC-aware, MCP-based, built for real operations rather than demos.
+That breadth comes from 10+ years across environments ranging from 4-rack datacenters to multi-DC platforms serving millions of users where data sovereignty and uptime were non-negotiable.
 
-## Open source
+## What we cover
 
-I build tools around real operational pain points and keep them open. Selected projects:
+- **Observability**: 11 TB/day across Loki, Elasticsearch, and Thanos. Grafana deployments serving 2000 users. Ingestion tuning, recording rules, SLO dashboarding, and query optimization.
+- **Infrastructure automation**: The tooling that managed 3000+ VMs across 4 providers. Terraform multi-provider modules, Ansible dynamic inventory, GitOps pipelines from Git push to live traffic.
+- **On-prem virtualization**: 100+ Proxmox nodes with PXE automation. Production experience across ZFS, NFS, SAN, NVMe-oF, and Ceph. vSphere migrations, HA cluster design.
+- **Networking & security**: F5 DDoS mitigation, distributed firewalling across 1000+ VMs, Cisco/Juniper network hardware, ExtraHop NDR, vulnerability management.
+- **Sovereign AI**: GPU deployments running vLLM, private RAG pipelines, and RBAC-aware SRE assistants that run entirely on your own infrastructure. No external API dependency for sensitive workflows.
+- **Databases & messaging**: PostgreSQL HA (Patroni/etcd), Couchbase at scale, Kafka pipelines, Elasticsearch clusters.
 
-- **[SSHplex](https://github.com/Sabrimjd/SSHPlex)** - Modern SSH multiplexer with multi-source inventory (NetBox, Ansible, Consul) and tmux/iTerm2 backends. Built to replace expensive legacy tooling.
-- **[terraform-provider-centreon](https://github.com/Sabrimjd/terraform-provider-centreon)** - Go-based Terraform provider for Centreon API V2. Turns monitoring configuration into infrastructure as code.
-- **[OpenClaw Audit TUI](https://github.com/Sabrimjd/openclaw-audit-tui)** - Terminal UI for auditing agent sessions, tool usage, and live events with streaming to Discord/Telegram/Slack.
+## How we work
 
-More on the [Open Source](/open-source/) page.
+SMJED integrates directly into your team. No black-box consulting, no throwing reports over the wall. We scope properly before starting, validate decisions through real testing, and document everything we touch so your team can operate it after we leave.
+
+For engagements that need more capacity, vetted freelancers from the SMJED network join the mission. One point of contact, scalable delivery.
 
 ## Background
 
-I've been operating infrastructure since I was 15, starting with a multi-node Minecraft platform on OVH dedicated servers. Since then: a Master's degree project on BGP + ElasticSearch + ML + JA3 signature analysis for DDoS auto-mitigation, then 10 years across system administration, virtualization, on-prem storage, and SRE work on production platforms ingesting multiple TB of observability data per day.
+Founded by Sabri MJAHED — SRE with 10 years across sysadmin roles (VINC) and high-stakes platform engineering. Started hands-on with physical infrastructure, moved into automation, observability, and AI-assisted operations. Each layer built on operational pain felt at the previous one.
 
-## Contact
-
-Email: [contact@smjed.net](mailto:contact@smjed.net) · Paris area / remote · Available for freelance missions.
+More on the [Open Source](/open-source/) page and the [Missions](/missions/) page.

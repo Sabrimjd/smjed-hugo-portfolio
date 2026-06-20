@@ -1,0 +1,21 @@
+{{ define "main" }}
+<main class="page-shell missions-page">
+  <header class="page-header">
+    <p class="kicker">Mission briefs</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.lead }}<p>{{ . | markdownify }}</p>{{ end }}
+  </header>
+  <div class="mission-grid">
+    {{ range .Pages.ByParam "weight" }}
+      <a class="mission-card accent-{{ .Params.accent | default "blue" }}" href="{{ .RelPermalink }}">
+        <span>M{{ printf "%02d" .Params.weight }}</span>
+        <h2>{{ .Title }}</h2>
+        <p>{{ .Params.subtitle | default .Description }}</p>
+        <ul>{{ range first 5 (.Params.stack | default slice) }}<li>{{ . }}</li>{{ end }}</ul>
+        <em>{{ i18n "missionDetails" | default "Read brief" }} →</em>
+      </a>
+    {{ end }}
+  </div>
+  {{ with .Content }}<div class="prose mission-body">{{ . }}</div>{{ end }}
+</main>
+{{ end }}
