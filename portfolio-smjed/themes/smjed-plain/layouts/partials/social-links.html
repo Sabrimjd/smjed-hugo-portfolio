@@ -1,9 +1,0 @@
-{{ range . }}
-  <a class="social-link" href="{{ .url }}" target="_blank" rel="noopener me" aria-label="{{ .name }}">
-    {{- if eq (lower .name) "github" -}}<img src="/img/tech/social-github.svg" alt="GitHub" width="16" height="16" loading="lazy"><span>GitHub</span>
-    {{- else if eq (lower .name) "linkedin" -}}<img src="/img/tech/social-linkedin.svg" alt="LinkedIn" width="16" height="16" loading="lazy"><span>LinkedIn</span>
-    {{- else if eq (lower .name) "email" -}}<img src="/img/tech/social-email.svg" alt="Email" width="16" height="16" loading="lazy"><span>Email</span>
-    {{- else if eq .name "X" -}}<img src="/img/tech/social-x.svg" alt="X" width="16" height="16" loading="lazy"><span>X</span>
-    {{- else -}}{{ .name }}{{- end -}}
-  </a>
-{{ end }}

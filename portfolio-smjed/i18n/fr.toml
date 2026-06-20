@@ -1,10 +1,10 @@
 # ─── Landing page ────────────────────────────────────────────────
 
 [heroTitle]
-other = "Prenez le **contrôle de vos données**"
+other = "SRE, observabilité & plateformes critiques"
 
 [heroTagline]
-other = "(Re)Take aide les équipes à concevoir et exploiter l'infrastructure on-prem, private-cloud et hybride : observabilité, automatisation, virtualisation et systèmes d'IA locaux pour environnements sensibles. Dirigé par Sabri MJAHED, SRE avec 10+ ans sur des plateformes à enjeux."
+other = "J'aide les équipes engineering à debugger plus vite, réduire le bruit opérationnel et fiabiliser les plateformes derrière des services critiques."
 
 [heroAvailability]
 other = "Disponible pour missions freelance - Paris / remote"
@@ -23,54 +23,54 @@ other = "Ans infra/SRE"
 [statLogs]
 other = "Ingestion observabilité"
 
-[statVMs]
-other = "VMs livrées au pic"
+[statDCs]
+other = "Livraison multi-datacenter"
 
-[statProxmox]
-other = "Noeuds Proxmox déployés"
+[statVirtualization]
+other = "Virtualisation"
 
 [statStorage]
-other = "Logs gérés"
+other = "Stockage distribué"
 
 # ─── Services ───────────────────────────────────────────────────
 
 [servicesTitle]
-other = "Ce que nous faisons"
+other = "Comment je peux aider"
 
 [servicesIntro]
-other = "Engineering d'infrastructure on-prem, private-cloud et hybride. Observabilité, automatisation, virtualisation et IA privée — pour les équipes qui doivent garder les workloads sensibles sous leur propre contrôle."
+other = "Du SRE ancré dans des opérations réelles. Un opérateur ciblé pour les équipes qui ont besoin de fiabilité automatisée, pas des tickets."
 
 [svcObsTitle]
 other = "Observabilité à grande échelle"
 
 [svcObsDesc]
-other = "Grafana, Loki, Thanos, Vector, Elasticsearch. Audits de stack, tuning d'ingestion, migrations Fluentd vers Vector, recording rules, performance des requêtes et dashboards SLO."
+other = "Grafana, Loki, Thanos, Vector, Alloy. Audits de stack, migrations, performance des requêtes, dashboards SLO et hygiène de plateforme."
 
-[svcAutoTitle]
-other = "Automatisation infra & IaC"
+[svcPlatformTitle]
+other = "Plateforme & engineering Kubernetes"
 
-[svcAutoDesc]
-other = "Modules Terraform multi-provider, Ansible, pipelines GitOps, inventaire Consul et NetBox. L'automatisation qui permet aux petites équipes d'opérer à l'échelle d'une flotte."
+[svcPlatformDesc]
+other = "Opérations Kubernetes, Helm, Argo CD, CI/CD (Jenkins, GitLab), automatisation Terraform et Ansible pour des livraisons sûres et reproductibles."
 
 [svcOnpremTitle]
 other = "Proxmox / Ceph / on-prem HA"
 
 [svcOnpremDesc]
-other = "100+ noeuds Proxmox déployés avec automatisation PXE. Backends de stockage dont ZFS, NFS, SAN, NVMe-oF et Ceph. Migrations depuis vSphere, conception de clusters HA."
+other = "Virtualisation et stockage distribué sur bare metal. Clusters multi-datacenter, migrations depuis de la virtualisation legacy, conception HA et réseau."
 
 # ─── Sovereign AI ───────────────────────────────────────────────
 
 [sovereignTitle]
-other = "IA privée pour les équipes infrastructure"
+other = "IA on-prem : vos modèles sur votre infrastructure"
 
 [sovereignDesc]
-other = "Certaines données opérationnelles ne doivent pas quitter votre réseau : incidents, logs, runbooks, docs internes et procédures. (Re)Take construit des systèmes d'IA locaux pour ces environnements : serving de modèles vLLM, pipelines RAG privés, assistants avec RBAC, et intégrations avec votre stack Proxmox, observabilité et documentation existante. Aucune dépendance API externe pour les workflows sensibles, coûts prévisibles, contrôle total des données."
+other = "Pour les équipes qui ont besoin de capacités IA sans envoyer leurs données vers des clouds tiers : serving de LLM local, pipelines RAG privés, et diagnostic assisté par IA qui tourne entièrement sur votre infrastructure Proxmox/Kubernetes. Conforme RGPD par construction, contrôle total sur les modèles et les données."
 
 [sovereignTag1]
 other = "Serving LLM local"
 
 [sovereignTag2]
-other = "Conscient RGPD"
+other = "Conforme RGPD"
 
 [sovereignTag3]
 other = "Pipelines RAG privés"
@@ -87,31 +87,31 @@ other = "Sélection de réalisations"
 other = "Quelques preuves sur 10 ans d'infrastructure qui ne peut pas tomber en silence."
 
 [proof1Title]
-other = "Observabilité à très haute enjeux"
+other = "Plateforme d'observabilité haut volume"
 
 [proof1Metric]
-other = "11 TB/jour - 400 pods Loki - 50TB Thanos"
+other = "Ingestion TB/jour - multi-cluster"
 
 [proof1Desc]
-other = "Exploitation d'une observabilité multi-cluster à 11 TB/jour répartis sur Loki, Elasticsearch et Thanos. Tuning d'ingestion, migration Fluentd vers Vector, recording rules convertissant des TB/jour de logs de load-balancers en métriques. Dans un métier où quelques minutes d'indisponibilité ont un impact à sept chiffres."
+other = "Opération d'une plateforme d'observabilité multi-cluster avec ingestion de plusieurs TB/jour sur logs, métriques et traces, pipelines Kafka alimentant SIEM, logging, EDR, APM et supervision."
 
 [proof2Title]
-other = "Pipeline de livraison de VMs"
+other = "Plateforme Proxmox / Ceph HA"
 
 [proof2Metric]
-other = "3000 VMs - 4 providers - Git jusqu'au monitoring"
+other = "10 baies - 4 datacenters - 200 Gb/hôte"
 
 [proof2Desc]
-other = "Construction d'un pipeline autonome de livraison de VMs en 6 phases : Git PR, Terraform sur vSphere/Proxmox/OpenStack, auto-enregistrement Consul et NetBox, configuration Ansible, inscription backend HAProxy, monitoring Centreon. Sans Kubernetes."
+other = "Intégration d'un cluster Proxmox haute disponibilité automatisé avec stockage Ceph, automatisation PXE et réseau 200 Gb par hôte."
 
 [proof3Title]
-other = "Infrastructure IA on-prem"
+other = "Automatisation multi-provider"
 
 [proof3Metric]
-other = "6 GPUs - 1000+ PDFs - serving vLLM"
+other = "10 datacenters - 4 providers"
 
 [proof3Desc]
-other = "Déploiement de serveurs équipés GPU en datacenter faisant tourner vLLM avec un pipeline RAG privé sur 1000+ documents. Création de Graphia, un agent SRE avec RBAC qui abstrait la complexité de Grafana pour les équipes engineering."
+other = "Livraison automatisée de VMs et applications sur 10 datacenters et 4 providers (OpenStack, Proxmox, vSphere, K8S) via templates Terraform partagés."
 
 [proofFullCV]
 other = "Voir le CV complet"
@@ -122,7 +122,7 @@ other = "Voir le CV complet"
 other = "Open Source"
 
 [homeOpenSourceIntro]
-other = "Des outils conçus autour de vrais problèmes opérationnels, pratiques, ouverts et utiles au-delà de notre environnement."
+other = "Des outils construits autour de vrais problèmes opérationnels, pratiques, ouverts et utiles au-delà de mon environnement."
 
 [homeOpenSourceGitHub]
 other = "GitHub"
@@ -145,13 +145,13 @@ other = "Voir tous les projets open source"
 # ─── Final CTA ──────────────────────────────────────────────────
 
 [ctaFinalTitle]
-other = "Besoin de garder votre infrastructure critique sous contrôle ?"
+other = "Discutons"
 
 [ctaFinalDesc]
-other = "Si votre équipe construit de l'infrastructure on-prem, private-cloud ou hybride pour des workloads sensibles, contactez-moi."
+other = "Si votre équipe fait tourner une infrastructure critique et a besoin de SRE sans théâtre, contactez-moi."
 
 [ctaFinalButton]
-other = "Nous contacter"
+other = "M'envoyer un email"
 
 # ─── Section Missions ──────────────────────────────────────────
 
