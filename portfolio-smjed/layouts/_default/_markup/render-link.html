@@ -1,0 +1,4 @@
+{{- /* Markdown link render hook: goldmark's default pipes hrefs through
+     Go's urlFilter, which ZgotmplZ-blocks tel: (mailto: passes). safeURL
+     restores passthrough for all schemes used in content. */ -}}
+<a href="{{ .Destination | safeURL }}"{{ with .Title }} title="{{ .Title }}"{{ end }}>{{ .Text }}</a>
