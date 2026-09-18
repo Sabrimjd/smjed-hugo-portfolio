@@ -190,3 +190,12 @@ other = "Think this fits your needs? Let's scope it together."
 
 [missionCTAbutton]
 other = "Start a conversation"
+
+[dcBtnMissions]
+other = "Missions"
+
+[dcBtnOSS]
+other = "Open Source"
+
+[dcBtnCV]
+other = "CV"

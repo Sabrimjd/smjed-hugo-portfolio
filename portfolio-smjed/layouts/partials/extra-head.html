@@ -1,0 +1,35 @@
+{{- /* Discord component embed (discord-api-docs PR #8606) for smjed.net.
+     Site-level override picked up by the theme's extra-head.html hook —
+     theme files untouched. Replaces the standard OG card in Discord with a
+     Container(17) accent #3b82f6, Section(9): linked title + description +
+     profile.png thumbnail, ActionRow(1) of link Buttons(2): Missions /
+     Open Source / CV. OG fallback stays in head.html (_internal/opengraph).
+     jsonify MUST be piped through safeJS — Hugo contextually re-encodes
+     JSON inside <script> bodies otherwise. */ -}}
+{{- $p := . -}}
+{{- $desc := "" -}}
+{{- if $p.IsHome -}}
+  {{- $desc = $p.Site.Params.description -}}
+{{- else if $p.Description -}}
+  {{- $desc = $p.Description -}}
+{{- else -}}
+  {{- $desc = ($p.Summary | plainify) -}}
+{{- end -}}
+{{- $desc = $desc | plainify | chomp | truncate 300 -}}
+{{- $avatar := "img/profile.png" | absURL -}}
+{{- $embedTitle := cond $p.IsHome $p.Site.Title $p.Title -}}
+{{- $missions := "" -}}{{- with $p.Site.GetPage "/missions" -}}{{- $missions = .Permalink -}}{{- end -}}
+{{- if eq $missions "" -}}{{- $missions = "missions/" | absLangURL -}}{{- end -}}
+{{- $oss := "" -}}{{- with $p.Site.GetPage "/open-source" -}}{{- $oss = .Permalink -}}{{- end -}}
+{{- if eq $oss "" -}}{{- $oss = "open-source/" | absLangURL -}}{{- end -}}
+{{- $cv := "" -}}{{- with $p.Site.GetPage "/cv" -}}{{- $cv = .Permalink -}}{{- end -}}
+{{- if eq $cv "" -}}{{- $cv = "cv/" | absLangURL -}}{{- end -}}
+{{- $btnM := dict "type" 2 "style" 5 "url" $missions "label" (i18n "dcBtnMissions") -}}
+{{- $btnO := dict "type" 2 "style" 5 "url" $oss "label" (i18n "dcBtnOSS") -}}
+{{- $btnC := dict "type" 2 "style" 5 "url" $cv "label" (i18n "dcBtnCV") -}}
+{{- $header := dict "type" 10 "content" (printf "**[%s](%s)**\n%s" $embedTitle $p.Permalink $desc) -}}
+{{- $section := dict "type" 9 "components" (slice $header) "accessory" (dict "type" 11 "media" (dict "url" $avatar) "description" "SMJED") -}}
+{{- $row := dict "type" 1 "components" (slice $btnM $btnO $btnC) -}}
+{{- $sep := dict "type" 14 -}}
+{{- $payload := dict "component" (dict "type" 17 "accent_color" 3900150 "components" (slice $section $sep $row)) -}}
+<script id="discord:component-embed" type="application/json">{{ $payload | jsonify | safeJS }}</script>

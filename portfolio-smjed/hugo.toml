@@ -404,3 +404,7 @@ attribute = true
     name       = "CV"
     url        = "cv/"
     weight     = 3
+
+[minify]
+  [minify.tdewolff.html]
+    keepQuotes = true
