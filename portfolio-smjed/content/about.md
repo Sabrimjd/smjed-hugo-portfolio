@@ -34,4 +34,4 @@ I've been operating infrastructure since I was 15, starting with a multi-node Mi
 
 ## Contact
 
-Email: [contact@smjed.net](mailto:contact@smjed.net) · Paris area / remote · Available for freelance missions.
+Email: [contact@smjed.net](mailto:contact@smjed.net) · Phone: [+33 7 56 88 38 24](tel:+33756883824) · Paris area / remote · Available for freelance missions.

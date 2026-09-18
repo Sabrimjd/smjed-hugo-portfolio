@@ -34,4 +34,4 @@ J'opère de l'infrastructure depuis mes 15 ans, en commençant par une plateform
 
 ## Contact
 
-Email : [contact@smjed.net](mailto:contact@smjed.net) · Paris / remote · Disponible pour missions freelance.
+Email : [contact@smjed.net](mailto:contact@smjed.net) · Tél : [+33 7 56 88 38 24](tel:+33756883824) · Paris / remote · Disponible pour missions freelance.

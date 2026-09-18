@@ -96,3 +96,4 @@ description: "Senior freelance SRE with 10 years of experience across observabil
 ## Contact Information
 
 *   Email: contact@smjed.net
+*   Phone: [+33 7 56 88 38 24](tel:+33756883824)

@@ -95,4 +95,5 @@ description: "SRE freelance senior avec 10 ans d'expérience en observabilité, 
 
 ## Informations de Contact
 
-*   Email: contact@smjed.net
+*   Email : contact@smjed.net
+*   Téléphone : [+33 7 56 88 38 24](tel:+33756883824)
