@@ -1,99 +1,99 @@
 ---
 title: "My Resume"
 type: "resume"
-description: "Senior freelance SRE with 10 years of experience across observability, Kubernetes, Proxmox/Ceph, automation, and AI-assisted SRE tooling."
+description: "Independent SRE and infrastructure consultant specialising in observability, platform engineering, private cloud and infrastructure automation."
 ---
 
-## Summary
+## Profile
 
-> Senior freelance <span class="key">SRE</span> with <span class="key">10 years</span> of experience operating infrastructure that can't quietly fail. I work across high-volume observability, <span class="key">Kubernetes</span> platform engineering, on-prem <span class="key">Proxmox/Ceph</span> clusters, and AI-assisted SRE tooling.
+Independent SRE and infrastructure consultant with 10 years of hands-on infrastructure experience, from early technical assignments to more than 6 years on business-critical production platforms. I design and operate observable, automated infrastructure across datacenters, private cloud and hybrid environments.
 
 <div class="cv-downloads">
   <a href="/files/sabri-mjahed-cv-en.pdf" download>Download CV PDF - English</a>
   <a href="/files/sabri-mjahed-cv-fr.pdf" download>Download CV PDF - French</a>
 </div>
 
-## Open Source Contributions
+## Core expertise
 
-🌟 **SSHplex**
-> Built and maintained an open source terminal UI for SSH connection multiplexing, designed for infrastructure teams that need fast host discovery, bulk operations, and persistent sessions.
-- GitHub Repository: [SSHPlex](https://github.com/Sabrimjd/SSHPlex)
-- Blog Post: [Building SSHplex](/posts/building_sshplex/)
-- Combines NetBox, Ansible, Consul, and static lists as sources of truth for hosts and devices
-- Supports three mux backends: tmux standalone, tmux + iTerm2, and native iTerm2 on macOS
-- Provides broadcast commands and persistent sessions to replace expensive legacy tooling
+- **SRE and observability:** Grafana, Loki, Thanos, Vector, Alloy, Elastic, VictoriaMetrics, Prometheus, RUM/APM, SLIs/SLOs, alerting and incident response
+- **Platform engineering:** Terraform, Ansible, Jenkins, GitLab CI, GitHub Actions, NetBox, Consul, Vault and Git-driven delivery
+- **Private and hybrid infrastructure:** Proxmox, Ceph, VMware vSphere, OpenStack, Kubernetes operations, Linux, HAProxy, F5, BGP and PXE
+- **Engineering:** Python, Go, Bash, HCL, Kafka, PostgreSQL, Couchbase, RAG and private AI infrastructure
 
 ## Experience
 
-### <a href="https://www.kindredgroup.com/"><img src="/img/Kindred.webp" alt="Kindred France" style="height: 30px; padding-right: 10px; vertical-align: middle;"></a> Kindred France | Site Reliability Engineer | 2021 - Present
+### RetakeData | Independent SRE & Infrastructure Consultant | Aug 2026 - Present
 
-<div class="skills-container">
-    <a href="/tags/kubernetes" class="skill-badge">Kubernetes</a>
-    <a href="/tags/grafana" class="skill-badge">Grafana</a>
-    <a href="/tags/loki" class="skill-badge">Loki</a>
-    <a href="/tags/thanos" class="skill-badge">Thanos</a>
-    <a href="/tags/vector" class="skill-badge">Vector</a>
-    <a href="/tags/jenkins" class="skill-badge">Jenkins</a>
-    <a href="/tags/gitlab-ci" class="skill-badge">GitLab CI</a>
-    <a href="/tags/terraform" class="skill-badge">Terraform</a>
-</div>
+- Advise and deliver architecture, reliability, observability and infrastructure modernisation work for private and hybrid platforms.
+- Build operating models and automation that let engineering teams understand, run and own their infrastructure.
+- Scope work across observability, Proxmox and Kubernetes platforms, migrations, performance, cost optimisation and private AI infrastructure.
 
-*   Progressed from System Engineer to Site Reliability Engineer, shifting focus from infrastructure automation toward platform reliability, observability, diagnostics and performance.
-*   Operate observability workflows around Kubernetes with Thanos, Loki, Grafana, and Vector as core technologies.
-*   Built a HouseKeeping tool to diagnose stale and broken Grafana resources, reducing dashboard/config drift and improving platform hygiene.
-*   Built a Search Query Exporter to diagnose query slowness and establish SLOs across Thanos and Loki.
-*   Designed an SLO Dashboard Framework to standardize service-level visibility and make reliability reporting easier to adopt across teams.
-*   Building Graphia, a domain-specific SRE agent for Grafana diagnosis - RBAC-aware behavior, MCP-based diagnosis flows, and safeguards for enterprise operations.
-*   Daily hands-on work with Helm charts, Argo CD, container image lifecycle, Jenkins, GitLab, AWS CloudWatch, and CUR2 cost analysis.
+### Kindred France | Site Reliability Engineer | Jul 2023 - Aug 2026
 
-#### Current stack and ownership
+- Operated and improved a multi-TB/day observability platform using Grafana, Loki, Thanos, Vector and Elastic for regulated, high-traffic services, including major event workloads.
+- Designed RUM and APM capabilities to expose application and user-experience bottlenecks.
+- Defined SLIs, SLOs, alerting and incident-response practices with development teams from the design stage.
+- Automated recurring operational workflows with Python and built tooling for Grafana housekeeping, query performance analysis and reliability reporting.
+- Prototyped an RBAC-aware AI assistant for Grafana diagnostics and incident investigation.
 
-| Area | Components/Tools |
-|------|------------------|
-| Observability | Grafana, Loki, Thanos, Vector, AWS CloudWatch |
-| Platform Engineering | Kubernetes, Helm, Argo CD, Container Images |
-| CI/CD & Automation | Jenkins, GitLab CI, Terraform, Ansible |
-| Data & Storage | Kafka, Redis, PostgreSQL, Microsoft SQL, Couchbase |
-| Programming & AI | Go, Python, Bash, AI, MCP |
+### Kindred France | System Engineer | Sep 2020 - Jul 2023
 
-#### Previous impact within the same company
+- Designed an end-to-end VM delivery factory from Git request to monitored production across VMware vSphere, Proxmox and OpenStack.
+- Built reusable Terraform and Jenkins workflows across 10 datacenters. NetBox and Consul supplied inventory and service discovery; Ansible handled deployment; Vault secured credentials and supported platform hardening.
+- Supported 2,000+ active VMs and thousands of provisioning, migration and redeployment operations while reducing manual work and deployment tickets.
+- Designed and operated Proxmox/Ceph HA infrastructure across 2 datacenters, 4 racks and approximately 30 hosts with 25 GbE networking, live migration and PXE provisioning.
+- Operated an Elastic/Kafka estate managing approximately 1 PB of logs for SIEM, EDR, APM, network and system telemetry, uptime and SLO monitoring.
+- Developed a Go Terraform provider for Centreon API V2, with automated tests, CI/CD, releases and documentation.
 
-*   Led the automated deployment of VMs and applications through CI/CD, enabling multiple deployments per day.
-*   Used Terraform to deploy across 10 datacenters and 4 providers (OpenStack, Proxmox, vSphere, NetBox) from shared templates.
-*   Used Ansible for VM initialization and application deployment, with Consul feeding service pools for HAProxy and Prometheus.
-*   Operated multi-cluster observability at <span class="key">multi-TB/day</span> ingestion across logs, metrics, and traces, with <span class="key">Kafka</span> pipelines feeding SIEM, logging, EDR, APM, and uptime monitoring.
-*   Integrated a highly available Proxmox cluster across 4 racks and 2 datacenters with Ceph, including PXE-based automation and 25 Gb networking per host.
-*   Accountable for the French security scope, driving remediation work for vulnerabilities and production hardening.
+### VINC SAS | Systems & Network Administrator, Apprenticeship | Sep 2018 - Sep 2020
 
-### <a href="https://www.vinc.fr/"><img src="/img/Vinc.png" alt="VINC" style="height: 30px; padding-right: 10px; vertical-align: middle;"></a> VINC | System engineer | 2019 - 2021
+- Designed and deployed production infrastructure across two datacenters, including BGP routing, firewalls, HA DNS and network services.
+- Administered Proxmox production clusters and handled incidents, SLAs and customer communication through to resolution.
+- Delivered hosting and infrastructure solutions from requirements and architecture through production rollout.
 
-<div class="skills-container">
-    <a href="/tags/proxmox" class="skill-badge">Proxmox</a>
-    <a href="/tags/dns" class="skill-badge">DNS</a>
-    <a href="/tags/ha" class="skill-badge">High Availability</a>
-</div>
+**Earlier technical experience | 2016 - 2018:** Azuria, YL-Partner and independent systems/network assignments covering datacenter rack deployment, HA VPN and DNS services, hosting automation and RIPE API-based network tooling.
 
-*   Architected the new platform with new BGP routers and firewalls.
-*   Managed Proxmox cluster across 2 datacenters.
-*   Responsible for SLA and client communication during production incidents.
-*   Implemented websites around client needs.
-*   Implemented a new DNS stack with high availability in mind.
+## Selected engineering work
 
-### Multi-Visp / Azuria | System administrator | 2017 - 2019
+### Infrastructure delivery factory
 
-<div class="skills-container">
-    <a href="/tags/network" class="skill-badge">Network Infrastructure</a>
-    <a href="/tags/vpn" class="skill-badge">VPN</a>
-    <a href="/tags/datacenter" class="skill-badge">Datacenter Management</a>
-    <a href="/tags/wifi" class="skill-badge">WiFi</a>
-</div>
+Six-stage Git-to-production workflow combining Terraform, Jenkins, NetBox, Consul, Ansible, HAProxy and monitoring. It standardised provisioning across multiple infrastructure platforms and reduced repeated manual operations.
 
-*   Installed complete new racks in Telehouse2.
-*   Cable management between two rooms.
-*   Installed managed Wi-Fi equipment.
-*   Implemented high-availability multi-datacenter VPN services.
+### SRE operational tooling
 
-## Contact Information
+Built tools that audit stale or broken Grafana resources, measure query latency across observability backends and standardise SLO dashboards for engineering teams.
 
-*   Email: contact@smjed.net
-*   Phone: [+33 7 56 88 38 24](tel:+33756883824)
+### Open source
+
+- **[terraform-provider-centreon](https://github.com/Sabrimjd/terraform-provider-centreon):** Go provider that manages Centreon monitoring through Terraform and API V2.
+- **[SSHplex](https://github.com/Sabrimjd/SSHPlex):** Python terminal UI for SSH host discovery, multiplexing, broadcast commands and persistent sessions using NetBox, Ansible or Consul inventories.
+
+### Private AI infrastructure
+
+Hands-on work with GPU hosting, vLLM/Ollama, RAG pipelines and PostgreSQL/pgvector for self-hosted operational AI, with an emphasis on access control and keeping sensitive data inside the organisation.
+
+## Technical toolkit
+
+| Area | Technologies |
+|---|---|
+| Observability | Grafana, Loki, Thanos, Vector, Alloy, Elastic Stack, VictoriaMetrics, Prometheus, Centreon |
+| Automation | Terraform, Ansible, Jenkins, GitLab CI, GitHub Actions, NetBox, Consul, Vault, Packer |
+| Platforms | Linux, Proxmox, Ceph, VMware vSphere, OpenStack, Kubernetes, Docker, Helm, Argo CD |
+| Networking and security | HAProxy, F5, Nginx, BGP, DNS, VPN, nftables, Fortinet, vulnerability remediation |
+| Data and code | Kafka, PostgreSQL, Couchbase, Redis, Python, Go, Bash, HCL |
+
+## Education
+
+- **ESGI:** Mastère, Systems, Networks & Cloud, 2019 - 2021
+- **ESGI:** Bachelor's degree, Systems, Networks & Cloud Computing, 2018 - 2019
+- **Lycée Louis Armand, Nogent-sur-Marne:** BTS SIO, 2016 - 2018
+
+## Languages
+
+French: native | English: fluent (professional) | Arabic: elementary
+
+## Contact
+
+- Email: [contact@retakedata.com](mailto:contact@retakedata.com)
+- Phone: [+33 7 56 88 38 24](tel:+33756883824)
+- LinkedIn: [linkedin.com/in/sabrimjed](https://www.linkedin.com/in/sabrimjed)
